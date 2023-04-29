@@ -14,6 +14,7 @@ import "../styles/productDetails.css";
 import Description from "./products/description";
 import LoveBtn from "./products/loveBtn";
 import CustomerReview from "./products/customerReview";
+import { Footer } from "./footer";
 
 export const ProductDetails = () => {
   const { productID } = useParams();
@@ -70,6 +71,7 @@ export const ProductDetails = () => {
         style={data[productID - 1]["style"]}
       />
       <CustomerReview />
+      <Footer />
     </Box>
   );
 };
