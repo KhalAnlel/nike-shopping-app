@@ -1,0 +1,9 @@
+.learnMoreBtn {
+  padding: 10px;
+  background-color: rgb(117, 158, 255);
+  border-radius: 10px;
+  color: aliceblue;
+}
+.learnMoreBtn:hover {
+  opacity: 0.5;
+}

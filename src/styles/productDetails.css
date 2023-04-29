@@ -1,0 +1,13 @@
+.slideContainer {
+  border: 0;
+}
+.nextButton,
+.prevButton {
+  background-color: rgb(0 0 0);
+}
+.MuiSlider-thumb {
+  display: none !important;
+}
+.css-1x9fseg-MuiSlider-root.Mui-disabled {
+  color: black !important;
+}

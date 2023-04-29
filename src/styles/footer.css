@@ -1,0 +1,22 @@
+.footerColumn {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.contactDiv {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footerColumn a {
+  color: #333;
+  width: fit-content;
+}
+
+.footerColumn a:hover {
+  text-decoration: underline;
+}
