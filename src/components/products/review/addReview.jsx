@@ -42,8 +42,10 @@ export default function AddReview() {
         Write a Review
       </Button>
       <Dialog open={open} onClose={handleClose} fullWidth>
-        <Stack gap={3} Direction="column" p={3}>
-          <DialogTitle>Write a Review</DialogTitle>
+        <Stack gap={3} direction="column" p={3}>
+          <Typography fontSize={20} fontWeight={700} textAlign="center">
+            Write a Review
+          </Typography>
           <Box>
             <Typography component="legend">Rate</Typography>
             <Rating

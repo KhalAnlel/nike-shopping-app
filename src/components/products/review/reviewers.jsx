@@ -52,7 +52,7 @@ const Reviewers = () => {
           <Typography marginTop={2}>{item.content}</Typography>
           <Stack direction="row" width="100%" gap={2} marginTop={2}>
             {item.images.map((image, index) => (
-              <ul style={{ listStyleType: "none", padding: 0 }}>
+              <ul style={{ listStyleType: "none", padding: 0 }} key={index}>
                 <li key={index}>
                   <img
                     src={image.url}

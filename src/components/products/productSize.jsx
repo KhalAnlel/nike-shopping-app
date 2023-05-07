@@ -17,23 +17,23 @@ const MenuProps = {
   },
 };
 
-function getStyles(name, personName, theme) {
+function getStyles(name, size, theme) {
   return {
     fontWeight:
-      personName.indexOf(name) === -1
+      size.indexOf(name) === -1
         ? theme.typography.fontWeightRegular
         : theme.typography.fontWeightMedium,
   };
 }
 const ProductSize = ({ sizeAvailable }) => {
   const theme = useTheme();
-  const [personName, setPersonName] = React.useState([]);
+  const [size, setsizeName] = React.useState([sizeAvailable[0]]);
 
   const handleSizeChange = (event) => {
     const {
       target: { value },
     } = event;
-    setPersonName(
+    setsizeName(
       // On autofill we get a stringified value.
       typeof value === "string" ? value.split(",") : value
     );
@@ -44,7 +44,7 @@ const ProductSize = ({ sizeAvailable }) => {
       <Select
         labelId="demo-multiple-name-label"
         id="demo-multiple-name"
-        value={personName}
+        value={size}
         onChange={handleSizeChange}
         input={<OutlinedInput label="Name" />}
         MenuProps={MenuProps}
@@ -54,7 +54,7 @@ const ProductSize = ({ sizeAvailable }) => {
           <MenuItem
             key={item}
             value={item}
-            style={getStyles(item, personName, theme)}
+            style={getStyles(item, size, theme)}
           >
             {item}
           </MenuItem>
