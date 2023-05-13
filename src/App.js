@@ -4,7 +4,7 @@ import { Collection } from "./components/collection";
 import { Home } from "./components/home";
 import { ProductDetails } from "./components/productDetails";
 import { Products } from "./components/products";
-import ScrollToTop from "./components/scrollToTop";
+import ScrollToTop from "./components/common/scrollToTop";
 
 function App() {
   return (

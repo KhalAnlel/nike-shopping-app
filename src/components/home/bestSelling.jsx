@@ -9,6 +9,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Box, CardActionArea, Chip } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
+import LearnMoreBtn from "./learnMoreBtn";
 
 const cards = [
   {
@@ -180,13 +181,7 @@ export const BestSelling = () => {
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
                 <Chip label={card.price} />
-                <Button
-                  variant="contained"
-                  size="small"
-                  href={`/products/${card.title}`}
-                >
-                  Learn More
-                </Button>
+                <LearnMoreBtn data={card.title} />
               </CardActions>
             </Card>
           </CardActionArea>

@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LaunchIcon from "@mui/icons-material/Launch";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Box, CardActionArea, Chip } from "@mui/material";
+import {
+  Box,
+  CardActionArea,
+  Chip,
+  CardMedia,
+  Typography,
+  CardContent,
+  CardActions,
+  Card,
+} from "@mui/material";
+import LearnMoreBtn from "./learnMoreBtn";
 import data from "../../data/latestArrivalData.json";
-import "../../styles/learnMoreBtn.css";
 
 export const LatestArrival = () => {
   return (
@@ -68,12 +72,7 @@ export const LatestArrival = () => {
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
                 <Chip label={item.price} />
-                <Link
-                  to={`/productDetails/${item.id}`}
-                  className="learnMoreBtn"
-                >
-                  Learn More
-                </Link>
+                <LearnMoreBtn data={item.id} />
               </CardActions>
             </Card>
           </CardActionArea>
