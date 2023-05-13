@@ -16,8 +16,11 @@ const CustomerReview = () => {
         <SortBy />
       </Stack>
       <TotalRate />
-      <Stack direction="row" gap={10}>
-        <Box>
+      <Stack
+        gap={3}
+        sx={{ flexDirection: { lg: "row", md: "row", sm: "column" } }}
+      >
+        <Box width="fit-content">
           <Rates />
           <AddReview />
         </Box>

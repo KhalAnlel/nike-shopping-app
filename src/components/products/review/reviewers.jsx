@@ -13,7 +13,7 @@ const Reviewers = () => {
   };
 
   return (
-    <Stack gap={3}>
+    <Stack gap={3} width="90%">
       {reviewers.map((item) => (
         <Box
           bgcolor="#fafafa"

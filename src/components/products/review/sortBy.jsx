@@ -22,7 +22,6 @@ const SortBy = () => {
         >
           <MenuItem value="Date">Date</MenuItem>
           <MenuItem value="Rate">Rate</MenuItem>
-          <MenuItem value="Content">Content</MenuItem>
         </Select>
       </FormControl>
     </Box>
