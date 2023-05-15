@@ -12,9 +12,10 @@ import {
   Card,
 } from "@mui/material";
 import LearnMoreBtn from "./learnMoreBtn";
-import data from "../../data/latestArrivalData.json";
+import data from "../../data/allProducts.json";
 
 export const LatestArrival = () => {
+  const latestItems = data.slice(0, 4); // Extract the first 4 items
   return (
     <>
       <Box marginTop={5}>
@@ -33,7 +34,7 @@ export const LatestArrival = () => {
         marginTop="20px"
         p="10px"
       >
-        {data.map((item) => (
+        {latestItems.map((item) => (
           <CardActionArea sx={{ maxWidth: "250px" }} key={item.id}>
             <Card sx={{ maxWidth: 250, margin: "auto", boxShadow: 0 }}>
               <Typography

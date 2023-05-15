@@ -15,7 +15,6 @@ export const Home = () => {
       <LatestArrival />
       <ByCategories />
       <BestSelling />
-      <Footer />
     </div>
   );
 };

@@ -8,13 +8,12 @@ import ProductColor from "./products/productColor";
 import ProductSize from "./products/productSize";
 import Quantity from "./products/quantity";
 import BuyBtn from "./products/buyBtn";
-import data from "../data/latestArrivalData.json";
 import SmartSlider from "react-smart-slider";
-import "../styles/productDetails.css";
 import Description from "./products/description";
 import LoveBtn from "./products/loveBtn";
 import CustomerReview from "./products/customerReview";
-import { Footer } from "./footer";
+import data from "../data/allProducts.json";
+import "../styles/productDetails.css";
 
 export const ProductDetails = () => {
   const { productID } = useParams();
@@ -71,7 +70,6 @@ export const ProductDetails = () => {
         style={data[productID - 1]["style"]}
       />
       <CustomerReview />
-      <Footer />
     </Box>
   );
 };

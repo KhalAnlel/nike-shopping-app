@@ -57,7 +57,7 @@ export const ByCategories = () => {
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="center">
           <LaunchIcon fontSize="small" sx={{ marginTop: "3px" }} />
-          <Link to="collection/latest">View All</Link>
+          <Link to="collection">View All</Link>
         </Box>
       </Box>
       <Box

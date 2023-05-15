@@ -5,7 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 const categories = [
-  "hodies",
+  "hoodies",
   "shirts",
   "hats",
   "pants",

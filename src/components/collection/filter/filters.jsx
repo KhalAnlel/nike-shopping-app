@@ -11,16 +11,41 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import PriceRange from "./priceRange";
 
+const categories = [
+  "hoodies",
+  "shirts",
+  "hats",
+  "pants",
+  "cosplay costumes",
+  "figures",
+  "accessories",
+  "anime pillow",
+];
+const animeSeries = [
+  "Attack on Titan",
+  "Demon Slayer",
+  "Jujutsu Kaisen",
+  "One Piece",
+  "Naruto",
+  "One Punch Man",
+  "Hunter x Hunter",
+  "Vinland Saga",
+  "Dragon Ball",
+];
 export default function Filters() {
   const [openSeries, setOpenSeries] = React.useState(true);
-  const [openAvailability, setOpenAvailability] = React.useState(true);
+  const [openCategories, setOpenCategories] = React.useState(true);
+  const [openProducts, setOpenProducts] = React.useState(true);
   const [openPrice, setOpenPrice] = React.useState(true);
 
   const handleClickSeries = () => {
     setOpenSeries(!openSeries);
   };
-  const handleClickAvailability = () => {
-    setOpenAvailability(!openAvailability);
+  const handleClickCategories = () => {
+    setOpenCategories(!openCategories);
+  };
+  const handleClickProducts = () => {
+    setOpenProducts(!openProducts);
   };
   const handleClickPriceSlider = () => {
     setOpenPrice(!openPrice);
@@ -43,47 +68,43 @@ export default function Filters() {
       </ListItemButton>
       <Collapse in={openSeries} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Attack on Titan" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Demon Slayer" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Jujutsu Kaisen" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="One Piece" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Naruto" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="One Punch Man" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Hunter x Hunter" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Vinland Saga" />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }}>
-            <ListItemText secondary="Dragon Ball" />
-          </ListItemButton>
+          {animeSeries.map((item) => {
+            return (
+              <ListItemButton sx={{ pl: 4 }}>
+                <ListItemText secondary={item.toLocaleUpperCase()} />
+              </ListItemButton>
+            );
+          })}
         </List>
       </Collapse>
-      <ListItemButton onClick={handleClickAvailability}>
-        <ListItemText primary="AVAILABILITY" />
-        {openAvailability ? <ExpandLess /> : <ExpandMore />}
+      <ListItemButton onClick={handleClickCategories}>
+        <ListItemText primary="ANIME CATEGORIES" />
+        {openCategories ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={openAvailability} timeout="auto" unmountOnExit>
+      <Collapse in={openCategories} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {categories.map((item) => {
+            return (
+              <ListItemButton sx={{ pl: 4 }}>
+                <ListItemText secondary={item.toLocaleUpperCase()} />
+              </ListItemButton>
+            );
+          })}
+        </List>
+      </Collapse>
+      <ListItemButton onClick={handleClickProducts}>
+        <ListItemText primary="Products" />
+        {openProducts ? <ExpandLess /> : <ExpandMore />}
+      </ListItemButton>
+      <Collapse in={openProducts} timeout="auto" unmountOnExit>
         <List component="div" sx={{ p: 3 }}>
           <FormGroup>
             <FormControlLabel
               control={<Checkbox defaultChecked />}
-              label="In Stock"
+              label="All Products"
             />
-            <FormControlLabel control={<Checkbox />} label="Out of Stock" />
+            <FormControlLabel control={<Checkbox />} label="Latest Arrival" />
+            <FormControlLabel control={<Checkbox />} label="Best Selling" />
           </FormGroup>
         </List>
       </Collapse>

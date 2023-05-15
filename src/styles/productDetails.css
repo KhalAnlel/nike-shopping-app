@@ -8,3 +8,7 @@
 .css-1x9fseg-MuiSlider-root.Mui-disabled {
   color: black !important;
 }
+
+.css-eg0mwd-MuiSlider-thumb.Mui-disabled {
+  display: none;
+}

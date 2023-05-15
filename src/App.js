@@ -3,7 +3,6 @@ import { Navbar } from "./components/navbar";
 import { Collection } from "./components/collection";
 import { Home } from "./components/home";
 import { ProductDetails } from "./components/productDetails";
-import { Products } from "./components/products";
 import ScrollToTop from "./components/common/scrollToTop";
 
 function App() {
@@ -13,8 +12,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/collection/:category" element={<Collection />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/collection/:category?" element={<Collection />} />
         <Route path="/productDetails/:productID" element={<ProductDetails />} />
       </Routes>
     </div>

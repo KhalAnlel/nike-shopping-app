@@ -12,11 +12,12 @@ export const Collection = () => {
     <Box p={2}>
       <Box>
         <Typography fontWeight={700} fontSize={20}>
-          ANIME {category.toLocaleUpperCase()}
+          ANIME{category ? `${category} ` : ""}
         </Typography>
         <Typography mt={3}>
-          Buy High Quality Supercool And Cute Designed Anime {category} For Men
-          Or Women With Free Shipping To All Over The World On All Order.
+          Buy High Quality Supercool And Cute Designed Anime{" "}
+          {category ? `${category} ` : ""}For Men Or Women With Free Shipping To
+          All Over The World On All Order.
         </Typography>
       </Box>
       <Box>
@@ -31,7 +32,7 @@ export const Collection = () => {
           <PerPage />
           <SortBy />
         </Stack>
-        <ProductsGrid />
+        <ProductsGrid category={category} />
       </Box>
     </Box>
   );

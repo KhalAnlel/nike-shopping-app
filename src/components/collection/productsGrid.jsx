@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
+import { FavoriteBorder, Favorite } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
+import data from "../../data/allProducts.json";
 import "../../styles/collection.css";
+import { Link } from "react-router-dom";
 
-const ProductsGrid = () => {
+const ProductsGrid = ({ category }) => {
+  const [clickedItems, setClickedItems] = useState({});
+
+  const handleClick = (id) => {
+    setClickedItems((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+
+  let filteredData = data;
+  if (category) {
+    filteredData = data.filter((item) => item.type === category);
+  }
+
   return (
     <Box
       display="flex"
@@ -12,109 +30,38 @@ const ProductsGrid = () => {
       justifyContent="center"
       mt={2}
     >
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">
-          Aesthetic Tops Killua Zoldyck Hoodie Sweatshirts Hunter X Hunter
-          Winter Clothes
-        </Typography>
-        <Typography className="price">$49.9</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
-      <Box className="card">
-        <Box className="image">
-          <img
-            src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H52055711cbb2426c8ecbd0bb5b27321bW_785x.jpg?v=1683646274"
-            width="100%"
-          />
-        </Box>
-        <Typography className="title">Cool Chair</Typography>
-        <Typography className="price">$100</Typography>
-      </Box>
+      {filteredData.map((item) => {
+        const isClicked = clickedItems[item.id];
+        return (
+          <Box className="card" key={item.id}>
+            <Link to={`/productDetails/${item.id}`}>
+              <Box className="image">
+                <img src={item["images"][0].url} width="100%" height="240px" />
+              </Box>
+            </Link>
+            <Typography className="title">{item.title}</Typography>
+            <Box
+              display="flex"
+              flexDirection="row"
+              alignItems="center"
+              justifyContent="space-between"
+              width="100%"
+            >
+              <Typography className="price">{item.price}</Typography>
+              <IconButton
+                onClick={() => handleClick(item.id)}
+                color={isClicked ? "error" : "default"}
+              >
+                {isClicked ? (
+                  <Favorite fontSize="medium" />
+                ) : (
+                  <FavoriteBorder fontSize="medium" />
+                )}
+              </IconButton>
+            </Box>
+          </Box>
+        );
+      })}
     </Box>
   );
 };
