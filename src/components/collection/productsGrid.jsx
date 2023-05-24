@@ -20,6 +20,17 @@ const ProductsGrid = ({ category }) => {
   if (category) {
     filteredData = data.filter((item) => item.type === category);
   }
+  if (category === "all") {
+    filteredData = data;
+  }
+  if (category === "latest") {
+    filteredData = data.slice(-50).reverse();
+  }
+  if (category === "best rated") {
+    filteredData = data
+      .filter((item) => item.rate >= 4)
+      .sort((a, b) => b.rate - a.rate);
+  }
 
   return (
     <Box
@@ -34,11 +45,12 @@ const ProductsGrid = ({ category }) => {
         const isClicked = clickedItems[item.id];
         return (
           <Box className="card" key={item.id}>
-            <Link to={`/productDetails/${item.id}`}>
-              <Box className="image">
-                <img src={item["images"][0].url} width="100%" height="240px" />
-              </Box>
-            </Link>
+            <Box className="image">
+              <img src={item["images"][0].url} width="100%" height="240px" />
+              <Link to={`/productDetails/${item.id}`} className="button">
+                BUY
+              </Link>
+            </Box>
             <Typography className="title">{item.title}</Typography>
             <Box
               display="flex"

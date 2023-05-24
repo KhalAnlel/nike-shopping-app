@@ -6,10 +6,9 @@ import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import PriceRange from "./priceRange";
+import { Radio, RadioGroup } from "@mui/material";
 
 const categories = [
   "hoodies",
@@ -98,14 +97,27 @@ export default function Filters() {
       </ListItemButton>
       <Collapse in={openProducts} timeout="auto" unmountOnExit>
         <List component="div" sx={{ p: 3 }}>
-          <FormGroup>
+          <RadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            defaultValue="All Products"
+            name="radio-buttons-group"
+          >
             <FormControlLabel
-              control={<Checkbox defaultChecked />}
+              value="All Products"
+              control={<Radio />}
               label="All Products"
             />
-            <FormControlLabel control={<Checkbox />} label="Latest Arrival" />
-            <FormControlLabel control={<Checkbox />} label="Best Selling" />
-          </FormGroup>
+            <FormControlLabel
+              value="Best Rated"
+              control={<Radio />}
+              label="Best Rated"
+            />
+            <FormControlLabel
+              value="Latest Arrival"
+              control={<Radio />}
+              label="Latest Arrival"
+            />
+          </RadioGroup>
         </List>
       </Collapse>
       <ListItemButton onClick={handleClickPriceSlider}>

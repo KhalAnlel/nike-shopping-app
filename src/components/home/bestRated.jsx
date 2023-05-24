@@ -1,41 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LaunchIcon from "@mui/icons-material/Launch";
-import {
-  Box,
-  CardActionArea,
-  Chip,
-  CardMedia,
-  Typography,
-  CardContent,
-  CardActions,
-  Card,
-} from "@mui/material";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { Box, CardActionArea, Chip } from "@mui/material";
+import Pagination from "@mui/material/Pagination";
 import LearnMoreBtn from "./learnMoreBtn";
 import data from "../../data/allProducts.json";
 
-export const LatestArrival = () => {
-  const latestItems = data.slice(-4);
+export const BestRated = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardPerPage = 4;
+
+  const indexOfLastCard = currentPage * cardPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardPerPage;
+  // Filter and sort the data based on the rate property
+  const filteredData = data.filter((product) => product.rate >= 4); // Filter by rate value (e.g., 5)
+
+  // Sort the filtered data based on the rate property
+  const sortedData = filteredData.sort((a, b) => b.rate - a.rate); // Sort in descending order
+
+  const currentCards = sortedData.slice(indexOfFirstCard, indexOfLastCard);
   return (
     <>
-      <Box marginTop={5}>
+      <Box marginTop={15}>
         <Typography textAlign="center" variant="h4" fontWeight={700}>
-          LATEST ARRIVAL
+          Best Rated Products
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="center">
           <LaunchIcon fontSize="small" sx={{ marginTop: "3px" }} />
-          <Link to="collection/latest">View All</Link>
+          <Link to="collection/best rated">View All</Link>
         </Box>
       </Box>
       <Box
-        display={"flex"}
-        flexWrap="wrap"
+        display="flex"
         justifyContent="center"
-        marginTop="20px"
-        p="10px"
+        gap="30px"
+        flexWrap="wrap"
+        sx={{ marginTop: "20px", p: "10px" }}
       >
-        {latestItems.map((item) => (
-          <CardActionArea sx={{ maxWidth: "250px" }} key={item.id}>
+        {currentCards.map((data) => (
+          <CardActionArea key={data.id} sx={{ width: "250px" }}>
             <Card sx={{ maxWidth: 250, margin: "auto", boxShadow: 0 }}>
               <Typography
                 position="absolute"
@@ -50,9 +58,9 @@ export const LatestArrival = () => {
               </Typography>
               <CardMedia
                 component="img"
-                alt="shirt"
-                height="300"
-                image={item.images[0].url}
+                alt="latest arrival item"
+                height="200"
+                image={data["images"][0].url}
               />
               <CardContent>
                 <Typography
@@ -66,7 +74,7 @@ export const LatestArrival = () => {
                     WebkitBoxOrient: "vertical",
                   }}
                 >
-                  {item.title}
+                  {data.title}
                 </Typography>
                 <Typography
                   variant="subtitle2"
@@ -78,16 +86,26 @@ export const LatestArrival = () => {
                     WebkitBoxOrient: "vertical",
                   }}
                 >
-                  {item.description}
+                  {data.description}
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
-                <Chip label={item.price} />
-                <LearnMoreBtn data={item.id} />
+                <Chip label={data.price} />
+                <LearnMoreBtn data={data.id} />
               </CardActions>
             </Card>
           </CardActionArea>
         ))}
+      </Box>
+      <Box display="flex" m={2}>
+        <Pagination
+          sx={{ margin: "auto" }}
+          hidePrevButton
+          hideNextButton
+          count={4}
+          onChange={(event) => setCurrentPage(event.target.textContent)}
+          color="primary"
+        />
       </Box>
     </>
   );

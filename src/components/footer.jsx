@@ -12,7 +12,7 @@ import "../styles/footer.css";
 export const Footer = () => {
   return (
     <>
-      <Box p="20px" bgcolor="#f2f2f2" marginTop={10}>
+      <Box p="20px" bgcolor="#f2f2f2" marginTop={5}>
         <Grid container>
           <Grid item xs={6} sm={4}>
             <Box className="footerColumn">

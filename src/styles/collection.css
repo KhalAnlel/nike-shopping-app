@@ -1,5 +1,5 @@
 .card {
-  width: 200px;
+  width: 240px;
   height: 320px;
   box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -20,8 +20,8 @@
   color: #000;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* number of lines to show */
-  line-clamp: 3;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
@@ -31,13 +31,70 @@
   color: #000;
 }
 
-.card:active {
+.card:hover {
   transform: scale(0.98);
 }
 
 .image {
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: grid;
   place-items: center;
+  position: relative;
+}
+
+.image:hover img {
+  filter: blur(2.1px);
+  transition: filter 0.2s linear;
+}
+
+.button {
+  display: none;
+}
+
+.image:hover .button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #3b71ca;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #3b71ca;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #3b71ca;
+  box-shadow: 4px 5px 17px -4px #3b71ca;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #3b71ca;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%;
 }

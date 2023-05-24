@@ -1,7 +1,5 @@
 import React from "react";
-import "../styles/home.css";
-import { Footer } from "./footer";
-import { BestSelling } from "./home/bestSelling";
+import { BestRated } from "./home/bestRated";
 import { ByCategories } from "./home/byCategories";
 import { HomeSlider } from "./home/homeSlider";
 import { LatestArrival } from "./home/latestArrival";
@@ -14,7 +12,7 @@ export const Home = () => {
       <WhyUs />
       <LatestArrival />
       <ByCategories />
-      <BestSelling />
+      <BestRated />
     </div>
   );
 };

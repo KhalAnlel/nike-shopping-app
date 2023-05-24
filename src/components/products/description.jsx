@@ -17,7 +17,6 @@ const Description = ({ ...props }) => {
       <p>{props.description}</p>
       <p>Material: {props.material}</p>
       <p>Item Type: {props.itemType}</p>
-      <p>Style: {props.style}</p>
       {props.images.map((item, index) => (
         <Box key={index}>
           <img src={item.url} width="100%" alt={`Image ${index}`} />

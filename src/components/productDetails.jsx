@@ -66,8 +66,7 @@ export const ProductDetails = () => {
         images={data[productID - 1]["images"]}
         description={data[productID - 1]["description"]}
         material={data[productID - 1]["material"]}
-        itemType={data[productID - 1]["item_type"]}
-        style={data[productID - 1]["style"]}
+        itemType={data[productID - 1]["type"]}
       />
       <CustomerReview />
     </Box>

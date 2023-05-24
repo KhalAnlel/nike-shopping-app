@@ -18,10 +18,8 @@ const SortBy = () => {
           onChange={handleChange}
           autoWidth
           label="Sort By"
-          defaultValue="Featured"
         >
-          <MenuItem value="Featured">Featured</MenuItem>
-          <MenuItem value="Best Selling">Best Selling</MenuItem>
+          <MenuItem value="Best Rated">Best Rated</MenuItem>
           <MenuItem value="A-Z">A-Z</MenuItem>
           <MenuItem value="Z-A">Z-A</MenuItem>
           <MenuItem value="Price low-high">Price low-high</MenuItem>

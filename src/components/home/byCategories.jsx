@@ -6,7 +6,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 const categories = [
   {
     id: 1,
-    title: "hodies",
+    title: "hoodies",
     imageUrl:
       "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/product-image-1757593221_785x.webp?v=1651586729",
   },
@@ -42,7 +42,7 @@ const categories = [
   },
   {
     id: 7,
-    title: "hats",
+    title: "cosplay costumes",
     imageUrl:
       "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H79a2e88db99545a89be32c4c9a84f902Z_785x.jpg?v=1645335329",
   },
@@ -57,7 +57,7 @@ export const ByCategories = () => {
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="center">
           <LaunchIcon fontSize="small" sx={{ marginTop: "3px" }} />
-          <Link to="collection">View All</Link>
+          <Link to="/collection/all">View All</Link>
         </Box>
       </Box>
       <Box
@@ -76,7 +76,9 @@ export const ByCategories = () => {
                 height="150"
                 image={item.imageUrl}
               />
-              <Typography textAlign={"center"}>{item.title}</Typography>
+              <Typography textAlign={"center"}>
+                {item.title.toLocaleUpperCase()}
+              </Typography>
             </CardActionArea>
           </Box>
         ))}

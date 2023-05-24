@@ -3,408 +3,507 @@
     "id": 1,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sfbff257942074ad8a8a228edd433ec2dQ.jpg?v=1684769133"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sf6e51499a20546c98a83ae565d88261ac.jpg?v=1684769136"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sd63ab5fa11bd4cadb48bfc27bde49000Z.jpg?v=1684769138"
       },
       {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sa81ffbb0539d468fb554401b1eec245f5.jpg?v=1684769144"
       },
       {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S9b45367f89504e5788456cbf2fb792a0x.jpg?v=1684769123"
       },
       {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S6955decf173443779921ffdf3282633fw.jpg?v=1684769131"
       }
     ],
-    "title": "Tokyo Revengers Takemichi Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "30$",
-    "rate": 1,
-    "stock": 10,
-    "colors": ["white"],
+    "title": "Fashionably Hashira Muichiro Tokito Casual Anime Hoodie Embody The Spirit Of Demon Slayer With Fashion-Forward Men's Pullover",
+    "description": "Fashionably Slayer Muichiro Tokito Casual Anime Hoodie Embody the Spirit of Demon Slayer with Fashion-Forward Men's Pullover Best Material High Quality Recomended For Uses Daily",
+    "price": "45.5$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["white", "Grey", "Black", "Purple", "Red"],
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "pants"
+    "material": "Cotton,Polyester",
+    "type": "hoodies"
   },
   {
     "id": 2,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Scdee8c9c641544fc8cde9c273883d142u.jpg?v=1684768890"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S1238c30a654d446ba00048e04bb3ca74d.jpg?v=1684768910"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sd2a921f135e4462ca41dad3b302545c9H.jpg?v=1684768918"
       }
     ],
-    "title": "Tokyo Revengers Mikey Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "60$",
+    "title": "Fashionably Slayer Shinazugawa Sanemi Graphic Print Hoodie Embrace The Power Of Kimetsu No Yaiba In Casual Long Sleeve Hoodies",
+    "description": "Anime Demon Slayer Shinazugawa Sanemi Graphic Print Hoodie Kimetsu No Yaiba Sweatshirt  Fashion Casual Long Sleeve Hoodies Best material High Quality Recomended For Uses Daily",
+    "price": "43$",
     "rate": 5,
-    "stock": 4,
-    "colors": ["white", "blue", "black", "red"],
-    "size": ["XS", "S", "M", "L"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "pants"
+    "stock": 10,
+    "colors": ["white", "Grey", "Black"],
+    "size": ["XS", "S", "M"],
+    "material": "Acrylic,Cotton",
+    "type": "hoodies"
   },
   {
     "id": 3,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Ha3db9a88d9e34215b8b94eb525034872L.jpg?v=1684162787"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Habfa23d5a5a74dcb82c6c3d9219ac88af.jpg?v=1684162793"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Hcdd37419dfba4b44b21374adb74eb60cI.jpg?v=1684162812"
       }
     ],
-    "title": "Tokyo Revengers Black And White Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "50$",
-    "rate": 4,
-    "stock": 24,
-    "colors": ["white", "blue", "red", "purple"],
-    "size": ["M", "L", "XL", "XXL"],
+    "title": "Best Fashion Spy X Family Anya Peanut Evolution Anime Hoodie High Quality",
+    "description": "This is an oversized women's hoodie inspired by the Korean fashion style. It features a graphic print from the anime 'Spy x Family', specifically Anya's peanut evolution. The hoodie has a gothic look and is part of a line of sweatshirts called 'Sudaderas Para Mujer'. It is a comfortable and fashionable option for those who enjoy anime and oversized clothing.",
+    "price": "43.9$",
+    "rate": 3,
+    "stock": 15,
+    "colors": ["Orange", "Dark-Green", "Light-Blue"],
+    "size": ["XS", "S", "M"],
     "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "hats"
+    "type": "hoodies"
   },
   {
     "id": 4,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S12d49b579dd54a2ab5d41e9fe5ec71edM.jpg?v=1684248561"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sdd988d2fc70a42bbafb52902ad3e8498T.jpg?v=1684248572"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S5eef067fc9404a088d4c78668daa1330V.jpg?v=1684248567"
       }
     ],
-    "title": "Tokyo Revengers Manjiro Sano Draken Casual Long Trousers",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "50$",
-    "rate": 3,
-    "stock": 34,
-    "colors": ["white", "blue", "black", "red", "purple"],
-    "size": ["M", "L"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "hats"
+    "title": "Best Denki Berserk Guts T-Shirt Fashion High Quality",
+    "description": "Unleash your inner hero with this stunning Guts printed T-shirt from Kenpuu Denki Berserk. Designed for both women and men, this Japanese anime tee features short sleeves and a summer-ready style. Made from 100% cotton, it ensures maximum comfort and breathability. With its captivating design, this top is the perfect choice for anime enthusiasts looking to showcase their love for the series. Embrace your own handsome style with this top-tier tee.",
+    "price": "35.5$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["white", "Grey", "Black"],
+    "size": ["XS", "S", "M", "L", "XL", "XXL"],
+    "material": "100% Cotton",
+    "type": "shirts"
   },
   {
     "id": 5,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S469499683ed246cdbf059308fc716aefS.jpg?v=1683640307"
       }
     ],
-    "title": "Tokyo Revengers Takemichi Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "30$",
-    "rate": 1,
+    "title": "Best Tshirt Punk Dabi Japanese Anime My Hero Academia T Shirt Mens 100% Cotton Streetwear",
+    "description": "Japanese Anime My Hero Academia T Shirt Mens 100% Cotton Tshirt Punk Dabi T-shirt Manga Graphic Tops Tees Male Unisex Streetwear Best Material High Quality Recomended For Uses Daily",
+    "price": "36.6$",
+    "rate": 3,
     "stock": 10,
-    "colors": ["white"],
-    "size": ["XS", "S", "M", "L", "XL", "XXL"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "pants"
+    "colors": ["Black"],
+    "size": ["XS", "S", "M"],
+    "material": "100% Cotton",
+    "type": "shirts"
   },
   {
     "id": 6,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sf971d23791ce4df4b68852062fe55053H.jpg?v=1683038659"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Se1f69eaf80a941bc800e9a4413e16a9bD.jpg?v=1683038663"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S8ac9db72974d4518b6e55c956d619fdbN.jpg?v=1683038657"
       }
     ],
-    "title": "Tokyo Revengers Mikey Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "60$",
+    "title": "Best Hunter X Hunter Killua And Gon Happy Anime T-Shirts 100% Cotton High Quality",
+    "description": "This Hunter X Hunter T-shirt features popular characters Killua and Gon from the Japanese anime series in a graphic print design. It's made of 100% cotton and is a comfortable and stylish option for women who are fans of the show.",
+    "price": "34.5$",
     "rate": 5,
-    "stock": 4,
-    "colors": ["white", "blue", "black", "red"],
-    "size": ["XS", "S", "M", "L"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "pants"
+    "stock": 15,
+    "colors": ["White", "Red", "Light-Blue"],
+    "size": ["XS", "S", "M"],
+    "material": "100% Cotton",
+    "type": "shirts"
   },
   {
     "id": 7,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Hb965280a7699474b90d4b435164e3854Y.jpg?v=1684418973"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H8ba59c76382e4b93a28d2d358b410bc6w.jpg?v=1684418977"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H329e225271a84edba71f656e8106e162Y.jpg?v=1684418975"
       }
     ],
-    "title": "Tokyo Revengers Black And White Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "50$",
+    "title": "Tokyo Ghoul Print Kaneki Ken Ghoul Bucket Hats High Quality",
+    "description": "Experience the dark allure of Tokyo Ghoul with our Tokyo Ghoul Print Bucket Hat! This summer sunshade Panama bucket cap is designed for both men and women who want to make a fashion statement. The unique Tokyo Ghoul print adds an edgy touch to your outdoor adventures, whether you're hiking, fishing, or simply enjoying a sunny day. With its foldable and portable design, this adult fashion hat is perfect for on-the-go style. Step into the world of Tokyo Ghoul and elevate your fashion game with this trendy fisherman cap!",
+    "price": "24.9$",
     "rate": 4,
-    "stock": 24,
-    "colors": ["white", "blue", "red", "purple"],
-    "size": ["M", "L", "XL", "XXL"],
+    "stock": 35,
+    "colors": ["white", "Beige", "Yellow"],
+    "size": ["ONE SIZE"],
     "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
     "type": "hats"
   },
   {
     "id": 8,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S78eba5846e2a45a68f741625a2e4451d2.jpg?v=1684418409"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S797e121f2f934241b4d7a4a5323477dc4.jpg?v=1684418417"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S8f955fd6e2464cdab61b1c99a8cc2285l.jpg?v=1684418423"
       }
     ],
-    "title": "Tokyo Revengers Manjiro Sano Draken Casual Long Trousers",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "50$",
-    "rate": 3,
-    "stock": 34,
-    "colors": ["white", "blue", "black", "red", "purple"],
-    "size": ["M", "L"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
+    "title": "One Piece Skull Pirate Flag Baseball Caps High Quality",
+    "description": "Japanese Anime My Hero Academia T Shirt Mens 100% Cotton Tshirt Punk Dabi T-shirt Manga Graphic Tops Tees Male Unisex Streetwear Best Material High Quality Recomended For Uses Daily",
+    "price": "28.9$",
+    "rate": 5,
+    "stock": 10,
+    "colors": ["Black", "Red", "Blue"],
+    "size": ["8.3x4x2 Inch"],
+    "material": "Cotton, Denim",
     "type": "hats"
   },
   {
     "id": 9,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H11986e84d12d44a1851fc71450afbe63o.jpg?v=1684417785"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Hb45f1edd1ebf4fdcb1cfa00c127971b2t.jpg?v=1684417778"
       },
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H55a3e41fdac94b30a6cb0b24d1156156N.jpg?v=1684417780"
       }
     ],
-    "title": "Tokyo Revengers Takemichi Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "30$",
-    "rate": 1,
-    "stock": 10,
-    "colors": ["white"],
-    "size": ["XS", "S", "M", "L", "XL", "XXL"],
+    "title": "Eren Yeager Bucket Cap Attack On Titan Summer New Foldable Panama Black",
+    "description": "Panama Hip Hop Fashion Cap Attack on Titan Woman Man Soft One Size Unisex Chapeau Femme Summer New Foldable Panama Black Best Material High Quality Recomended For Uses Daily",
+    "price": "26.66$",
+    "rate": 5,
+    "stock": 15,
+    "colors": ["Beige", "Yellow", "Black"],
+    "size": ["ONE SIZE"],
     "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "pants"
+    "type": "hats"
   },
   {
     "id": 10,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S549fe655d34040fba7e1efa50b13da93U.jpg?v=1684333341"
       }
     ],
-    "title": "Tokyo Revengers Mikey Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "60$",
-    "rate": 5,
-    "stock": 4,
-    "colors": ["white", "blue", "black", "red"],
-    "size": ["XS", "S", "M", "L"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
+    "title": "Best Kimetsu No Yaiba Demon Slayer Inosuke Cool And Cute Anime Pants High Quality",
+    "description": "Kimetsu no Yaiba Demon Slayer Anime Gym Shorts Men Women Kawaii Manga Cartoon Print 2 In1 Performance Shorts to Workout Summer Best Material High-Quality Recommended For Uses Daily. Discover the ultimate workout companion for summer: the Kimetsu no Yaiba Demon Slayer Anime Gym Shorts. Crafted from the best materials, these shorts are designed for both men and women, ensuring a perfect fit and maximum comfort. Featuring a kawaii manga cartoon print inspired by the popular anime series, they add a touch of style to your workout attire. With their 2-in-1 performance design, these shorts offer the flexibility and durability you need for daily use. Whether you're hitting the gym, going for a run, or engaging in any physical activity, these high-quality shorts are your go-to choice. Embrace the power of Demon Slayer and elevate your workout routine with these recommended shorts, perfect for daily use.",
+    "price": "36.9$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["Red"],
+    "size": ["XS", "S", "M", "L", "XL", "XXL"],
+    "material": "nylon,Rayon",
     "type": "pants"
   },
   {
     "id": 11,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sa9325de66e35407e8c10ea09d9091fd8t.jpg?v=1683127722"
       }
     ],
-    "title": "Tokyo Revengers Black And White Pants High Quality",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "50$",
-    "rate": 4,
-    "stock": 24,
-    "colors": ["white", "blue", "red", "purple"],
-    "size": ["M", "L", "XL", "XXL"],
-    "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "hats"
+    "title": "Hanma Baki Show Strength Powerful Anime Shorts High Quality",
+    "description": "Anime Hanma Baki Gym Shorts Black for Men 2 In1 Mesh Quick Dry Board Shorts Mens Bodybuilding Fitness Running Short Pants Summer Best Material High Quality Recomended For Uses Daily",
+    "price": "39.9$",
+    "rate": 5,
+    "stock": 1,
+    "colors": ["Grey"],
+    "size": ["M"],
+    "material": "nylon,Rayon",
+    "type": "pants"
   },
   {
     "id": 12,
     "images": [
       {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Ha9f6b250cf8240d0a69e7848a1f77b5f8_940x.jpg?v=1679495418"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H0a93a94d5569477b9cdddd082b39c261o_940x.jpg?v=1679494545"
-      },
-      {
-        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sdd71b5ad83c54b7b8aa570f7e923bcf4W_640x.jpg?v=1680704939"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Seaf6aa4422614205acd674a6b05bfd25N.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/S068f2c20f0e1456f848f43916173acdb7.jpg"
-      },
-      {
-        "url": "https://ae01.alicdn.com/kf/Sc61a5a1a998844c2b71734bdfa93f120z.jpg"
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H60e3c24ef5604e4080c70520de401318L.jpg?v=1679494544"
       }
     ],
-    "title": "Tokyo Revengers Manjiro Sano Draken Casual Long Trousers",
-    "description": "Hashibira Inosuke Shorts Pants 2 In1 Gym Shorts Demon Slayer Anime Shorts Black for Men Women Bodybuilding Fitness Summer Mesh Quick Dry Board Shorts to Beach Best Material High Quality Recomended For Uses Daily",
-    "price": "50$",
-    "rate": 3,
-    "stock": 34,
-    "colors": ["white", "blue", "black", "red", "purple"],
+    "title": "Tokyo Revengers Mikey Cool 3D Anime Pants High Quality",
+    "description": "Tokyo Revengers Mikey Cool 3D Anime Pants High Quality",
+    "price": "36.71$",
+    "rate": 4,
+    "stock": 15,
+    "colors": ["Black"],
     "size": ["M", "L"],
     "material": "Polyester",
-    "item_type": "Baseball Caps",
-    "style": "casual",
-    "type": "hats"
+    "type": "pants"
+  },
+  {
+    "id": 13,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Hca3ad67461004ad8a671479942ebef2fg.jpg?v=1684506791"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Ha98ca540278d48f1b96179f7056d1a1e7.jpg?v=1684506794"
+      }
+    ],
+    "title": "Tokyo Revengers Cosplay Manjiro Sano Draken Kimono Anime Cosplay Costume High Quality",
+    "description": "Experience the thrilling world of Tokyo Revengers as you step into the shoes of Manjiro Sano, also known as Draken, with this incredible cosplay kimono costume! This Halloween, immerse yourself in the intense atmosphere of the series by donning this authentic and intricately designed uniform. The attention to detail in this costume captures the essence of Draken's style, making you feel like a true member of the Tokyo Manji Gang. Whether you're attending a cosplay event or celebrating Halloween, this cosplay suit is the perfect choice to showcase your love for Tokyo Revengers and pay homage to the charismatic and badass character of Draken. Get ready to command attention and stand out with this remarkable cosplay ensemble.",
+    "price": "129.9$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["For Girls", "For Boys"],
+    "size": ["XS", "S", "M", "L", "XL", "XXL"],
+    "material": "Polyester",
+    "type": "cosplay costumes"
+  },
+  {
+    "id": 14,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S3c43421e9d3148f3a0c8d6d2cf8d4029m.jpg?v=1684506012"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sd2befc7a9de04990a97b50e9ba1c3e05B.jpg?v=1684506014"
+      }
+    ],
+    "title": "Best Bleach Orihime Inoue Arrancar Cosplay Costume White Dress Anime Cosplay High Quality",
+    "description": "Transform into the captivating Orihime Inoue from the popular anime Bleach with this stunning Arrancar cosplay costume! This custom-made white dress perfectly captures the essence of Orihime's iconic style. Whether you're attending a Halloween party or immersing yourself in anime conventions, this costume is sure to impress fellow fans with its meticulous attention to detail and authentic design. Embrace your inner Orihime and make a powerful fashion statement with this extraordinary cosplay ensemble.",
+    "price": "128.5$",
+    "rate": 3,
+    "stock": 3,
+    "colors": ["Full Set"],
+    "size": ["M"],
+    "material": "Polyester",
+    "type": "cosplay costumes"
+  },
+  {
+    "id": 15,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S04ea0fc398c34e78bbd1210207708d58V.jpg?v=1683297124"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sc92990f7678644d2801d2ff7abb3b94bY.jpg?v=1683297131"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Se9174c3d2d2b4af7903787e4b57c9276F.jpg?v=1683297129"
+      }
+    ],
+    "title": "One Piece Shirohige Whitebeard Edward Newgate Anime Cosplay Costume High Quality",
+    "description": "Shirohige Whitebeard Edward Newgate cosplay costume uniform suit set outfit is a cosplay attire inspired by the character Edward Newgate, also known as Whitebeard, from the anime and manga series One Piece. This outfit is designed for Halloween or cosplay events and features a white and black suit with a red sash and matching hat. The costume typically includes additional accessories such as a fake mustache, beard, and weapon props to complete the character's look.",
+    "price": "162.9$",
+    "rate": 4,
+    "stock": 10,
+    "colors": ["Full Set"],
+    "size": ["M", "L"],
+    "material": "Polyester",
+    "type": "cosplay costumes"
+  },
+  {
+    "id": 16,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S83d270253b214d349e5a87da978862dcj.jpg?v=1684591131"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Se77616dfae6c47e086dd01ec67db9a45F.jpg?v=1684591151"
+      }
+    ],
+    "title": "Dragon Ball Z The Sage's Power Unleashed GK Master Roshi's Kame Sennin Muscle Strengthening Form PVC Action Figure",
+    "description": "10cm Dragon Ball Z Figure GK Master Roshi Action Figures Kame Sennin Muscle Strengthening Form PVC Anime Collectible Model Toys Best Material High Quality Recomended For Uses Collections",
+    "price": "47.9$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["Mascular", "Non-Mascular"],
+    "size": ["10cm"],
+    "material": "PVC",
+    "type": "figures"
+  },
+  {
+    "id": 17,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S7a582e161d8240eb94c6820e7e50d502S.jpg?v=1683382430"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S35adf6c5732242eabc61253645801c11t.jpg?v=1683382439"
+      }
+    ],
+    "title": "12.5cm Anime One Piece Charlotte Katakuri PVC Action Figure High Quality",
+    "description": "This high-quality PVC action figure of the One Piece character Charlotte Katakuri is a collectible model toy that makes a great gift for children who are fans of the series.",
+    "price": "66.9$",
+    "rate": 3,
+    "stock": 3,
+    "colors": ["With Box", "Open Box"],
+    "size": ["12.5cm"],
+    "material": "PVC",
+    "type": "figures"
+  },
+  {
+    "id": 18,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S889aca6aeefb42dc8f211b2e4c45ea4bG.jpg?v=1683382939"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S79addbff016d4fe9aa721f3a9ee8833cr.jpg?v=1683382951"
+      }
+    ],
+    "title": "Hashira Rengoku Kyoujurou Figure Demon Slayer Kimetu No Yaiba Action Figurine Dawn Near Death",
+    "description": "Legend Rengoku Kyoujurou Figure Demon Slayer Kimetu No Yaiba Action Figurine Dawn Near Death Anime 13cm PVC Collection Model Toys Gifts Best material High Quality Recomended For Uses Daily",
+    "price": "69.9$",
+    "rate": 4,
+    "stock": 10,
+    "colors": ["With Box"],
+    "size": ["13cm"],
+    "material": "PVC",
+    "type": "figures"
+  },
+  {
+    "id": 19,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S37d62565b2fc4b518a6921e830ad55bbA.jpg?v=1684679645"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sda9ff5891b384bfa87f539f8cc4be4a7F.jpg?v=1684679649"
+      }
+    ],
+    "title": "Best My Hero Academia Key Tag Embroidered Keychain Anime Accessories High Quality",
+    "description": "The Japanese Anime My Hero Academia KeyTag is a must-have accessory for fans of the popular series. This embroidered key fob is designed for motorcycles, cars, backpacks, or as a fashionable chaveiro key tag. It features intricate embroidery showcasing iconic characters from the anime, adding a touch of style and personality to your belongings. Whether you're a devoted fan or looking for a trendy gift, this key tag is the perfect way to display your love for My Hero Academia while keeping your keys organized and making a fashion statement.",
+    "price": "16.9$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["Color 1", "Color 2"],
+    "size": ["3cm * 13cm"],
+    "material": "Zinc alloy",
+    "type": "accessories"
+  },
+  {
+    "id": 20,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S5a5735c19d5348fdb1dce79b6ad4708aH.jpg?v=1683464479"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Se22a6513a5ce4958b58c34f6851ab80er.jpg?v=1683464477"
+      }
+    ],
+    "title": "Cute Jewelry Accessories Demon Slayer Anime Enamel Pins Hashibira Inosuke Brooch Clothes Backpack",
+    "description": "Cute Demon Slayer Anime Enamel Pins Cosplay Hashibira Inosuke Brooch Clothes Backpack Lapel Badges Fashion Jewelry Accessories Gifts Best material High Quality Recomended For Uses Daily",
+    "price": "15.5$",
+    "rate": 5,
+    "stock": 3,
+    "colors": ["White"],
+    "size": ["1.1inch * 1.4inch"],
+    "material": "Metal",
+    "type": "accessories"
+  },
+  {
+    "id": 21,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S2e30ddee3ca94b8cbbee22ae678b8f61j.jpg?v=1682258424"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S15f2c9555eee4a2c8312cc9756099d07U.jpg?v=1682258426"
+      }
+    ],
+    "title": "Enamel Keychain Anime Chainsaw Man Key Chains Ring Souvenir Jewelry Accessories Decorations",
+    "description": "Japanese Anime Chainsaw Man Enamel keychain Key Chains Ring Souvenir For Women Men Handbag Jewelry Accessorie Decorations Gifts Best material High Quality Recomended For Uses Daily",
+    "price": "17.9$",
+    "rate": 5,
+    "stock": 10,
+    "colors": ["Tinje", "Power"],
+    "size": ["5cm"],
+    "material": "Metal",
+    "type": "accessories"
+  },
+  {
+    "id": 22,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1765494721.jpg?v=1648976503"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1765494704.jpg?v=1648976509"
+      }
+    ],
+    "title": "That Time I Got Reincarnated As A Slime Rimuru Tempest Pillow",
+    "description": "That Time I Got Reincarnated as a Slime Rimuru Tempest Pillow. Rimuru Tempest Plush Toys Anime That Time I Got Reincarnated as a Slime Rimuru Tempest Pillow for Children Baby Model Number.",
+    "price": "24.7$",
+    "rate": 4,
+    "stock": 35,
+    "colors": ["Light-Blue"],
+    "size": ["28cm * 55cm"],
+    "material": "Plush",
+    "type": "anime pillow"
+  },
+  {
+    "id": 23,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1953844594.jpg?v=1645453098"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1953844598.jpg?v=1645453101"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1953844599.jpg?v=1645453104"
+      }
+    ],
+    "title": "Anime Demon Slayer Kimetsu No Yaiba Plush Stuffed Cushion Cute Pillow",
+    "description": "Cute anime demon slayer kimetsu no yaiba cushion pillow, soft material.",
+    "price": "39.22$",
+    "rate": 5,
+    "stock": 3,
+    "colors": ["Tanjiro", "Nezuko", "Zenitsu"],
+    "size": ["36cm * 27cm"],
+    "material": "Plush",
+    "type": "anime pillow"
+  },
+  {
+    "id": 24,
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1658842695.jpg?v=1648969786"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1658842719.jpg?v=1648969723"
+      }
+    ],
+    "title": "Super Soft Plush Newspaper Style One Piece Character Print Cushion Cover Pillow",
+    "description": "Super Soft Plush Newspaper Style One Piece Luffy Print Cushion Cover Pillow Covers Pillows Cases for Sofa Home Decor Pillowcase",
+    "price": "20.9$",
+    "rate": 4,
+    "stock": 10,
+    "colors": ["Ace", "Luffy"],
+    "size": ["450mm * 450mm"],
+    "material": "Plush",
+    "type": "anime pillow"
   }
 ]
