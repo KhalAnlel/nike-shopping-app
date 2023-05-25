@@ -19,6 +19,7 @@ const categories = [
   "figures",
   "accessories",
   "anime pillow",
+  "all",
 ];
 const animeSeries = [
   "Attack on Titan",
@@ -31,23 +32,20 @@ const animeSeries = [
   "Vinland Saga",
   "Dragon Ball",
 ];
-export default function Filters() {
-  const [openSeries, setOpenSeries] = React.useState(true);
-  const [openCategories, setOpenCategories] = React.useState(true);
-  const [openProducts, setOpenProducts] = React.useState(true);
-  const [openPrice, setOpenPrice] = React.useState(true);
 
-  const handleClickSeries = () => {
-    setOpenSeries(!openSeries);
-  };
-  const handleClickCategories = () => {
-    setOpenCategories(!openCategories);
-  };
-  const handleClickProducts = () => {
-    setOpenProducts(!openProducts);
-  };
-  const handleClickPriceSlider = () => {
-    setOpenPrice(!openPrice);
+export default function Filters() {
+  const [openStates, setOpenStates] = React.useState({
+    openSeries: true,
+    openCategories: true,
+    openProducts: true,
+    openPrice: true,
+  });
+
+  const handleClick = (stateName) => {
+    setOpenStates((prevState) => ({
+      ...prevState,
+      [stateName]: !prevState[stateName],
+    }));
   };
 
   return (
@@ -61,41 +59,37 @@ export default function Filters() {
         </ListSubheader>
       }
     >
-      <ListItemButton onClick={handleClickSeries}>
+      <ListItemButton onClick={() => handleClick("openSeries")}>
         <ListItemText primary="ANIME SERIES" />
-        {openSeries ? <ExpandLess /> : <ExpandMore />}
+        {openStates.openSeries ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={openSeries} timeout="auto" unmountOnExit>
+      <Collapse in={openStates.openSeries} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {animeSeries.map((item) => {
-            return (
-              <ListItemButton sx={{ pl: 4 }}>
-                <ListItemText secondary={item.toLocaleUpperCase()} />
-              </ListItemButton>
-            );
-          })}
+          {animeSeries.map((item) => (
+            <ListItemButton sx={{ pl: 4 }} key={item}>
+              <ListItemText secondary={item.toLocaleUpperCase()} />
+            </ListItemButton>
+          ))}
         </List>
       </Collapse>
-      <ListItemButton onClick={handleClickCategories}>
+      <ListItemButton onClick={() => handleClick("openCategories")}>
         <ListItemText primary="ANIME CATEGORIES" />
-        {openCategories ? <ExpandLess /> : <ExpandMore />}
+        {openStates.openCategories ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={openCategories} timeout="auto" unmountOnExit>
+      <Collapse in={openStates.openCategories} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {categories.map((item) => {
-            return (
-              <ListItemButton sx={{ pl: 4 }}>
-                <ListItemText secondary={item.toLocaleUpperCase()} />
-              </ListItemButton>
-            );
-          })}
+          {categories.map((item) => (
+            <ListItemButton sx={{ pl: 4 }} key={item}>
+              <ListItemText secondary={item.toLocaleUpperCase()} />
+            </ListItemButton>
+          ))}
         </List>
       </Collapse>
-      <ListItemButton onClick={handleClickProducts}>
+      <ListItemButton onClick={() => handleClick("openProducts")}>
         <ListItemText primary="Products" />
-        {openProducts ? <ExpandLess /> : <ExpandMore />}
+        {openStates.openProducts ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={openProducts} timeout="auto" unmountOnExit>
+      <Collapse in={openStates.openProducts} timeout="auto" unmountOnExit>
         <List component="div" sx={{ p: 3 }}>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
@@ -120,11 +114,11 @@ export default function Filters() {
           </RadioGroup>
         </List>
       </Collapse>
-      <ListItemButton onClick={handleClickPriceSlider}>
+      <ListItemButton onClick={() => handleClick("openPrice")}>
         <ListItemText primary="Price" />
-        {openPrice ? <ExpandLess /> : <ExpandMore />}
+        {openStates.openPrice ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={openPrice} timeout="auto" unmountOnExit>
+      <Collapse in={openStates.openPrice} timeout="auto" unmountOnExit>
         <List component="div" sx={{ p: 3 }}>
           <PriceRange />
         </List>

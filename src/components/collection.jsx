@@ -8,6 +8,17 @@ import PerPage from "./collection/perPage";
 import CollectionPagination from "./collection/collectionPagination";
 
 export const Collection = () => {
+  const [page, setPage] = React.useState("20");
+
+  const handlePageChange = (event) => {
+    setPage(event.target.value);
+  };
+
+  const [sort, setSort] = React.useState("new-old");
+
+  const handleSortChange = (event) => {
+    setSort(event.target.value);
+  };
   const { category } = useParams();
   return (
     <Box p={2}>
@@ -30,11 +41,11 @@ export const Collection = () => {
           gap={4}
         >
           <Filter />
-          <PerPage />
-          <SortBy />
+          <PerPage handlePageChange={handlePageChange} page={page} />
+          <SortBy handleSortChange={handleSortChange} sort={sort} />
         </Stack>
         <Stack alignItems="center">
-          <ProductsGrid category={category} />
+          <ProductsGrid category={category} page={page} sort={sort} />
           <CollectionPagination />
         </Stack>
       </Box>

@@ -1,16 +1,11 @@
 import React from "react";
-import { Typography, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-const PerPage = () => {
-  const [age, setAge] = React.useState("20");
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+const PerPage = ({ handlePageChange, page }) => {
   return (
     <Box sx={{ minWidth: 130 }}>
       <FormControl fullWidth>
@@ -18,14 +13,14 @@ const PerPage = () => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={age}
+          value={page}
           label="Items/page"
-          onChange={handleChange}
+          onChange={handlePageChange}
         >
           <MenuItem value={10}>10</MenuItem>
           <MenuItem value={20}>20</MenuItem>
           <MenuItem value={30}>30</MenuItem>
-          <MenuItem value={30}>40</MenuItem>
+          <MenuItem value={40}>40</MenuItem>
         </Select>
       </FormControl>
     </Box>

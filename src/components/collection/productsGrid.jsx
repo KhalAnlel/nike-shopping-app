@@ -6,7 +6,7 @@ import data from "../../data/allProducts.json";
 import "../../styles/collection.css";
 import { Link } from "react-router-dom";
 
-const ProductsGrid = ({ category }) => {
+const ProductsGrid = ({ category, page, sort }) => {
   const [clickedItems, setClickedItems] = useState({});
 
   const handleClick = (id) => {
@@ -16,7 +16,7 @@ const ProductsGrid = ({ category }) => {
     }));
   };
 
-  let filteredData = data;
+  let filteredData = "";
   if (category) {
     filteredData = data.filter((item) => item.type === category);
   }
@@ -32,6 +32,39 @@ const ProductsGrid = ({ category }) => {
       .sort((a, b) => b.rate - a.rate);
   }
 
+  switch (sort) {
+    case "A-Z":
+      filteredData = [...filteredData].sort((a, b) =>
+        a.title.localeCompare(b.title)
+      );
+      break;
+    case "Z-A":
+      filteredData = [...filteredData].sort((a, b) =>
+        b.title.localeCompare(a.title)
+      );
+      break;
+    case "old-new":
+      // No changes needed for this case
+      break;
+    case "new-old":
+      filteredData = [...filteredData].reverse();
+      break;
+    case "low-high":
+      filteredData = [...filteredData].sort((a, b) => a.price - b.price);
+      break;
+    case "high-low":
+      filteredData = [...filteredData].sort((a, b) => b.price - a.price);
+      break;
+    case "Best Rated":
+      filteredData = [...filteredData].sort((a, b) => b.rate - a.rate);
+      break;
+    default:
+      // Handle the case when sort is not one of the specified options
+      break;
+  }
+
+  let slicedData = filteredData.slice(0, page);
+
   return (
     <Box
       display="flex"
@@ -41,7 +74,7 @@ const ProductsGrid = ({ category }) => {
       justifyContent="center"
       mt={2}
     >
-      {filteredData.map((item) => {
+      {slicedData.map((item) => {
         const isClicked = clickedItems[item.id];
         return (
           <Box className="card" key={item.id}>
