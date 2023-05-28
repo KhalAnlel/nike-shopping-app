@@ -9,31 +9,14 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import PriceRange from "./priceRange";
 import { Radio, RadioGroup } from "@mui/material";
-
-const categories = [
-  "hoodies",
-  "shirts",
-  "hats",
-  "pants",
-  "cosplay costumes",
-  "figures",
-  "accessories",
-  "anime pillow",
-  "all",
-];
-const animeSeries = [
-  "Attack on Titan",
-  "Demon Slayer",
-  "Jujutsu Kaisen",
-  "One Piece",
-  "Naruto",
-  "One Punch Man",
-  "Hunter x Hunter",
-  "Vinland Saga",
-  "Dragon Ball",
-];
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import animeSeries from "../../data/animeSeries.json";
+import categories from "../../data/categories.json";
 
 export default function Filters() {
+  const navigate = useNavigate();
+
   const [openStates, setOpenStates] = React.useState({
     openSeries: true,
     openCategories: true,
@@ -46,6 +29,24 @@ export default function Filters() {
       ...prevState,
       [stateName]: !prevState[stateName],
     }));
+  };
+
+  const [radioValue, setRadioValue] = useState("all");
+  const handleChange = (event) => {
+    const selectedValue = event.target.value;
+    setRadioValue(selectedValue);
+
+    switch (selectedValue) {
+      case "all":
+        navigate("/collection/all");
+        break;
+      case "best rated":
+        navigate("/collection/best rated");
+        break;
+      case "latest":
+        navigate("/collection/latest");
+        break;
+    }
   };
 
   return (
@@ -66,9 +67,11 @@ export default function Filters() {
       <Collapse in={openStates.openSeries} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           {animeSeries.map((item) => (
-            <ListItemButton sx={{ pl: 4 }} key={item}>
-              <ListItemText secondary={item.toLocaleUpperCase()} />
-            </ListItemButton>
+            <Link to={`/collection/${item}`}>
+              <ListItemButton sx={{ pl: 4 }} key={item}>
+                <ListItemText secondary={item.toLocaleUpperCase()} />
+              </ListItemButton>
+            </Link>
           ))}
         </List>
       </Collapse>
@@ -79,9 +82,11 @@ export default function Filters() {
       <Collapse in={openStates.openCategories} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           {categories.map((item) => (
-            <ListItemButton sx={{ pl: 4 }} key={item}>
-              <ListItemText secondary={item.toLocaleUpperCase()} />
-            </ListItemButton>
+            <Link to={`/collection/${item}`}>
+              <ListItemButton sx={{ pl: 4 }} key={item}>
+                <ListItemText secondary={item.toLocaleUpperCase()} />
+              </ListItemButton>
+            </Link>
           ))}
         </List>
       </Collapse>
@@ -93,21 +98,25 @@ export default function Filters() {
         <List component="div" sx={{ p: 3 }}>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
-            defaultValue="All Products"
+            defaultValue="all"
             name="radio-buttons-group"
+            value={radioValue}
+            onChange={handleChange}
           >
             <FormControlLabel
-              value="All Products"
+              value="all"
               control={<Radio />}
               label="All Products"
             />
+
             <FormControlLabel
-              value="Best Rated"
+              value="best rated"
               control={<Radio />}
               label="Best Rated"
             />
+
             <FormControlLabel
-              value="Latest Arrival"
+              value="latest"
               control={<Radio />}
               label="Latest Arrival"
             />

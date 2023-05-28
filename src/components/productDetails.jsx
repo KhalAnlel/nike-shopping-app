@@ -45,7 +45,7 @@ export const ProductDetails = () => {
             {data[productID - 1].stock} in stock
           </Typography>
           <Typography fontSize={18} fontWeight={600}>
-            {data[productID - 1].price}
+            ${data[productID - 1].price}
           </Typography>
           <ProductColor colorsAvailable={data[productID - 1].colors} />
           <ProductSize sizeAvailable={data[productID - 1].size} />

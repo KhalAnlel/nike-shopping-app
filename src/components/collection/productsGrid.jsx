@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { Box, Typography } from "@mui/material";
 import { FavoriteBorder, Favorite } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import data from "../../data/allProducts.json";
 import "../../styles/collection.css";
 import { Link } from "react-router-dom";
 
-const ProductsGrid = ({ category, page, sort }) => {
+const ProductsGrid = ({ currentCards }) => {
   const [clickedItems, setClickedItems] = useState({});
 
   const handleClick = (id) => {
@@ -15,55 +14,6 @@ const ProductsGrid = ({ category, page, sort }) => {
       [id]: !prevState[id],
     }));
   };
-
-  let filteredData = "";
-  if (category) {
-    filteredData = data.filter((item) => item.type === category);
-  }
-  if (category === "all") {
-    filteredData = data;
-  }
-  if (category === "latest") {
-    filteredData = data.slice(-50).reverse();
-  }
-  if (category === "best rated") {
-    filteredData = data
-      .filter((item) => item.rate >= 4)
-      .sort((a, b) => b.rate - a.rate);
-  }
-
-  switch (sort) {
-    case "A-Z":
-      filteredData = [...filteredData].sort((a, b) =>
-        a.title.localeCompare(b.title)
-      );
-      break;
-    case "Z-A":
-      filteredData = [...filteredData].sort((a, b) =>
-        b.title.localeCompare(a.title)
-      );
-      break;
-    case "old-new":
-      // No changes needed for this case
-      break;
-    case "new-old":
-      filteredData = [...filteredData].reverse();
-      break;
-    case "low-high":
-      filteredData = [...filteredData].sort((a, b) => a.price - b.price);
-      break;
-    case "high-low":
-      filteredData = [...filteredData].sort((a, b) => b.price - a.price);
-      break;
-    case "Best Rated":
-      filteredData = [...filteredData].sort((a, b) => b.rate - a.rate);
-      break;
-    default:
-      // Handle the case when sort is not one of the specified options
-      break;
-  }
-
-  let slicedData = filteredData.slice(0, page);
 
   return (
     <Box
@@ -74,7 +24,7 @@ const ProductsGrid = ({ category, page, sort }) => {
       justifyContent="center"
       mt={2}
     >
-      {slicedData.map((item) => {
+      {currentCards.map((item) => {
         const isClicked = clickedItems[item.id];
         return (
           <Box className="card" key={item.id}>
@@ -92,7 +42,7 @@ const ProductsGrid = ({ category, page, sort }) => {
               justifyContent="space-between"
               width="100%"
             >
-              <Typography className="price">{item.price}</Typography>
+              <Typography className="price">${item.price}</Typography>
               <IconButton
                 onClick={() => handleClick(item.id)}
                 color={isClicked ? "error" : "default"}

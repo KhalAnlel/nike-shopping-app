@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 
-const SortBy = ({ handleSortChange, sort }) => {
+const SortBy = ({ handleSortChange, sortData }) => {
   return (
     <Box>
       <FormControl sx={{ minWidth: 100 }}>
@@ -9,7 +9,7 @@ const SortBy = ({ handleSortChange, sort }) => {
         <Select
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
-          value={sort}
+          value={sortData}
           onChange={handleSortChange}
           autoWidth
           label="Sort By"

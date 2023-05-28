@@ -1,25 +1,40 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
-import Filter from "./collection/filter";
+import FilterDrawer from "./collection/filterDrawer";
 import ProductsGrid from "./collection/productsGrid";
 import SortBy from "./collection/sortBy";
 import PerPage from "./collection/perPage";
-import CollectionPagination from "./collection/collectionPagination";
+import Pagination from "@mui/material/Pagination";
+import data from "../data/allProducts.json";
+
+import { filterData, sortDataFunc } from "./collection/dataProcessing";
 
 export const Collection = () => {
-  const [page, setPage] = React.useState("20");
+  const { category } = useParams();
+  const [sortData, setSortData] = useState("");
+  const [itemsPerPage, setItemsPerPage] = useState(20);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const handlePageChange = (event) => {
-    setPage(event.target.value);
-  };
+  const filteredData = filterData(category, data);
+  const sortedData = sortDataFunc(sortData, filteredData);
 
-  const [sort, setSort] = React.useState("new-old");
+  const totalCards = sortedData.length;
+  const cardsPerPage = itemsPerPage;
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentCards = sortedData.slice(indexOfFirstCard, indexOfLastCard);
 
   const handleSortChange = (event) => {
-    setSort(event.target.value);
+    setSortData(event.target.value);
   };
-  const { category } = useParams();
+
+  const handleItemsPerPageChange = (event, value) => {
+    setItemsPerPage(event.target.value);
+    setCurrentPage(1);
+  };
+
   return (
     <Box p={2}>
       <Box>
@@ -40,13 +55,26 @@ export const Collection = () => {
           justifyContent="flex-end"
           gap={4}
         >
-          <Filter />
-          <PerPage handlePageChange={handlePageChange} page={page} />
-          <SortBy handleSortChange={handleSortChange} sort={sort} />
+          <FilterDrawer />
+          <PerPage
+            handleItemsPerPageChange={handleItemsPerPageChange}
+            itemsPerPage={itemsPerPage}
+          />
+          <SortBy handleSortChange={handleSortChange} sortData={sortData} />
         </Stack>
         <Stack alignItems="center">
-          <ProductsGrid category={category} page={page} sort={sort} />
-          <CollectionPagination />
+          <ProductsGrid currentCards={currentCards} />
+          <Stack mt={5}>
+            <Pagination
+              sx={{ margin: "auto" }}
+              count={Math.ceil(totalCards / cardsPerPage)}
+              hidePrevButton
+              hideNextButton
+              onChange={(event) => setCurrentPage(event.target.textContent)}
+              color="primary"
+              defaultValue={1}
+            />
+          </Stack>
         </Stack>
       </Box>
     </Box>

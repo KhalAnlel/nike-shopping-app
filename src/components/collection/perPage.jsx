@@ -5,7 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-const PerPage = ({ handlePageChange, page }) => {
+const PerPage = ({ handleItemsPerPageChange, itemsPerPage }) => {
   return (
     <Box sx={{ minWidth: 130 }}>
       <FormControl fullWidth>
@@ -13,9 +13,9 @@ const PerPage = ({ handlePageChange, page }) => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={page}
+          value={itemsPerPage}
           label="Items/page"
-          onChange={handlePageChange}
+          onChange={handleItemsPerPageChange}
         >
           <MenuItem value={10}>10</MenuItem>
           <MenuItem value={20}>20</MenuItem>

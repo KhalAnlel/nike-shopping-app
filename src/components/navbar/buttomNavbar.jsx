@@ -3,18 +3,7 @@ import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
-const categories = [
-  "hoodies",
-  "shirts",
-  "hats",
-  "pants",
-  "cosplay costumes",
-  "figures",
-  "accessories",
-  "anime pillow",
-  "all",
-];
+import categories from "../../data/categories.json";
 
 export const ButtomNavbar = () => {
   const [value, setValue] = React.useState(0);

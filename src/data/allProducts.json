@@ -29,7 +29,8 @@
     "colors": ["white", "Grey", "Black", "Purple", "Red"],
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "Cotton,Polyester",
-    "type": "hoodies"
+    "type": "hoodies",
+    "anime": "Demon Slayer"
   },
   {
     "id": 2,
@@ -52,7 +53,8 @@
     "colors": ["white", "Grey", "Black"],
     "size": ["XS", "S", "M"],
     "material": "Acrylic,Cotton",
-    "type": "hoodies"
+    "type": "hoodies",
+    "anime": "Demon Slayer"
   },
   {
     "id": 3,
@@ -75,7 +77,8 @@
     "colors": ["Orange", "Dark-Green", "Light-Blue"],
     "size": ["XS", "S", "M"],
     "material": "Polyester",
-    "type": "hoodies"
+    "type": "hoodies",
+    "anime": "Spy x Family"
   },
   {
     "id": 4,
@@ -98,7 +101,8 @@
     "colors": ["white", "Grey", "Black"],
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "100% Cotton",
-    "type": "shirts"
+    "type": "shirts",
+    "anime": "Berserk"
   },
   {
     "id": 5,
@@ -115,7 +119,8 @@
     "colors": ["Black"],
     "size": ["XS", "S", "M"],
     "material": "100% Cotton",
-    "type": "shirts"
+    "type": "shirts",
+    "anime": "My Hero Academia"
   },
   {
     "id": 6,
@@ -138,7 +143,8 @@
     "colors": ["White", "Red", "Light-Blue"],
     "size": ["XS", "S", "M"],
     "material": "100% Cotton",
-    "type": "shirts"
+    "type": "shirts",
+    "anime": "Hunter x Hunter"
   },
   {
     "id": 7,
@@ -161,7 +167,8 @@
     "colors": ["white", "Beige", "Yellow"],
     "size": ["ONE SIZE"],
     "material": "Polyester",
-    "type": "hats"
+    "type": "hats",
+    "anime": "Tokyo Ghoul"
   },
   {
     "id": 8,
@@ -184,7 +191,8 @@
     "colors": ["Black", "Red", "Blue"],
     "size": ["8.3x4x2 Inch"],
     "material": "Cotton, Denim",
-    "type": "hats"
+    "type": "hats",
+    "anime": "One Piece"
   },
   {
     "id": 9,
@@ -207,7 +215,8 @@
     "colors": ["Beige", "Yellow", "Black"],
     "size": ["ONE SIZE"],
     "material": "Polyester",
-    "type": "hats"
+    "type": "hats",
+    "anime": "Attack on Titan"
   },
   {
     "id": 10,
@@ -224,7 +233,8 @@
     "colors": ["Red"],
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "nylon,Rayon",
-    "type": "pants"
+    "type": "pants",
+    "anime": "Demon Slayer"
   },
   {
     "id": 11,
@@ -241,7 +251,8 @@
     "colors": ["Grey"],
     "size": ["M"],
     "material": "nylon,Rayon",
-    "type": "pants"
+    "type": "pants",
+    "anime": "Baki"
   },
   {
     "id": 12,
@@ -258,7 +269,8 @@
     "colors": ["Black"],
     "size": ["M", "L"],
     "material": "Polyester",
-    "type": "pants"
+    "type": "pants",
+    "anime": "Tokyo Revengers"
   },
   {
     "id": 13,
@@ -278,7 +290,8 @@
     "colors": ["For Girls", "For Boys"],
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "Polyester",
-    "type": "cosplay costumes"
+    "type": "cosplay costumes",
+    "anime": "Tokyo Revengers"
   },
   {
     "id": 14,
@@ -298,7 +311,8 @@
     "colors": ["Full Set"],
     "size": ["M"],
     "material": "Polyester",
-    "type": "cosplay costumes"
+    "type": "cosplay costumes",
+    "anime": "Bleach"
   },
   {
     "id": 15,
@@ -321,7 +335,8 @@
     "colors": ["Full Set"],
     "size": ["M", "L"],
     "material": "Polyester",
-    "type": "cosplay costumes"
+    "type": "cosplay costumes",
+    "anime": "One Piece"
   },
   {
     "id": 16,
@@ -341,7 +356,8 @@
     "colors": ["Mascular", "Non-Mascular"],
     "size": ["10cm"],
     "material": "PVC",
-    "type": "figures"
+    "type": "figures",
+    "anime": "Dragon Ball"
   },
   {
     "id": 17,
@@ -361,7 +377,8 @@
     "colors": ["With Box", "Open Box"],
     "size": ["12.5cm"],
     "material": "PVC",
-    "type": "figures"
+    "type": "figures",
+    "anime": "One Piece"
   },
   {
     "id": 18,
@@ -381,7 +398,8 @@
     "colors": ["With Box"],
     "size": ["13cm"],
     "material": "PVC",
-    "type": "figures"
+    "type": "figures",
+    "anime": "Demon Slayer"
   },
   {
     "id": 19,
@@ -401,7 +419,8 @@
     "colors": ["Color 1", "Color 2"],
     "size": ["3cm * 13cm"],
     "material": "Zinc alloy",
-    "type": "accessories"
+    "type": "accessories",
+    "anime": "My Hero Academia"
   },
   {
     "id": 20,
@@ -421,7 +440,8 @@
     "colors": ["White"],
     "size": ["1.1inch * 1.4inch"],
     "material": "Metal",
-    "type": "accessories"
+    "type": "accessories",
+    "anime": "Demon Slayer"
   },
   {
     "id": 21,
@@ -441,7 +461,8 @@
     "colors": ["Tinje", "Power"],
     "size": ["5cm"],
     "material": "Metal",
-    "type": "accessories"
+    "type": "accessories",
+    "anime": "Chainsaw Man"
   },
   {
     "id": 22,
@@ -461,7 +482,8 @@
     "colors": ["Light-Blue"],
     "size": ["28cm * 55cm"],
     "material": "Plush",
-    "type": "anime pillow"
+    "type": "anime pillow",
+    "anime": "other"
   },
   {
     "id": 23,
@@ -484,7 +506,8 @@
     "colors": ["Tanjiro", "Nezuko", "Zenitsu"],
     "size": ["36cm * 27cm"],
     "material": "Plush",
-    "type": "anime pillow"
+    "type": "anime pillow",
+    "anime": "Demon Slayer"
   },
   {
     "id": 24,
@@ -504,6 +527,7 @@
     "colors": ["Ace", "Luffy"],
     "size": ["450mm * 450mm"],
     "material": "Plush",
-    "type": "anime pillow"
+    "type": "anime pillow",
+    "anime": "One Piece"
   }
 ]

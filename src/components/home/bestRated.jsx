@@ -90,7 +90,8 @@ export const BestRated = () => {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
-                <Chip label={data.price} />
+                <Chip label={`$${data.price}`} />
+
                 <LearnMoreBtn data={data.id} />
               </CardActions>
             </Card>
