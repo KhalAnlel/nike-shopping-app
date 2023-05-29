@@ -14,7 +14,7 @@ import { useState } from "react";
 import animeSeries from "../../data/animeSeries.json";
 import categories from "../../data/categories.json";
 
-export default function Filters() {
+export default function Filters({ setCurrentPage }) {
   const navigate = useNavigate();
 
   const [openStates, setOpenStates] = React.useState({
@@ -31,10 +31,11 @@ export default function Filters() {
     }));
   };
 
-  const [radioValue, setRadioValue] = useState("all");
+  const [radioValue, setRadioValue] = useState("");
   const handleChange = (event) => {
     const selectedValue = event.target.value;
     setRadioValue(selectedValue);
+    setCurrentPage(1);
 
     switch (selectedValue) {
       case "all":
@@ -98,7 +99,7 @@ export default function Filters() {
         <List component="div" sx={{ p: 3 }}>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
-            defaultValue="all"
+            defaultValue=""
             name="radio-buttons-group"
             value={radioValue}
             onChange={handleChange}

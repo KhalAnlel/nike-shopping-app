@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, CardActionArea, Chip } from "@mui/material";
-import Pagination from "@mui/material/Pagination";
+import Pages from "../common/pages";
 import LearnMoreBtn from "./learnMoreBtn";
 import data from "../../data/allProducts.json";
 
@@ -99,14 +99,7 @@ export const BestRated = () => {
         ))}
       </Box>
       <Box display="flex" m={2}>
-        <Pagination
-          sx={{ margin: "auto" }}
-          hidePrevButton
-          hideNextButton
-          count={4}
-          onChange={(event) => setCurrentPage(event.target.textContent)}
-          color="primary"
-        />
+        <Pages setCurrentPage={setCurrentPage} count={4} />
       </Box>
     </>
   );

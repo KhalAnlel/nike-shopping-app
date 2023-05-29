@@ -19,7 +19,7 @@ export const filterData = (category, data) => {
 
   if (category === "best rated") {
     filteredData = data
-      .filter((item) => item.rate >= 4)
+      .filter((item) => item.rate >= 1)
       .sort((a, b) => b.rate - a.rate);
   }
 

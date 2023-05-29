@@ -6,9 +6,8 @@ import FilterDrawer from "./collection/filterDrawer";
 import ProductsGrid from "./collection/productsGrid";
 import SortBy from "./collection/sortBy";
 import PerPage from "./collection/perPage";
-import Pagination from "@mui/material/Pagination";
+import Pages from "./common/pages";
 import data from "../data/allProducts.json";
-
 import { filterData, sortDataFunc } from "./collection/dataProcessing";
 
 export const Collection = () => {
@@ -55,7 +54,7 @@ export const Collection = () => {
           justifyContent="flex-end"
           gap={4}
         >
-          <FilterDrawer />
+          <FilterDrawer setCurrentPage={setCurrentPage} />
           <PerPage
             handleItemsPerPageChange={handleItemsPerPageChange}
             itemsPerPage={itemsPerPage}
@@ -65,14 +64,9 @@ export const Collection = () => {
         <Stack alignItems="center">
           <ProductsGrid currentCards={currentCards} />
           <Stack mt={5}>
-            <Pagination
-              sx={{ margin: "auto" }}
+            <Pages
+              setCurrentPage={setCurrentPage}
               count={Math.ceil(totalCards / cardsPerPage)}
-              hidePrevButton
-              hideNextButton
-              onChange={(event) => setCurrentPage(event.target.textContent)}
-              color="primary"
-              defaultValue={1}
             />
           </Stack>
         </Stack>

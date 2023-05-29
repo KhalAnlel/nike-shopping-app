@@ -53,7 +53,7 @@ export default function TopNavbar() {
         <Toolbar>
           <Link to="/" className="logo">
             <Typography variant="a" noWrap component="div">
-              Shopping-App
+              Anime Shop
             </Typography>
           </Link>
           <Box sx={{ flexGrow: 1 }} />

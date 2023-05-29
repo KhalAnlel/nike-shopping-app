@@ -4,7 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import Filters from "./filters";
 
-const FilterDrawer = () => {
+const FilterDrawer = ({ setCurrentPage }) => {
   const [state, setState] = React.useState({
     left: false,
   });
@@ -25,7 +25,7 @@ const FilterDrawer = () => {
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
       role="presentation"
     >
-      <Filters />
+      <Filters setCurrentPage={setCurrentPage} />
     </Box>
   );
 
