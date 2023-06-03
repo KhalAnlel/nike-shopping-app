@@ -83,7 +83,6 @@ export const LatestArrival = () => {
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
                 <Chip label={`$${item.price}`} />
-
                 <LearnMoreBtn data={item.id} />
               </CardActions>
             </Card>

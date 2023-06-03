@@ -18,7 +18,7 @@ export const BestRated = () => {
   const indexOfLastCard = currentPage * cardPerPage;
   const indexOfFirstCard = indexOfLastCard - cardPerPage;
   // Filter and sort the data based on the rate property
-  const filteredData = data.filter((product) => product.rate >= 4); // Filter by rate value (e.g., 5)
+  const filteredData = data.filter((product) => product.rate >= 4); // Filter by rate value (e.g., 4)
 
   // Sort the filtered data based on the rate property
   const sortedData = filteredData.sort((a, b) => b.rate - a.rate); // Sort in descending order
@@ -91,7 +91,6 @@ export const BestRated = () => {
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
                 <Chip label={`$${data.price}`} />
-
                 <LearnMoreBtn data={data.id} />
               </CardActions>
             </Card>

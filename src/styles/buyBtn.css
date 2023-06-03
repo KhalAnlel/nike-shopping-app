@@ -12,10 +12,15 @@
   overflow: hidden;
   z-index: 1;
   font-family: inherit;
+  text-align: center;
 }
 
 .btn:hover {
   color: #fff;
+}
+
+.btn:hover em {
+  color: rgb(0, 0, 0);
 }
 
 .btn::before {
@@ -33,4 +38,8 @@
 
 .btn:hover::before {
   transform: translateX(0);
+}
+
+em {
+  color: crimson;
 }

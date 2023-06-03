@@ -6,7 +6,7 @@ import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 
 export const ProductColor = ({ colorsAvailable }) => {
-  const [color, setColor] = React.useState("white");
+  const [color, setColor] = React.useState(colorsAvailable[0]);
 
   const handleColorChange = (event) => {
     setColor(event.target.value);

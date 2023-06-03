@@ -1,7 +1,11 @@
 import React from "react";
 import { TextField } from "@mui/material";
 
-const Quantity = ({ stockAvailable }) => {
+const Quantity = ({ stockAvailable, quantity, onQuantityChange }) => {
+  const handleQuantityChange = (e) => {
+    const newQuantity = e.target.value;
+    onQuantityChange(newQuantity);
+  };
   return (
     <TextField
       InputProps={{
@@ -10,7 +14,7 @@ const Quantity = ({ stockAvailable }) => {
           min: 1,
         },
       }}
-      defaultValue={1}
+      defaultValue={quantity}
       id="outlined-number"
       label="Quantity"
       type="number"
@@ -18,6 +22,7 @@ const Quantity = ({ stockAvailable }) => {
         shrink: true,
       }}
       sx={{ width: "80px" }}
+      onChange={handleQuantityChange}
     />
   );
 };

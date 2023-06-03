@@ -10,13 +10,22 @@ import Quantity from "./products/quantity";
 import BuyBtn from "./products/buyBtn";
 import SmartSlider from "react-smart-slider";
 import Description from "./products/description";
-import LoveBtn from "./products/loveBtn";
 import CustomerReview from "./products/customerReview";
-import data from "../data/allProducts.json";
-import "../styles/productDetails.css";
+import data from "../../data/allProducts.json";
+import "../../styles/productDetails.css";
+import { useState } from "react";
+import Like from "../common/like";
+import WishlistContext from "../../wishlistContext";
+import { useContext } from "react";
 
 export const ProductDetails = () => {
   const { productID } = useParams();
+  const { likedItems, handleLike } = useContext(WishlistContext);
+  const [quantity, setQuantity] = useState(1);
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
+  const finalPrice = Math.ceil(data[productID - 1].price * quantity);
   return (
     <Box>
       <Box
@@ -50,14 +59,23 @@ export const ProductDetails = () => {
           <ProductColor colorsAvailable={data[productID - 1].colors} />
           <ProductSize sizeAvailable={data[productID - 1].size} />
           <Stack direction="row" alignItems="center" gap={2}>
-            <Quantity stockAvailable={data[productID - 1].stock} />
-            <BuyBtn />
-            <LoveBtn />
+            <Quantity
+              stockAvailable={data[productID - 1].stock}
+              quantity={quantity}
+              onQuantityChange={handleQuantityChange}
+            />
+            <BuyBtn price={finalPrice} />
+            <Like
+              id={data[productID - 1].id}
+              handleLike={handleLike}
+              likedItems={likedItems}
+            />
           </Stack>
           <Box maxWidth={500} marginTop={4}>
             <img
               src="https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Untitled_design_5_2a9c7130-6f4c-4643-843b-21be8216a157@2x.png?v=1678414688"
               width="100%"
+              alt={data[productID - 1].title}
             />
           </Box>
         </Stack>

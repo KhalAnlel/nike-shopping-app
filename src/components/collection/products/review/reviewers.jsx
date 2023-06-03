@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Rating, Stack, Typography } from "@mui/material";
 import StarIcon from "@mui/icons-material/Star";
-import reviewers from "../../../data/reviewers.json";
+import reviewers from "../../../../data/reviewers.json";
 
 const Reviewers = () => {
   const labels = {

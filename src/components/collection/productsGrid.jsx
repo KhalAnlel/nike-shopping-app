@@ -1,20 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Typography } from "@mui/material";
-import { FavoriteBorder, Favorite } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
 import "../../styles/collection.css";
 import { Link } from "react-router-dom";
+import Like from "../common/like";
+import WishlistContext from "../../wishlistContext";
+import { useContext } from "react";
 
 const ProductsGrid = ({ currentCards }) => {
-  const [clickedItems, setClickedItems] = useState({});
-
-  const handleClick = (id) => {
-    setClickedItems((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
-  };
-
+  const { likedItems, handleLike } = useContext(WishlistContext);
   return (
     <Box
       display="flex"
@@ -25,12 +18,19 @@ const ProductsGrid = ({ currentCards }) => {
       mt={2}
     >
       {currentCards.map((item) => {
-        const isClicked = clickedItems[item.id];
         return (
           <Box className="card" key={item.id}>
             <Box className="image">
-              <img src={item["images"][0].url} width="100%" height="240px" />
-              <Link to={`/productDetails/${item.id}`} className="button">
+              <img
+                src={item["images"][0].url}
+                alt={item.title}
+                width="100%"
+                height="240px"
+              />
+              <Link
+                to={`/collection/productDetails/${item.id}`}
+                className="button"
+              >
                 BUY
               </Link>
             </Box>
@@ -43,16 +43,11 @@ const ProductsGrid = ({ currentCards }) => {
               width="100%"
             >
               <Typography className="price">${item.price}</Typography>
-              <IconButton
-                onClick={() => handleClick(item.id)}
-                color={isClicked ? "error" : "default"}
-              >
-                {isClicked ? (
-                  <Favorite fontSize="medium" />
-                ) : (
-                  <FavoriteBorder fontSize="medium" />
-                )}
-              </IconButton>
+              <Like
+                id={item.id}
+                handleLike={handleLike}
+                likedItems={likedItems}
+              />
             </Box>
           </Box>
         );

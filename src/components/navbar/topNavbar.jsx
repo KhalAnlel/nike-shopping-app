@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -7,10 +7,12 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
+import Menu from "@mui/material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { FavoriteBorder } from "@mui/icons-material";
+import { styled, alpha } from "@mui/material/styles";
+import WishList from "../collection/wishList";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -47,6 +49,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function TopNavbar() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: "#333" }}>
@@ -72,11 +83,27 @@ export default function TopNavbar() {
                 <AddShoppingCartIcon />
               </Badge>
             </IconButton>
-            <IconButton size="large" aria-label="show cart" color="inherit">
-              <Badge badgeContent={5} color="error">
-                <FavoriteBorder />
-              </Badge>
+            <IconButton
+              size="large"
+              aria-label="show cart"
+              color="inherit"
+              onClick={handleClick}
+            >
+              <FavoriteBorder />
             </IconButton>
+            <Box>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <WishList />
+              </Menu>
+            </Box>
           </Box>
         </Toolbar>
       </AppBar>
