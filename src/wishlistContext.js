@@ -1,8 +1,10 @@
-import { useEffect } from "react";
-import { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
+
 const WishlistContext = createContext();
+
 export function WishlistProvider({ children }) {
   const [likedItems, setLikedItems] = useState([]);
+
   const handleLike = (id) => {
     const itemExists = likedItems.some((item) => item.id === id);
     if (!itemExists) {
@@ -13,6 +15,12 @@ export function WishlistProvider({ children }) {
       setLikedItems(updatedItems);
     }
   };
+
+  const handleRemoveItem = (itemId) => {
+    const updatedList = likedItems.filter((item) => item.id !== itemId);
+    setLikedItems(updatedList);
+  };
+
   useEffect(() => {
     const storedItems = localStorage.getItem("wishlist");
     if (storedItems) {
@@ -20,13 +28,16 @@ export function WishlistProvider({ children }) {
     }
   }, []);
 
-  // Update local storage whenever liked items change
   useEffect(() => {
     localStorage.setItem("wishlist", JSON.stringify(likedItems));
   }, [likedItems]);
 
+  const count = likedItems.length;
+
   return (
-    <WishlistContext.Provider value={{ handleLike, likedItems }}>
+    <WishlistContext.Provider
+      value={{ handleLike, likedItems, count, handleRemoveItem }}
+    >
       {children}
     </WishlistContext.Provider>
   );

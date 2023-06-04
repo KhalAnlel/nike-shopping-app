@@ -13,6 +13,8 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { FavoriteBorder } from "@mui/icons-material";
 import { styled, alpha } from "@mui/material/styles";
 import WishList from "../collection/wishList";
+import WishlistContext from "../../wishlistContext";
+import { useContext } from "react";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -58,6 +60,8 @@ export default function TopNavbar() {
     setAnchorEl(null);
   };
 
+  const { count } = useContext(WishlistContext);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: "#333" }}>
@@ -89,7 +93,9 @@ export default function TopNavbar() {
               color="inherit"
               onClick={handleClick}
             >
-              <FavoriteBorder />
+              <Badge badgeContent={count} color="error">
+                <FavoriteBorder />
+              </Badge>
             </IconButton>
             <Box>
               <Menu

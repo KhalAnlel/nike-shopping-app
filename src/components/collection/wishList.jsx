@@ -1,16 +1,21 @@
 import React from "react";
 import data from "../../data/allProducts.json";
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import DeleteIcon from "@mui/icons-material/Delete";
+import WishlistContext from "../../wishlistContext";
+import { useContext } from "react";
 
 const WishList = () => {
-  const likedItems = localStorage.getItem("wishlist");
+  const { likedItems, handleRemoveItem } = useContext(WishlistContext);
 
-  // Convert the likedItems string to an array
-  const likedItemsArray = JSON.parse(likedItems);
+  const handleDelete = (itemId) => {
+    handleRemoveItem(itemId);
+  };
 
   // Filter the data based on the likedItems array
-  const filteredData = likedItemsArray.map((item) =>
+  const filteredData = likedItems.map((item) =>
     data.find((product) => product.id === item.id)
   );
 
@@ -20,18 +25,40 @@ const WishList = () => {
         <p>No Favorites</p>
       ) : (
         filteredData.map((item, index) => (
-          <Box key={item.id}>
-            <Box display="flex" flexDirection="row" alignItems="center" gap={1}>
+          <Box key={item.id} mb={2}>
+            <Box
+              display="flex"
+              flexDirection="row"
+              alignItems="center"
+              gap={1}
+              justifyContent="space-around"
+            >
               <img src={item["images"][0].url} width="35px" height="35px" />
-              <Typography fontSize="smaller" fontWeight={500}>
+              <Typography
+                fontSize="smaller"
+                fontWeight={500}
+                width={"120px"}
+                sx={{
+                  "& a": {
+                    color: "#000",
+                    transition: "color 0.3s ease",
+                    "&:hover": {
+                      color: "blue",
+                    },
+                  },
+                }}
+              >
                 <Link to={`/collection/productDetails/${item.id}`}>
-                  {item.title.split(" ").slice(0, 2).join(" ")}
+                  {item.title.split(" ").slice(0, 3).join(" ")}
                 </Link>
               </Typography>
+              <IconButton color="primary" aria-label="add to shopping cart">
+                <DeleteIcon onClick={() => handleDelete(item.id)} />
+              </IconButton>
+              <IconButton color="primary" aria-label="add to shopping cart">
+                <AddShoppingCartIcon />
+              </IconButton>
             </Box>
-            {index !== filteredData.length - 1 && (
-              <Box height="1px" width="100%" bgcolor="#333" mt={1} mb={1}></Box>
-            )}
           </Box>
         ))
       )}
