@@ -13,8 +13,11 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { FavoriteBorder } from "@mui/icons-material";
 import { styled, alpha } from "@mui/material/styles";
 import WishList from "../collection/wishList";
+import Cart from "../collection/cart";
 import WishlistContext from "../../wishlistContext";
+import CartContext from "../../cartContext";
 import { useContext } from "react";
+import { Stack } from "@mui/material";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -52,15 +55,25 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function TopNavbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
+  const openLiked = Boolean(anchorEl);
+  const handleOpenLiked = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
+  const handleCloseLiked = () => {
     setAnchorEl(null);
   };
 
-  const { count } = useContext(WishlistContext);
+  const [anchorE2, setAnchorE2] = React.useState(null);
+  const openCart = Boolean(anchorE2);
+  const handleOpenCart = (event) => {
+    setAnchorE2(event.currentTarget);
+  };
+  const handleCloseCart = () => {
+    setAnchorE2(null);
+  };
+
+  const { countLiked } = useContext(WishlistContext);
+  const { countCart } = useContext(CartContext);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -81,19 +94,37 @@ export default function TopNavbar() {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
-          <Box>
-            <IconButton size="large" aria-label="show cart" color="inherit">
-              <Badge badgeContent={1} color="error">
-                <AddShoppingCartIcon />
-              </Badge>
-            </IconButton>
+          <Stack flexDirection="row">
             <IconButton
               size="large"
               aria-label="show cart"
               color="inherit"
-              onClick={handleClick}
+              onClick={handleOpenCart}
             >
-              <Badge badgeContent={count} color="error">
+              <Badge badgeContent={countCart} color="error">
+                <AddShoppingCartIcon />
+              </Badge>
+            </IconButton>
+            <Box>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorE2}
+                open={openCart}
+                onClose={handleCloseCart}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <Cart />
+              </Menu>
+            </Box>
+            <IconButton
+              size="large"
+              aria-label="show cart"
+              color="inherit"
+              onClick={handleOpenLiked}
+            >
+              <Badge badgeContent={countLiked} color="error">
                 <FavoriteBorder />
               </Badge>
             </IconButton>
@@ -101,8 +132,8 @@ export default function TopNavbar() {
               <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
+                open={openLiked}
+                onClose={handleCloseLiked}
                 MenuListProps={{
                   "aria-labelledby": "basic-button",
                 }}
@@ -110,7 +141,7 @@ export default function TopNavbar() {
                 <WishList />
               </Menu>
             </Box>
-          </Box>
+          </Stack>
         </Toolbar>
       </AppBar>
     </Box>

@@ -5,11 +5,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 
-export const ProductColor = ({ colorsAvailable }) => {
-  const [color, setColor] = React.useState(colorsAvailable[0]);
-
-  const handleColorChange = (event) => {
+export const ProductColor = ({ availableColors, onColorChange }) => {
+  const [color, setColor] = React.useState(availableColors[0]);
+  const handleColorClick = (event) => {
     setColor(event.target.value);
+    onColorChange(event.target.value); // Pass the selected color
   };
   return (
     <FormControl>
@@ -21,9 +21,9 @@ export const ProductColor = ({ colorsAvailable }) => {
         aria-labelledby="demo-controlled-radio-buttons-group"
         name="controlled-radio-buttons-group"
         value={color}
-        onChange={handleColorChange}
+        onChange={handleColorClick}
       >
-        {colorsAvailable.map((item) => (
+        {availableColors.map((item) => (
           <FormControlLabel
             value={item}
             key={item}

@@ -1,12 +1,28 @@
 import React from "react";
 import "../../../styles/buyBtn.css";
-const BuyBtn = ({ price }) => {
+import CartContext from "../../../cartContext";
+import { useContext } from "react";
+
+const BuyBtn = ({
+  finalPrice,
+  id,
+  quantity,
+  selectedColor,
+  selectedSize,
+  index,
+}) => {
+  const { cartItems, handleAdd } = useContext(CartContext);
+  const handleClick = (id) => {
+    handleAdd(id, quantity, selectedColor, selectedSize, index);
+  };
   return (
     <div>
-      <button className="btn">
-        Add To Cart <br />
-        <em>{"$" + price}</em>
-      </button>
+      <div>
+        <span className="productPrice">{"$" + finalPrice}</span>
+        <button className="btn" onClick={() => handleClick(id)}>
+          Add To Cart <br />
+        </button>
+      </div>
     </div>
   );
 };

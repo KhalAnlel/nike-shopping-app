@@ -15,6 +15,15 @@
   text-align: center;
 }
 
+.addeBtn {
+  padding: 15px;
+  color: #3b71ca;
+  font-size: 18px;
+  border: 2px #3b71ca solid;
+  border-radius: 7px;
+  cursor: not-allowed;
+}
+
 .btn:hover {
   color: #fff;
 }
@@ -40,6 +49,12 @@
   transform: translateX(0);
 }
 
-em {
-  color: crimson;
+.productPrice {
+  padding: 15px;
+  background-color: rgb(220, 239, 255);
+  border: 0;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-style: italic;
 }

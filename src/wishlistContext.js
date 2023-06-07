@@ -32,11 +32,11 @@ export function WishlistProvider({ children }) {
     localStorage.setItem("wishlist", JSON.stringify(likedItems));
   }, [likedItems]);
 
-  const count = likedItems.length;
+  const countLiked = likedItems.length;
 
   return (
     <WishlistContext.Provider
-      value={{ handleLike, likedItems, count, handleRemoveItem }}
+      value={{ handleLike, likedItems, countLiked, handleRemoveItem }}
     >
       {children}
     </WishlistContext.Provider>

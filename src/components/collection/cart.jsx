@@ -3,25 +3,24 @@ import data from "../../data/allProducts.json";
 import { Box, IconButton, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
-import WishlistContext from "../../wishlistContext";
+import CartContext from "../../cartContext";
 import { useContext } from "react";
 
-const WishList = () => {
-  const { likedItems, handleRemoveItem } = useContext(WishlistContext);
-
+const Cart = () => {
+  const { cartItems, handleRemoveItem } = useContext(CartContext);
   const handleDelete = (itemId) => {
     handleRemoveItem(itemId);
   };
-
-  // Filter the data based on the likedItems array
-  const filteredData = likedItems.map((item) =>
-    data.find((product) => product.id === item.id)
-  );
+  // Filter the data based on the cartItems array
+  const filteredData = cartItems.map((item) => {
+    const product = data.find((product) => product.id === item.id);
+    return { ...product, quantity: item.quantity, index: item.index };
+  });
 
   return (
     <Box p={2} display={"flex"} flexDirection={"column"} gap={2}>
       {filteredData.length === 0 ? (
-        <p>No Favorites</p>
+        <p>Empty Cart</p>
       ) : (
         filteredData.map((item, index) => (
           <Box key={item.id}>
@@ -56,15 +55,37 @@ const WishList = () => {
                   {item.title.split(" ").slice(0, 3).join(" ")}
                 </Link>
               </Typography>
-              <IconButton color="primary" aria-label="add to shopping cart">
-                <DeleteIcon onClick={() => handleDelete(item.id)} />
+              <Typography>${Math.ceil(item.price * item.quantity)}</Typography>
+              <IconButton
+                color="primary"
+                aria-label="add to shopping cart"
+                onClick={() => handleDelete(item.index)}
+              >
+                <DeleteIcon />
               </IconButton>
             </Box>
           </Box>
         ))
       )}
+      {filteredData.length >= 1 && (
+        <Typography
+          textAlign={"center"}
+          mt={1}
+          sx={{
+            "& a": {
+              color: "#000",
+              transition: "color 0.3s ease",
+              "&:hover": {
+                color: "blue",
+              },
+            },
+          }}
+        >
+          <Link to={`/checkout/`}>View All</Link>
+        </Typography>
+      )}
     </Box>
   );
 };
 
-export default WishList;
+export default Cart;

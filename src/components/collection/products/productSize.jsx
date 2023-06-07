@@ -25,18 +25,13 @@ function getStyles(name, size, theme) {
         : theme.typography.fontWeightMedium,
   };
 }
-const ProductSize = ({ sizeAvailable }) => {
+const ProductSize = ({ availableSizes, onSizeChange }) => {
   const theme = useTheme();
-  const [size, setsizeName] = React.useState([sizeAvailable[0]]);
+  const [size, setSize] = React.useState([availableSizes[0]]);
 
-  const handleSizeChange = (event) => {
-    const {
-      target: { value },
-    } = event;
-    setsizeName(
-      // On autofill we get a stringified value.
-      typeof value === "string" ? value.split(",") : value
-    );
+  const handleSizeClick = (event) => {
+    setSize(event.target.value);
+    onSizeChange(event.target.value);
   };
   return (
     <FormControl sx={{ marginBottom: 2, width: 300 }}>
@@ -45,12 +40,12 @@ const ProductSize = ({ sizeAvailable }) => {
         labelId="demo-multiple-name-label"
         id="demo-multiple-name"
         value={size}
-        onChange={handleSizeChange}
+        onChange={handleSizeClick}
         input={<OutlinedInput label="Name" />}
         MenuProps={MenuProps}
         required
       >
-        {sizeAvailable.map((item) => (
+        {availableSizes.map((item) => (
           <MenuItem
             key={item}
             value={item}

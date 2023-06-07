@@ -21,11 +21,28 @@ import { useContext } from "react";
 export const ProductDetails = () => {
   const { productID } = useParams();
   const { likedItems, handleLike } = useContext(WishlistContext);
+
+  const availableColors = data[productID - 1].colors;
+  const availableSizes = data[productID - 1].size;
+
   const [quantity, setQuantity] = useState(1);
+  const [selectedColor, setSelectedColor] = useState(availableColors[0]);
+  const [selectedSize, setSelectedSize] = useState(availableSizes[0]);
+
+  const handleColorChange = (color) => {
+    setSelectedColor(color);
+  };
+
+  const handleSizeChange = (size) => {
+    setSelectedSize(size);
+  };
+
   const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
   };
+
   const finalPrice = Math.ceil(data[productID - 1].price * quantity);
+  const randomIndex = Math.floor(Math.random() * data.length);
   return (
     <Box>
       <Box
@@ -56,15 +73,30 @@ export const ProductDetails = () => {
           <Typography fontSize={18} fontWeight={600}>
             ${data[productID - 1].price}
           </Typography>
-          <ProductColor colorsAvailable={data[productID - 1].colors} />
-          <ProductSize sizeAvailable={data[productID - 1].size} />
+          <ProductColor
+            availableColors={availableColors}
+            onColorChange={handleColorChange}
+            selectedColor={selectedColor}
+          />
+          <ProductSize
+            availableSizes={availableSizes}
+            onSizeChange={handleSizeChange}
+            selectedSize={selectedSize}
+          />
           <Stack direction="row" alignItems="center" gap={2}>
             <Quantity
               stockAvailable={data[productID - 1].stock}
               quantity={quantity}
               onQuantityChange={handleQuantityChange}
             />
-            <BuyBtn price={finalPrice} />
+            <BuyBtn
+              finalPrice={finalPrice}
+              quantity={quantity}
+              id={data[productID - 1].id}
+              index={randomIndex}
+              selectedColor={selectedColor}
+              selectedSize={selectedSize}
+            />
             <Like
               id={data[productID - 1].id}
               handleLike={handleLike}
