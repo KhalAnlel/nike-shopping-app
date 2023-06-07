@@ -33,6 +33,7 @@ export const LatestArrival = () => {
         justifyContent="center"
         marginTop="20px"
         p="10px"
+        gap={3}
       >
         {latestItems.map((item) => (
           <CardActionArea sx={{ maxWidth: "250px" }} key={item.id}>

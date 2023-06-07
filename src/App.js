@@ -16,16 +16,16 @@ function App() {
           <Navbar />
           <ScrollToTop />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/collection/:category?" element={<Collection />} />
+            <Route path="/" element={<Home />} />{" "}
+            <Route path="/collection/:category?" element={<Collection />} />{" "}
             <Route
               path="/collection/productDetails/:productID"
               element={<ProductDetails />}
-            />
-            <Route path="/checkout/" element={<Checkout />} />
-          </Routes>
-        </WishlistProvider>
-      </CartProvider>
+            />{" "}
+            <Route path="/checkout/" element={<Checkout />} />{" "}
+          </Routes>{" "}
+        </WishlistProvider>{" "}
+      </CartProvider>{" "}
     </div>
   );
 }

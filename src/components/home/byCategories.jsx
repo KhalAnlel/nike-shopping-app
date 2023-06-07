@@ -42,9 +42,15 @@ const categories = [
   },
   {
     id: 7,
-    title: "cosplay costumes",
+    title: "cosplay ",
     imageUrl:
       "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H79a2e88db99545a89be32c4c9a84f902Z_785x.jpg?v=1645335329",
+  },
+  {
+    id: 8,
+    title: "anime pillows",
+    imageUrl:
+      "https://ih1.redbubble.net/image.2030751848.4716/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.jpg",
   },
 ];
 
@@ -64,8 +70,10 @@ export const ByCategories = () => {
         display="flex"
         justifyContent="center"
         flexWrap="wrap"
-        gap={"10px"}
+        gap={2}
         marginTop={6}
+        width={"70%"}
+        m={"auto"}
       >
         {categories.map((item) => (
           <Box key={item.id} maxWidth={150} boxShadow={2} margin="auto">
