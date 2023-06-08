@@ -6,7 +6,13 @@ export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
 
   const handleAdd = (id, quantity, selectedColor, selectedSize, index) => {
-    const newItem = { id, quantity, selectedColor, selectedSize, index };
+    const newItem = {
+      id,
+      quantity,
+      selectedColor,
+      selectedSize,
+      index: Date.now(),
+    };
     setCartItems([...cartItems, newItem]);
   };
 
@@ -32,7 +38,7 @@ export function CartProvider({ children }) {
     <CartContext.Provider
       value={{ handleAdd, cartItems, countCart, handleRemoveItem }}
     >
-      {children}
+      {children}{" "}
     </CartContext.Provider>
   );
 }

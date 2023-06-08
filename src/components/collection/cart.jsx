@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../data/allProducts.json";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
 import CartContext from "../../cartContext";
@@ -14,7 +14,13 @@ const Cart = () => {
   // Filter the data based on the cartItems array
   const filteredData = cartItems.map((item) => {
     const product = data.find((product) => product.id === item.id);
-    return { ...product, quantity: item.quantity, index: item.index };
+    return {
+      ...product,
+      quantity: item.quantity,
+      index: item.index,
+      color: item.selectedColor,
+      size: item.selectedSize,
+    };
   });
 
   return (
@@ -37,24 +43,29 @@ const Cart = () => {
                 height="55px"
                 style={{ borderRadius: "50%" }}
               />
-              <Typography
-                fontSize="smaller"
-                fontWeight={500}
-                width={"120px"}
-                sx={{
-                  "& a": {
-                    color: "#000",
-                    transition: "color 0.3s ease",
-                    "&:hover": {
-                      color: "blue",
+              <Stack>
+                <Typography
+                  fontSize="smaller"
+                  fontWeight={600}
+                  width={"120px"}
+                  sx={{
+                    "& a": {
+                      color: "#000",
+                      transition: "color 0.3s ease",
+                      "&:hover": {
+                        color: "blue",
+                      },
                     },
-                  },
-                }}
-              >
-                <Link to={`/collection/productDetails/${item.id}`}>
-                  {item.title.split(" ").slice(0, 3).join(" ")}
-                </Link>
-              </Typography>
+                  }}
+                >
+                  <Link to={`/collection/productDetails/${item.id}`}>
+                    {item.title.split(" ").slice(0, 3).join(" ")}
+                  </Link>
+                </Typography>
+                <Typography fontSize={12} fontStyle={"italic"}>
+                  {item.color} / {item.size}
+                </Typography>
+              </Stack>
               <Typography>${Math.ceil(item.price * item.quantity)}</Typography>
               <IconButton
                 color="primary"

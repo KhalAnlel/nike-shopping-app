@@ -42,7 +42,6 @@ export const ProductDetails = () => {
   };
 
   const finalPrice = Math.ceil(data[productID - 1].price * quantity);
-  const randomIndex = Math.floor(Math.random() * data.length);
   return (
     <Box>
       <Box
@@ -93,7 +92,6 @@ export const ProductDetails = () => {
               finalPrice={finalPrice}
               quantity={quantity}
               id={data[productID - 1].id}
-              index={randomIndex}
               selectedColor={selectedColor}
               selectedSize={selectedSize}
             />

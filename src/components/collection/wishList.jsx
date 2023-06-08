@@ -56,6 +56,7 @@ const WishList = () => {
                   {item.title.split(" ").slice(0, 3).join(" ")}
                 </Link>
               </Typography>
+              <Typography color={"red"}>${item.price}</Typography>
               <IconButton color="primary" aria-label="add to shopping cart">
                 <DeleteIcon onClick={() => handleDelete(item.id)} />
               </IconButton>

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useContext } from "react";
 import CartContext from "../cartContext";
 import data from "../data/allProducts.json";
 import PaidIcon from "@mui/icons-material/Paid";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import DeleteIcon from "@mui/icons-material/Delete";
 import {
   Box,
   Button,
@@ -14,10 +16,9 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Link } from "react-router-dom";
 
 const Checkout = () => {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems, handleRemoveItem } = useContext(CartContext);
   const filteredData = cartItems.map((item) => {
     const product = data.find((product) => product.id === item.id);
     return {
@@ -42,6 +43,10 @@ const Checkout = () => {
 
   const handleChange = (event) => {
     setCity(event.target.value);
+  };
+
+  const handleDelete = (itemId) => {
+    handleRemoveItem(itemId);
   };
 
   return (
@@ -75,8 +80,13 @@ const Checkout = () => {
         <Box display={"flex"}>
           <Box p={3} width="60%">
             {filteredData.map((item) => (
-              <Box key={item.index} borderBottom={1}>
-                <Typography mb={2} fontSize={20}>
+              <Box
+                key={item.index}
+                borderBottom={1}
+                display={"flex"}
+                flexDirection={"column"}
+              >
+                <Typography mb={2} fontSize={18}>
                   {item.title}
                 </Typography>
                 <Box>
@@ -98,6 +108,15 @@ const Checkout = () => {
                 <Typography color={"#333"} fontWeight={700}>
                   Size Selected: {item.size}
                 </Typography>
+                <Button
+                  variant="outlined"
+                  sx={{ mb: "10px", marginLeft: "auto" }}
+                  startIcon={<DeleteIcon />}
+                  color="error"
+                  onClick={() => handleDelete(item.index)}
+                >
+                  Delete
+                </Button>
               </Box>
             ))}
           </Box>
