@@ -77,8 +77,11 @@ const Checkout = () => {
           </Typography>
         </Box>
       ) : (
-        <Box display={"flex"}>
-          <Box p={3} width="60%">
+        <Box
+          display={"flex"}
+          sx={{ flexDirection: { xs: "column", md: "row" } }}
+        >
+          <Box p={3} sx={{ width: { xs: "90%", md: "60%" } }}>
             {filteredData.map((item) => (
               <Box
                 key={item.index}
@@ -120,9 +123,12 @@ const Checkout = () => {
               </Box>
             ))}
           </Box>
-          <Box width="40%">
+          <Box sx={{ width: { xs: "90%", md: "60%" }, p: 3 }}>
             <Typography
-              textAlign="center"
+              sx={{
+                textAlign: { xs: "left", md: "center" },
+                margin: "auto",
+              }}
               mt={3}
               fontSize={20}
               fontWeight={700}
@@ -130,7 +136,12 @@ const Checkout = () => {
             >
               Insert Your Information
             </Typography>
-            <Box display="flex" flexDirection="column" p={3} gap={2}>
+            <Box
+              display="flex"
+              flexDirection="column"
+              sx={{ p: { xs: 0, md: 3 } }}
+              gap={2}
+            >
               <TextField
                 id="standard-basic"
                 label="Full Name:"
@@ -168,9 +179,25 @@ const Checkout = () => {
                   sx={{ width: "70%" }}
                   required
                 >
+                  <MenuItem value="Al-Anbar">Al-Anbar</MenuItem>
+                  <MenuItem value="Babil">Babil</MenuItem>
+                  <MenuItem value="Baghdad">Baghdad</MenuItem>
+                  <MenuItem value="Basra">Basra</MenuItem>
+                  <MenuItem value="Dhi Qar">Dhi Qar</MenuItem>
+                  <MenuItem value="Al-Qādisiyyah">Al-Qādisiyyah</MenuItem>
+                  <MenuItem value="Diyala">Diyala</MenuItem>
                   <MenuItem value="Duhok">Duhok</MenuItem>
                   <MenuItem value="Erbil">Erbil</MenuItem>
-                  <MenuItem value="Baghdad">Baghdad</MenuItem>
+                  <MenuItem value="Halabja">Halabja</MenuItem>
+                  <MenuItem value="Karbala">Karbala</MenuItem>
+                  <MenuItem value="Kirkuk">Kirkuk</MenuItem>
+                  <MenuItem value="Maysan">Maysan</MenuItem>
+                  <MenuItem value="Muthanna">Muthanna</MenuItem>
+                  <MenuItem value="Najaf">Najaf</MenuItem>
+                  <MenuItem value="Ninawa">Ninawa</MenuItem>
+                  <MenuItem value="Salah Al-Din">Salah Al-Din</MenuItem>
+                  <MenuItem value="Sulaymaniyah">Sulaymaniyah</MenuItem>
+                  <MenuItem value="Wasit">Wasit</MenuItem>
                 </Select>
               </FormControl>
 
