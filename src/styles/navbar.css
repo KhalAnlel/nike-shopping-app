@@ -1,6 +1,7 @@
 .logo {
   color: #fff;
   transition: all 0.3s linear;
+  width: 100px;
 }
 
 .logo:hover {

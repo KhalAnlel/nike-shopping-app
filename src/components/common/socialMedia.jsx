@@ -1,7 +1,6 @@
 import {
   FacebookRounded,
   Instagram,
-  LinkedIn,
   Reddit,
   Twitter,
   YouTube,
@@ -30,9 +29,6 @@ export const SocialMedia = () => {
                 </Link>
                 <Link to="#" className="slider-nav-item">
                   <YouTube />
-                </Link>
-                <Link to="#" className="slider-nav-item">
-                  <LinkedIn />
                 </Link>
                 <Link to="#" className="slider-nav-item">
                   <Reddit />

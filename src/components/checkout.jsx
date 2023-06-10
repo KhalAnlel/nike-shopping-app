@@ -52,7 +52,7 @@ const Checkout = () => {
   return (
     <>
       {filteredData.length === 0 ? (
-        <Box p={20}>
+        <Box p={5}>
           <Typography
             textAlign="center"
             color="darkblue"
@@ -63,6 +63,7 @@ const Checkout = () => {
           </Typography>
           <Typography
             textAlign="center"
+            width={"100%"}
             sx={{
               "& a": {
                 color: "darkgrey",

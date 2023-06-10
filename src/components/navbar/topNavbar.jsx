@@ -5,53 +5,17 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import Menu from "@mui/material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { FavoriteBorder } from "@mui/icons-material";
-import { styled, alpha } from "@mui/material/styles";
 import WishList from "../collection/wishList";
 import Cart from "../collection/cart";
 import WishlistContext from "../../wishlistContext";
 import CartContext from "../../cartContext";
 import { useContext } from "react";
 import { Stack } from "@mui/material";
-
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  width: "auto",
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
-}));
+import logo from "../../logo.png";
 
 export default function TopNavbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -79,21 +43,21 @@ export default function TopNavbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: "#333" }}>
         <Toolbar>
-          <Link to="/" className="logo">
-            <Typography variant="a" noWrap component="div">
-              Anime Shop
-            </Typography>
-          </Link>
+          <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
+            <Link to="/" className="logo">
+              <img src={logo} width="100%" />
+            </Link>
+            <Link to="/">
+              <Typography color={"white"}>Home</Typography>
+            </Link>
+            <Link to="/collection/all">
+              <Typography color={"white"}>Products</Typography>
+            </Link>
+            <Link to="/about">
+              <Typography color={"white"}>About</Typography>
+            </Link>
+          </Stack>
           <Box sx={{ flexGrow: 1 }} />
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
           <Stack flexDirection="row">
             <IconButton
               size="large"

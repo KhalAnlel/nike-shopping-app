@@ -49,8 +49,7 @@ const categories = [
   {
     id: 8,
     title: "anime pillows",
-    imageUrl:
-      "https://ih1.redbubble.net/image.2030751848.4716/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.jpg",
+    imageUrl: "https://www.pngmart.com/files/10/Anime-Pillow-PNG-Picture.png",
   },
 ];
 
