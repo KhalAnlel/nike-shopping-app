@@ -70,17 +70,16 @@ export const ByCategories = () => {
         justifyContent="center"
         flexWrap="wrap"
         gap={2}
-        marginTop={6}
-        width={"70%"}
         m={"auto"}
+        marginTop={4}
+        sx={{ width: { md: "70%", sm: "90%" } }}
       >
         {categories.map((item) => (
-          <Box key={item.id} maxWidth={150} boxShadow={2} margin="auto">
+          <Box key={item.id} maxWidth={180} boxShadow={2} margin="auto">
             <CardActionArea href={`collection/${item.title}`}>
               <CardMedia
                 component="img"
                 alt={item.title}
-                height="150"
                 image={item.imageUrl}
               />
               <Typography textAlign={"center"}>

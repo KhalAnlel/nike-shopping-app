@@ -14,12 +14,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 export const WhyUs = () => {
   return (
-    <Box
-      bgcolor="rgb(72, 72, 72)"
-      p="10px"
-      display="flex"
-      justifyContent="space-around"
-    >
+    <Box bgcolor="grey" p="10px" display="flex" justifyContent="space-around">
       <StyledBox>
         <LocalShippingTwoToneIcon
           sx={{ fontSize: { xs: "12pt", sm: "20pt", md: "30pt" } }}

@@ -53,7 +53,7 @@ const Cart = () => {
                       color: "#000",
                       transition: "color 0.3s ease",
                       "&:hover": {
-                        color: "blue",
+                        color: "#3b71ca",
                       },
                     },
                   }}

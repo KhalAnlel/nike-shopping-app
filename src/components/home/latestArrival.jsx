@@ -42,7 +42,8 @@ export const LatestArrival = () => {
                 position="absolute"
                 top={10}
                 right={10}
-                bgcolor="#C8C4C8"
+                bgcolor="azure"
+                color={"black"}
                 p={1}
                 borderRadius={1}
                 fontSize={12}

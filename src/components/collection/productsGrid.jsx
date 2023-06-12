@@ -47,6 +47,7 @@ const ProductsGrid = ({ currentCards }) => {
                 id={item.id}
                 handleLike={handleLike}
                 likedItems={likedItems}
+                size={"medium"}
               />
             </Box>
           </Box>

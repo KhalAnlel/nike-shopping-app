@@ -3,7 +3,7 @@ import { IconButton } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 
-const Like = ({ id, handleLike, likedItems }) => {
+const Like = ({ id, handleLike, likedItems, size }) => {
   const [clickedItems, setClickedItems] = useState({});
   const isClicked = likedItems.some((item) => item.id === id);
   const handleClick = (id) => {
@@ -21,9 +21,9 @@ const Like = ({ id, handleLike, likedItems }) => {
         color={isClicked ? "error" : "default"}
       >
         {isClicked ? (
-          <Favorite fontSize="medium" />
+          <Favorite fontSize={size} />
         ) : (
-          <FavoriteBorder fontSize="medium" />
+          <FavoriteBorder fontSize={size} />
         )}
       </IconButton>
     </div>

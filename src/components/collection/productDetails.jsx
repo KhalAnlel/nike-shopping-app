@@ -47,7 +47,7 @@ export const ProductDetails = () => {
       <Box
         display="flex"
         justifyContent="space-around"
-        sx={{ flexDirection: { xs: "column", sm: "row", md: "row" } }}
+        sx={{ flexDirection: { xs: "column", md: "row" } }}
       >
         <Box>
           <BreadCrumb title={data[productID - 1].title} />
@@ -99,6 +99,7 @@ export const ProductDetails = () => {
               id={data[productID - 1].id}
               handleLike={handleLike}
               likedItems={likedItems}
+              size="large"
             />
           </Stack>
           <Box maxWidth={500} marginTop={4}>

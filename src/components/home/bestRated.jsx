@@ -44,18 +44,14 @@ export const BestRated = () => {
       >
         {currentCards.map((data) => (
           <CardActionArea key={data.id} sx={{ width: "250px" }}>
-            <Card sx={{ maxWidth: 250, margin: "auto", boxShadow: 0 }}>
-              <Typography
-                position="absolute"
-                top={10}
-                right={10}
-                bgcolor="#C8C4C8"
-                p={1}
-                borderRadius={1}
-                fontSize={12}
-              >
-                New
-              </Typography>
+            <Card
+              sx={{
+                maxWidth: 250,
+                margin: "auto",
+                boxShadow: "15px 22px 37px 4px rgba(0,0,0,0.1)",
+                borderRadius: 2,
+              }}
+            >
               <CardMedia
                 component="img"
                 alt="latest arrival item"
@@ -65,7 +61,6 @@ export const BestRated = () => {
               <CardContent>
                 <Typography
                   gutterBottom
-                  variant="h5"
                   component="div"
                   style={{
                     display: "-webkit-box",
@@ -75,18 +70,6 @@ export const BestRated = () => {
                   }}
                 >
                   {data.title}
-                </Typography>
-                <Typography
-                  variant="subtitle2"
-                  color="text.secondary"
-                  style={{
-                    display: "-webkit-box",
-                    overflow: "hidden",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                  }}
-                >
-                  {data.description}
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>

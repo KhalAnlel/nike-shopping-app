@@ -14,7 +14,7 @@ import Cart from "../collection/cart";
 import WishlistContext from "../../wishlistContext";
 import CartContext from "../../cartContext";
 import { useContext } from "react";
-import { Stack } from "@mui/material";
+import { Stack, styled } from "@mui/material";
 import logo from "../../logo.png";
 
 export default function TopNavbar() {
@@ -41,20 +41,62 @@ export default function TopNavbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#333" }}>
+      <AppBar position="static" sx={{ height: "60px" }}>
         <Toolbar>
-          <Stack flexDirection={"row"} gap={2} alignItems={"center"}>
-            <Link to="/" className="logo">
-              <img src={logo} width="100%" />
-            </Link>
+          <Link to="/" className="logo">
+            <img src={logo} width="100%" />
+          </Link>
+          <Stack
+            flexDirection={"row"}
+            gap={2}
+            alignItems={"center"}
+            width={"100%"}
+            justifyContent={"center"}
+          >
             <Link to="/">
-              <Typography color={"white"}>Home</Typography>
+              <Typography
+                color={"white"}
+                fontWeight={700}
+                fontFamily={"cursive"}
+                sx={{
+                  ":hover": {
+                    transform: "scale(1.1)",
+                    transition: "0.5s linear",
+                  },
+                }}
+              >
+                Home
+              </Typography>
             </Link>
             <Link to="/collection/all">
-              <Typography color={"white"}>Products</Typography>
+              <Typography
+                color={"white"}
+                fontWeight={700}
+                fontFamily={"cursive"}
+                sx={{
+                  ":hover": {
+                    transform: "scale(1.1)",
+                    transition: "0.5s linear",
+                  },
+                }}
+              >
+                Products
+              </Typography>
             </Link>
             <Link to="/about">
-              <Typography color={"white"}>About</Typography>
+              <Typography
+                color={"white"}
+                fontWeight={700}
+                fontFamily={"cursive"}
+                sx={{
+                  ":hover": {
+                    transform: "scale(1.1)",
+                    transition: "0.5s linear",
+                  },
+                }}
+              >
+                About
+              </Typography>
             </Link>
           </Stack>
           <Box sx={{ flexGrow: 1 }} />

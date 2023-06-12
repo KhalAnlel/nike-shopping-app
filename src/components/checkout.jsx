@@ -55,7 +55,7 @@ const Checkout = () => {
         <Box p={5}>
           <Typography
             textAlign="center"
-            color="darkblue"
+            color="primary"
             fontSize={30}
             fontWeight={700}
           >
