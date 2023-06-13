@@ -19,7 +19,7 @@ export const LatestArrival = () => {
   return (
     <>
       <Box marginTop={5}>
-        <Typography textAlign="center" variant="h4" fontWeight={700}>
+        <Typography textAlign="center" variant="h5" fontWeight={700}>
           LATEST ARRIVAL
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="center">

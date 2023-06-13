@@ -10,6 +10,8 @@ import Pages from "./common/pages";
 import data from "../data/allProducts.json";
 import { filterData, sortDataFunc } from "./collection/dataProcessing";
 
+import Search from "./collection/search";
+
 export const Collection = () => {
   const { category } = useParams();
   const [sortData, setSortData] = useState("");
@@ -35,7 +37,7 @@ export const Collection = () => {
   };
 
   return (
-    <Box p={2}>
+    <Box p={2} display={"flex"} flexDirection={"column"}>
       <Box>
         <Typography fontWeight={700} fontSize={20}>
           ANIME {category === "all" ? "PRODUCTS" : `${category.toUpperCase()} `}
@@ -46,14 +48,9 @@ export const Collection = () => {
           All Over The World On All Order.
         </Typography>
       </Box>
+      <Search />
       <Box>
-        <Stack
-          direction="row"
-          mt={4}
-          alignItems="center"
-          justifyContent="flex-end"
-          gap={4}
-        >
+        <Stack direction="row" mt={4} alignItems="center" gap={4}>
           <FilterDrawer setCurrentPage={setCurrentPage} />
           <PerPage
             handleItemsPerPageChange={handleItemsPerPageChange}

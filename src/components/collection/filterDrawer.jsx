@@ -30,7 +30,7 @@ const FilterDrawer = ({ setCurrentPage }) => {
   );
 
   return (
-    <Box mr="auto">
+    <Box flex={1}>
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>Filter</Button>

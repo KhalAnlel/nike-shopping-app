@@ -6,7 +6,9 @@ export const filterData = (category, data) => {
   if (animeSeries.includes(category)) {
     filteredData = data.filter((item) => item.anime === category);
   } else if (category) {
-    filteredData = data.filter((item) => item.type === category);
+    filteredData = data.filter(
+      (item) => item.type.includes(category) || item.anime.includes(category)
+    );
   }
 
   if (category === "all") {

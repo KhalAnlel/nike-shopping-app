@@ -27,7 +27,7 @@ export const BestRated = () => {
   return (
     <>
       <Box marginTop={15}>
-        <Typography textAlign="center" variant="h4" fontWeight={700}>
+        <Typography textAlign="center" variant="h5" fontWeight={700}>
           Best Rated Products
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="center">

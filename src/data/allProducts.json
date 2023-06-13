@@ -30,7 +30,7 @@
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "Cotton,Polyester",
     "type": "hoodies",
-    "anime": "Demon Slayer"
+    "anime": "demon slayer"
   },
   {
     "id": 2,
@@ -54,7 +54,7 @@
     "size": ["XS", "S", "M"],
     "material": "Acrylic,Cotton",
     "type": "hoodies",
-    "anime": "Demon Slayer"
+    "anime": "demon slayer"
   },
   {
     "id": 3,
@@ -78,7 +78,7 @@
     "size": ["XS", "S", "M"],
     "material": "Polyester",
     "type": "hoodies",
-    "anime": "Spy x Family"
+    "anime": "spy x family"
   },
   {
     "id": 4,
@@ -102,7 +102,7 @@
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "100% Cotton",
     "type": "shirts",
-    "anime": "Berserk"
+    "anime": "berserk"
   },
   {
     "id": 5,
@@ -120,7 +120,7 @@
     "size": ["XS", "S", "M"],
     "material": "100% Cotton",
     "type": "shirts",
-    "anime": "My Hero Academia"
+    "anime": "my hero academia"
   },
   {
     "id": 6,
@@ -144,7 +144,7 @@
     "size": ["XS", "S", "M"],
     "material": "100% Cotton",
     "type": "shirts",
-    "anime": "Hunter x Hunter"
+    "anime": "hunter x hunter"
   },
   {
     "id": 7,
@@ -168,7 +168,7 @@
     "size": ["ONE SIZE"],
     "material": "Polyester",
     "type": "hats",
-    "anime": "Tokyo Ghoul"
+    "anime": "tokyo ghoul"
   },
   {
     "id": 8,
@@ -192,7 +192,7 @@
     "size": ["8.3x4x2 Inch"],
     "material": "Cotton, Denim",
     "type": "hats",
-    "anime": "One Piece"
+    "anime": "one piece"
   },
   {
     "id": 9,
@@ -216,7 +216,7 @@
     "size": ["ONE SIZE"],
     "material": "Polyester",
     "type": "hats",
-    "anime": "Attack on Titan"
+    "anime": "attack on titan"
   },
   {
     "id": 10,
@@ -234,7 +234,7 @@
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "nylon,Rayon",
     "type": "pants",
-    "anime": "Demon Slayer"
+    "anime": "demon slayer"
   },
   {
     "id": 11,
@@ -252,7 +252,7 @@
     "size": ["M"],
     "material": "nylon,Rayon",
     "type": "pants",
-    "anime": "Baki"
+    "anime": "baki"
   },
   {
     "id": 12,
@@ -270,7 +270,7 @@
     "size": ["M", "L"],
     "material": "Polyester",
     "type": "pants",
-    "anime": "Tokyo Revengers"
+    "anime": "tokyo revengers"
   },
   {
     "id": 13,
@@ -291,7 +291,7 @@
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "Polyester",
     "type": "cosplay costumes",
-    "anime": "Tokyo Revengers"
+    "anime": "tokyo revengers"
   },
   {
     "id": 14,
@@ -312,7 +312,7 @@
     "size": ["M"],
     "material": "Polyester",
     "type": "cosplay costumes",
-    "anime": "Bleach"
+    "anime": "bleach"
   },
   {
     "id": 15,
@@ -336,7 +336,7 @@
     "size": ["M", "L"],
     "material": "Polyester",
     "type": "cosplay costumes",
-    "anime": "One Piece"
+    "anime": "one piece"
   },
   {
     "id": 16,
@@ -357,7 +357,7 @@
     "size": ["10cm"],
     "material": "PVC",
     "type": "figures",
-    "anime": "Dragon Ball"
+    "anime": "dragon ball"
   },
   {
     "id": 17,
@@ -378,7 +378,7 @@
     "size": ["12.5cm"],
     "material": "PVC",
     "type": "figures",
-    "anime": "One Piece"
+    "anime": "one piece"
   },
   {
     "id": 18,
@@ -399,7 +399,7 @@
     "size": ["13cm"],
     "material": "PVC",
     "type": "figures",
-    "anime": "Demon Slayer"
+    "anime": "demon slayer"
   },
   {
     "id": 19,
@@ -420,7 +420,7 @@
     "size": ["3cm * 13cm"],
     "material": "Zinc alloy",
     "type": "accessories",
-    "anime": "My Hero Academia"
+    "anime": "my hero academia"
   },
   {
     "id": 20,
@@ -441,7 +441,7 @@
     "size": ["1.1inch * 1.4inch"],
     "material": "Metal",
     "type": "accessories",
-    "anime": "Demon Slayer"
+    "anime": "demon slayer"
   },
   {
     "id": 21,
@@ -462,7 +462,7 @@
     "size": ["5cm"],
     "material": "Metal",
     "type": "accessories",
-    "anime": "Chainsaw Man"
+    "anime": "chainsaw man"
   },
   {
     "id": 22,
@@ -507,7 +507,7 @@
     "size": ["36cm * 27cm"],
     "material": "Plush",
     "type": "anime pillow",
-    "anime": "Demon Slayer"
+    "anime": "demon slayer"
   },
   {
     "id": 24,
@@ -528,6 +528,6 @@
     "size": ["450mm * 450mm"],
     "material": "Plush",
     "type": "anime pillow",
-    "anime": "One Piece"
+    "anime": "one piece"
   }
 ]

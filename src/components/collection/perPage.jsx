@@ -7,7 +7,7 @@ import Select from "@mui/material/Select";
 
 const PerPage = ({ handleItemsPerPageChange, itemsPerPage }) => {
   return (
-    <Box sx={{ minWidth: 130 }}>
+    <Box sx={{ minWidth: 100 }}>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">Items/Page</InputLabel>
         <Select

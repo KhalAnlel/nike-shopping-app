@@ -14,7 +14,7 @@ import Cart from "../collection/cart";
 import WishlistContext from "../../wishlistContext";
 import CartContext from "../../cartContext";
 import { useContext } from "react";
-import { Stack, styled } from "@mui/material";
+import { Stack } from "@mui/material";
 import logo from "../../logo.png";
 
 export default function TopNavbar() {
@@ -41,7 +41,10 @@ export default function TopNavbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ height: "60px" }}>
+      <AppBar
+        position="static"
+        sx={{ height: "60px", bgcolor: "rgb(59, 113, 202)" }}
+      >
         <Toolbar>
           <Box
             width={"130px"}
@@ -69,7 +72,7 @@ export default function TopNavbar() {
                 fontSize={14}
                 fontWeight={700}
                 width="40px"
-                height="40px"
+                height="20px"
                 p={1}
                 textAlign={"center"}
                 display={"flex"}
@@ -90,7 +93,7 @@ export default function TopNavbar() {
                 fontSize={14}
                 fontWeight={700}
                 width="60px"
-                height="40px"
+                height="20px"
                 p={1}
                 textAlign={"center"}
                 display={"flex"}
@@ -111,7 +114,7 @@ export default function TopNavbar() {
                 fontSize={14}
                 fontWeight={700}
                 width="40px"
-                height="40px"
+                height="20px"
                 p={1}
                 textAlign={"center"}
                 display={"flex"}

@@ -14,28 +14,33 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 export const WhyUs = () => {
   return (
-    <Box bgcolor="grey" p="10px" display="flex" justifyContent="space-around">
+    <Box
+      bgcolor="rgb(59, 113, 202)"
+      p="10px"
+      display="flex"
+      justifyContent="space-around"
+    >
       <StyledBox>
         <LocalShippingTwoToneIcon
-          sx={{ fontSize: { xs: "12pt", sm: "20pt", md: "30pt" } }}
+          sx={{ fontSize: { xs: "14pt", sm: "20pt", md: "30pt" } }}
         />
-        <Typography sx={{ fontSize: { xs: "6pt", sm: "10pt", md: "14pt" } }}>
+        <Typography sx={{ fontSize: { xs: "8pt", sm: "10pt", md: "14pt" } }}>
           Fast and Free Shipping
         </Typography>
       </StyledBox>
       <StyledBox>
         <LocalOfferTwoToneIcon
-          sx={{ fontSize: { xs: "12pt", sm: "20pt", md: "30pt" } }}
+          sx={{ fontSize: { xs: "14pt", sm: "20pt", md: "30pt" } }}
         />
-        <Typography sx={{ fontSize: { xs: "6pt", sm: "10pt", md: "14pt" } }}>
+        <Typography sx={{ fontSize: { xs: "8pt", sm: "10pt", md: "14pt" } }}>
           Lowest Price
         </Typography>
       </StyledBox>
       <StyledBox>
         <EmojiEventsTwoToneIcon
-          sx={{ fontSize: { xs: "12pt", sm: "20pt", md: "30pt" } }}
+          sx={{ fontSize: { xs: "14pt", sm: "20pt", md: "30pt" } }}
         />
-        <Typography sx={{ fontSize: { xs: "6pt", sm: "10pt", md: "14pt" } }}>
+        <Typography sx={{ fontSize: { xs: "8pt", sm: "10pt", md: "14pt" } }}>
           Longest Warranty Offer
         </Typography>
       </StyledBox>

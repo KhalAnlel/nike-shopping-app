@@ -57,7 +57,7 @@ export const ByCategories = () => {
   return (
     <>
       <Box marginTop={7}>
-        <Typography textAlign="center" variant="h4" fontWeight={700}>
+        <Typography textAlign="center" variant="h5" fontWeight={700}>
           SEARCH BY CATEGORY
         </Typography>
         <Box display="flex" justifyContent="center" alignItems="center">
@@ -69,10 +69,14 @@ export const ByCategories = () => {
         display="flex"
         justifyContent="center"
         flexWrap="wrap"
-        gap={2}
+        gap={1}
         m={"auto"}
         marginTop={4}
-        sx={{ width: { md: "70%", sm: "90%" } }}
+        sx={{
+          width: {
+            lg: "90%",
+          },
+        }}
       >
         {categories.map((item) => (
           <Box key={item.id} maxWidth={180} boxShadow={2} margin="auto">
