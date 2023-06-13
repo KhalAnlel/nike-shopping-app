@@ -2,7 +2,7 @@ import React from "react";
 import "../../../styles/buyBtn.css";
 import CartContext from "../../../cartContext";
 import { useContext } from "react";
-import { Box, Chip, IconButton, Snackbar, Typography } from "@mui/material";
+import { Box, Chip, IconButton, Snackbar } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 const BuyBtn = ({
   finalPrice,

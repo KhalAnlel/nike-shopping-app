@@ -43,9 +43,19 @@ export default function TopNavbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ height: "60px" }}>
         <Toolbar>
-          <Link to="/" className="logo">
-            <img src={logo} width="100%" />
-          </Link>
+          <Box
+            width={"130px"}
+            sx={{
+              ":hover": {
+                transform: "scale(1.1)",
+                transition: "0.3s linear",
+              },
+            }}
+          >
+            <Link to="/" className="logo">
+              <img src={logo} width="100%" />
+            </Link>
+          </Box>
           <Stack
             flexDirection={"row"}
             gap={2}
@@ -56,12 +66,18 @@ export default function TopNavbar() {
             <Link to="/">
               <Typography
                 color={"white"}
+                fontSize={14}
                 fontWeight={700}
-                fontFamily={"cursive"}
+                width="40px"
+                height="40px"
+                p={1}
+                textAlign={"center"}
+                display={"flex"}
+                alignItems={"center"}
                 sx={{
                   ":hover": {
-                    transform: "scale(1.1)",
-                    transition: "0.5s linear",
+                    borderRadius: "10%",
+                    bgcolor: "rgb(255,255,255,0.05)",
                   },
                 }}
               >
@@ -71,12 +87,18 @@ export default function TopNavbar() {
             <Link to="/collection/all">
               <Typography
                 color={"white"}
+                fontSize={14}
                 fontWeight={700}
-                fontFamily={"cursive"}
+                width="60px"
+                height="40px"
+                p={1}
+                textAlign={"center"}
+                display={"flex"}
+                alignItems={"center"}
                 sx={{
                   ":hover": {
-                    transform: "scale(1.1)",
-                    transition: "0.5s linear",
+                    borderRadius: "10%",
+                    bgcolor: "rgb(255,255,255,0.05)",
                   },
                 }}
               >
@@ -86,12 +108,18 @@ export default function TopNavbar() {
             <Link to="/about">
               <Typography
                 color={"white"}
+                fontSize={14}
                 fontWeight={700}
-                fontFamily={"cursive"}
+                width="40px"
+                height="40px"
+                p={1}
+                textAlign={"center"}
+                display={"flex"}
+                alignItems={"center"}
                 sx={{
                   ":hover": {
-                    transform: "scale(1.1)",
-                    transition: "0.5s linear",
+                    borderRadius: "10%",
+                    bgcolor: "rgb(255,255,255,0.05)",
                   },
                 }}
               >
