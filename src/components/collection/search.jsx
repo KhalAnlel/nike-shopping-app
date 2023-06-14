@@ -19,10 +19,11 @@ const Search = () => {
   }
   const handleReset = () => {
     setSearchValue("");
+    navigate(`/collection`);
   };
 
   return (
-    <Box m={"auto"} mt={6} width={"500px"}>
+    <Box m={"auto"} mt={6}>
       <form class="form" onSubmit={handleSubmit}>
         <IconButton onClick={handleSubmit}>
           <SearchIcon fontSize="medium" />

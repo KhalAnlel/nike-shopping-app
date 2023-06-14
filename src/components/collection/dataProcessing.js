@@ -5,9 +5,13 @@ export const filterData = (category, data) => {
 
   if (animeSeries.includes(category)) {
     filteredData = data.filter((item) => item.anime === category);
-  } else if (category) {
+  } else if (category === undefined) {
+    filteredData = data;
+  } else if (category && category !== "") {
     filteredData = data.filter(
-      (item) => item.type.includes(category) || item.anime.includes(category)
+      (item) =>
+        item.type.includes(category.toLowerCase()) ||
+        item.anime.includes(category.toLowerCase())
     );
   }
 

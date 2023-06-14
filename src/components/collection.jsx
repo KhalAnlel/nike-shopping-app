@@ -40,12 +40,11 @@ export const Collection = () => {
     <Box p={2} display={"flex"} flexDirection={"column"}>
       <Box>
         <Typography fontWeight={700} fontSize={20}>
-          ANIME {category === "all" ? "PRODUCTS" : `${category.toUpperCase()} `}
+          ANIME PRODUCTS
         </Typography>
         <Typography mt={3}>
-          Buy High Quality Supercool And Cute Designed Anime{" "}
-          {category ? `${category} ` : ""}For Men Or Women With Free Shipping To
-          All Over The World On All Order.
+          Buy High Quality Supercool And Cute Designed Anime For Men Or Women
+          With Free Shipping To All Over The World On All Order.
         </Typography>
       </Box>
       <Search />
