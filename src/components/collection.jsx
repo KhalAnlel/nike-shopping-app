@@ -18,7 +18,7 @@ export const Collection = () => {
   const [itemsPerPage, setItemsPerPage] = useState(20);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const filteredData = filterData(category, data);
+  const { filteredData, notFound } = filterData(category, data);
   const sortedData = sortDataFunc(sortData, filteredData);
 
   const totalCards = sortedData.length;
@@ -60,7 +60,7 @@ export const Collection = () => {
           <SortBy handleSortChange={handleSortChange} sortData={sortData} />
         </Stack>
         <Stack alignItems="center">
-          <ProductsGrid currentCards={currentCards} />
+          <ProductsGrid currentCards={currentCards} notFound={notFound} />
           <Stack mt={5}>
             <Pages
               setCurrentPage={setCurrentPage}

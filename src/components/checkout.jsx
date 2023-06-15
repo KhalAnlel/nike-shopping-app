@@ -6,6 +6,7 @@ import data from "../data/allProducts.json";
 import PaidIcon from "@mui/icons-material/Paid";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import DeleteIcon from "@mui/icons-material/Delete";
+
 import {
   Box,
   Button,
@@ -146,6 +147,14 @@ const Checkout = () => {
               <TextField
                 id="standard-basic"
                 label="Full Name:"
+                variant="standard"
+                sx={{ width: "70%" }}
+                color="success"
+                required
+              />
+              <TextField
+                id="standard-basic"
+                label="Email:"
                 variant="standard"
                 sx={{ width: "70%" }}
                 color="success"

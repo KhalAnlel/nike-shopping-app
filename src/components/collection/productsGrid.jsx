@@ -6,8 +6,11 @@ import Like from "../common/like";
 import WishlistContext from "../../wishlistContext";
 import { useContext } from "react";
 
-const ProductsGrid = ({ currentCards }) => {
+const ProductsGrid = ({ currentCards, notFound }) => {
   const { likedItems, handleLike } = useContext(WishlistContext);
+  if (notFound) {
+    return <Typography>No items found.</Typography>;
+  }
   return (
     <Box
       display="flex"

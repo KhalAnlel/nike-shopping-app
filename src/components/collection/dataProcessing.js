@@ -2,17 +2,25 @@ import animeSeries from "../../data/animeSeries.json";
 
 export const filterData = (category, data) => {
   let filteredData = [];
+  let notFound = false;
 
   if (animeSeries.includes(category)) {
     filteredData = data.filter((item) => item.anime === category);
+    notFound = false;
   } else if (category === undefined) {
     filteredData = data;
+    notFound = false;
   } else if (category && category !== "") {
     filteredData = data.filter(
       (item) =>
         item.type.includes(category.toLowerCase()) ||
         item.anime.includes(category.toLowerCase())
     );
+    notFound = false;
+  }
+
+  if (filteredData.length === 0) {
+    notFound = true;
   }
 
   if (category === "all") {
@@ -21,15 +29,17 @@ export const filterData = (category, data) => {
 
   if (category === "latest") {
     filteredData = data.slice(-50).reverse();
+    notFound = false;
   }
 
   if (category === "best rated") {
     filteredData = data
       .filter((item) => item.rate >= 1)
       .sort((a, b) => b.rate - a.rate);
+    notFound = false;
   }
 
-  return filteredData;
+  return { filteredData, notFound };
 };
 
 export const sortDataFunc = (sortType, data) => {
