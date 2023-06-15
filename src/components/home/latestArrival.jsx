@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LaunchIcon from "@mui/icons-material/Launch";
 import {
   Box,
@@ -15,7 +15,11 @@ import LearnMoreBtn from "./learnMoreBtn";
 import data from "../../data/allProducts.json";
 
 export const LatestArrival = () => {
+  const navigate = useNavigate();
   const latestItems = data.slice(-4);
+  const handleClick = (id) => {
+    navigate(`/collection/productDetails/${id}`);
+  };
   return (
     <>
       <Box marginTop={5}>
@@ -36,8 +40,18 @@ export const LatestArrival = () => {
         gap={3}
       >
         {latestItems.map((item) => (
-          <CardActionArea sx={{ maxWidth: "250px" }} key={item.id}>
-            <Card sx={{ maxWidth: 250, margin: "auto", boxShadow: 0 }}>
+          <CardActionArea
+            sx={{ maxWidth: { lg: "250px", xs: "300px" } }}
+            key={item.id}
+            onClick={() => handleClick(item.id)}
+          >
+            <Card
+              sx={{
+                maxWidth: { lg: "250px", xs: "300px" },
+                margin: "auto",
+                boxShadow: 0,
+              }}
+            >
               <Typography
                 position="absolute"
                 top={10}
@@ -85,7 +99,7 @@ export const LatestArrival = () => {
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
                 <Chip label={`$${item.price}`} />
-                <LearnMoreBtn data={item.id} />
+                <LearnMoreBtn id={item.id} />
               </CardActions>
             </Card>
           </CardActionArea>

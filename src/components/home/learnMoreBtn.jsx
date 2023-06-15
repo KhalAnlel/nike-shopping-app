@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const LearnMoreBtn = ({ data }) => {
+const LearnMoreBtn = ({ id }) => {
   return (
     <Link
-      to={`/collection/productDetails/${data}`}
+      to={`/collection/productDetails/${id}`}
       style={{
         padding: "10px",
         backgroundColor: "#3b71ca",

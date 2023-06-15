@@ -23,24 +23,22 @@ const Search = () => {
   };
 
   return (
-    <Box m={"auto"} mt={6}>
-      <form class="form" onSubmit={handleSubmit}>
-        <IconButton onClick={handleSubmit}>
-          <SearchIcon fontSize="medium" />
-        </IconButton>
-        <input
-          className="input"
-          placeholder="Search here..."
-          required=""
-          type="text"
-          value={searchValue}
-          onChange={handleSearch}
-        />
-        <IconButton onClick={handleReset}>
-          <CloseIcon fontSize="small" />
-        </IconButton>
-      </form>
-    </Box>
+    <form className="form" onSubmit={handleSubmit}>
+      <IconButton onClick={handleSubmit} sx={{ ml: "10px" }}>
+        <SearchIcon fontSize="medium" />
+      </IconButton>
+      <input
+        className="input"
+        placeholder="Search here..."
+        required=""
+        type="text"
+        value={searchValue}
+        onChange={handleSearch}
+      />
+      <IconButton onClick={handleReset} sx={{ mr: "10px" }}>
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </form>
   );
 };
 

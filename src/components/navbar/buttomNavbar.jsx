@@ -12,7 +12,7 @@ export const ButtomNavbar = () => {
     setValue(newValue);
   };
   return (
-    <Box sx={{ bgcolor: "#fafafa", display: "flex", justifyContent: "center" }}>
+    <Box sx={{ bgcolor: "#f2f2f2", display: "flex", justifyContent: "center" }}>
       <Tabs
         variant="scrollable"
         scrollButtons="auto"

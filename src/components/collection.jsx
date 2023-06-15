@@ -47,7 +47,9 @@ export const Collection = () => {
           With Free Shipping To All Over The World On All Order.
         </Typography>
       </Box>
-      <Search />
+      <Box m={"auto"} mt={6} width={"350px"}>
+        <Search />
+      </Box>
       <Box>
         <Stack direction="row" mt={4} alignItems="center" gap={4}>
           <FilterDrawer setCurrentPage={setCurrentPage} />

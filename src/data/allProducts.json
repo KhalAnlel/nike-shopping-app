@@ -290,7 +290,7 @@
     "colors": ["For Girls", "For Boys"],
     "size": ["XS", "S", "M", "L", "XL", "XXL"],
     "material": "Polyester",
-    "type": "cosplay costumes",
+    "type": "cosplay",
     "anime": "tokyo revengers"
   },
   {
@@ -311,7 +311,7 @@
     "colors": ["Full Set"],
     "size": ["M"],
     "material": "Polyester",
-    "type": "cosplay costumes",
+    "type": "cosplay",
     "anime": "bleach"
   },
   {
@@ -335,7 +335,7 @@
     "colors": ["Full Set"],
     "size": ["M", "L"],
     "material": "Polyester",
-    "type": "cosplay costumes",
+    "type": "cosplay",
     "anime": "one piece"
   },
   {
@@ -482,7 +482,7 @@
     "colors": ["Light-Blue"],
     "size": ["28cm * 55cm"],
     "material": "Plush",
-    "type": "anime pillow",
+    "type": "pillows",
     "anime": "other"
   },
   {
@@ -506,7 +506,7 @@
     "colors": ["Tanjiro", "Nezuko", "Zenitsu"],
     "size": ["36cm * 27cm"],
     "material": "Plush",
-    "type": "anime pillow",
+    "type": "pillows",
     "anime": "demon slayer"
   },
   {
@@ -527,7 +527,7 @@
     "colors": ["Ace", "Luffy"],
     "size": ["450mm * 450mm"],
     "material": "Plush",
-    "type": "anime pillow",
+    "type": "pillows",
     "anime": "one piece"
   }
 ]

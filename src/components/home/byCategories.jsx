@@ -1,6 +1,6 @@
 import { Box, CardActionArea, CardMedia, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LaunchIcon from "@mui/icons-material/Launch";
 
 const categories = [
@@ -48,12 +48,16 @@ const categories = [
   },
   {
     id: 8,
-    title: "anime pillows",
+    title: "pillows",
     imageUrl: "https://www.pngmart.com/files/10/Anime-Pillow-PNG-Picture.png",
   },
 ];
 
 export const ByCategories = () => {
+  const navigate = useNavigate();
+  const handleClick = (title) => {
+    navigate(`collection/${title}`);
+  };
   return (
     <>
       <Box marginTop={7}>
@@ -79,14 +83,24 @@ export const ByCategories = () => {
         }}
       >
         {categories.map((item) => (
-          <Box key={item.id} maxWidth={180} boxShadow={2} margin="auto">
-            <CardActionArea href={`collection/${item.title}`}>
+          <Box key={item.id} maxWidth={"20%"} boxShadow={2}>
+            <CardActionArea onClick={() => handleClick(item.title)}>
               <CardMedia
                 component="img"
                 alt={item.title}
                 image={item.imageUrl}
               />
-              <Typography textAlign={"center"}>
+              <Typography
+                textAlign={"center"}
+                bgcolor={"#333"}
+                color={"#fff"}
+                sx={{
+                  fontSize: { xs: "8pt", md: "12pt" },
+                  ":hover": { color: "#3b71ca" },
+                }}
+                p={2}
+                fontWeight={600}
+              >
                 {item.title.toLocaleUpperCase()}
               </Typography>
             </CardActionArea>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LaunchIcon from "@mui/icons-material/Launch";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -12,6 +12,7 @@ import LearnMoreBtn from "./learnMoreBtn";
 import data from "../../data/allProducts.json";
 
 export const BestRated = () => {
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
   const cardPerPage = 4;
 
@@ -24,6 +25,9 @@ export const BestRated = () => {
   const sortedData = filteredData.sort((a, b) => b.rate - a.rate); // Sort in descending order
 
   const currentCards = sortedData.slice(indexOfFirstCard, indexOfLastCard);
+  const handleClick = (id) => {
+    navigate(`/collection/productDetails/${id}`);
+  };
   return (
     <>
       <Box marginTop={15}>
@@ -43,7 +47,11 @@ export const BestRated = () => {
         sx={{ marginTop: "20px", p: "10px" }}
       >
         {currentCards.map((data) => (
-          <CardActionArea key={data.id} sx={{ width: "250px" }}>
+          <CardActionArea
+            key={data.id}
+            sx={{ width: "250px" }}
+            onClick={() => handleClick(data.id)}
+          >
             <Card
               sx={{
                 maxWidth: 250,
@@ -74,7 +82,7 @@ export const BestRated = () => {
               </CardContent>
               <CardActions sx={{ justifyContent: "space-around" }}>
                 <Chip label={`$${data.price}`} />
-                <LearnMoreBtn data={data.id} />
+                <LearnMoreBtn id={data.id} />
               </CardActions>
             </Card>
           </CardActionArea>

@@ -5,13 +5,12 @@
 .form button {
   border: none;
   background: none;
-  color: #8b8ba7;
+  color: #3b71ca;
 }
 
 /* styling of whole input container */
 
 .form {
-  margin: auto;
   --timing: 0.3s;
   --border-height: 2px;
   --border-color: #3b71ca;
@@ -23,7 +22,6 @@
   height: 50px;
   display: flex;
   align-items: center;
-  padding-inline: 0.8em;
   border-radius: var(--border-radius);
   transition: border-radius 0.5s ease;
   background: #ffffff;
@@ -37,8 +35,6 @@
   background-color: transparent;
   width: 100%;
   height: 100%;
-  padding-inline: 0.5em;
-  padding-block: 0.7em;
   border: none;
   color: #333;
 }
