@@ -152,7 +152,7 @@ const Checkout = () => {
                   sx={{ width: "70%" }}
                   color="success"
                   required
-                  name="full_name"
+                  name="name"
                 />
                 <TextField
                   id="standard-basic"
