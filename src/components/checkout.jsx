@@ -138,103 +138,111 @@ const Checkout = () => {
             >
               Insert Your Information
             </Typography>
-            <Box
-              display="flex"
-              flexDirection="column"
-              sx={{ p: { xs: 0, md: 3 } }}
-              gap={2}
-            >
-              <TextField
-                id="standard-basic"
-                label="Full Name:"
-                variant="standard"
-                sx={{ width: "70%" }}
-                color="success"
-                required
-              />
-              <TextField
-                id="standard-basic"
-                label="Email:"
-                variant="standard"
-                sx={{ width: "70%" }}
-                color="success"
-                required
-              />
-
-              <TextField
-                id="standard-basic"
-                label="Phone No. 1:"
-                variant="standard"
-                sx={{ width: "70%" }}
-                color="success"
-                required
-              />
-
-              <TextField
-                id="standard-basic"
-                label="Phone No. 2 (optional):"
-                variant="standard"
-                sx={{ width: "70%" }}
-                color="success"
-              />
-
-              <FormControl variant="standard">
-                <InputLabel id="demo-simple-select-label">City:</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={city}
-                  label="City:"
-                  onChange={handleChange}
+            <form name="checkout" method="POST" data-netlify="true">
+              <Box
+                display="flex"
+                flexDirection="column"
+                sx={{ p: { xs: 0, md: 3 } }}
+                gap={2}
+              >
+                <TextField
+                  id="standard-basic"
+                  label="Full Name:"
+                  variant="standard"
                   sx={{ width: "70%" }}
+                  color="success"
                   required
-                >
-                  <MenuItem value="Al-Anbar">Al-Anbar</MenuItem>
-                  <MenuItem value="Babil">Babil</MenuItem>
-                  <MenuItem value="Baghdad">Baghdad</MenuItem>
-                  <MenuItem value="Basra">Basra</MenuItem>
-                  <MenuItem value="Dhi Qar">Dhi Qar</MenuItem>
-                  <MenuItem value="Al-Qādisiyyah">Al-Qādisiyyah</MenuItem>
-                  <MenuItem value="Diyala">Diyala</MenuItem>
-                  <MenuItem value="Duhok">Duhok</MenuItem>
-                  <MenuItem value="Erbil">Erbil</MenuItem>
-                  <MenuItem value="Halabja">Halabja</MenuItem>
-                  <MenuItem value="Karbala">Karbala</MenuItem>
-                  <MenuItem value="Kirkuk">Kirkuk</MenuItem>
-                  <MenuItem value="Maysan">Maysan</MenuItem>
-                  <MenuItem value="Muthanna">Muthanna</MenuItem>
-                  <MenuItem value="Najaf">Najaf</MenuItem>
-                  <MenuItem value="Ninawa">Ninawa</MenuItem>
-                  <MenuItem value="Salah Al-Din">Salah Al-Din</MenuItem>
-                  <MenuItem value="Sulaymaniyah">Sulaymaniyah</MenuItem>
-                  <MenuItem value="Wasit">Wasit</MenuItem>
-                </Select>
-              </FormControl>
+                  name="full_name"
+                />
+                <TextField
+                  id="standard-basic"
+                  label="Email:"
+                  variant="standard"
+                  sx={{ width: "70%" }}
+                  color="success"
+                  required
+                  name="email"
+                />
 
-              <TextField
-                id="standard-basic"
-                label="Address:"
-                variant="standard"
-                sx={{ width: "70%" }}
-                color="success"
-                required
-              />
-              <Typography display="flex" alignContent="center">
-                <PaidIcon sx={{ mr: "6px" }} />
-                Total Price:{"  "}
-                <span style={{ color: "red", marginLeft: "3px" }}>
-                  ${Math.ceil(totalPrice)}
-                </span>
-              </Typography>
-              <Typography display="flex" alignContent="center">
-                <LocalShippingIcon sx={{ mr: "6px" }} />
-                Shipping Fee:{" "}
-                <span style={{ color: "red", marginLeft: "3px" }}>Free</span>
-              </Typography>
-              <Button variant="contained" sx={{ mt: "30px" }}>
-                Submit and Buy
-              </Button>
-            </Box>
+                <TextField
+                  id="standard-basic"
+                  label="Phone No. 1:"
+                  variant="standard"
+                  sx={{ width: "70%" }}
+                  color="success"
+                  required
+                  name="phone_no1"
+                />
+
+                <TextField
+                  id="standard-basic"
+                  label="Phone No. 2 (optional):"
+                  variant="standard"
+                  sx={{ width: "70%" }}
+                  color="success"
+                  name="phone_no2"
+                />
+
+                <FormControl variant="standard">
+                  <InputLabel id="demo-simple-select-label">City:</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={city}
+                    label="City:"
+                    onChange={handleChange}
+                    sx={{ width: "70%" }}
+                    required
+                    name="city[]"
+                  >
+                    <MenuItem value="Al-Anbar">Al-Anbar</MenuItem>
+                    <MenuItem value="Babil">Babil</MenuItem>
+                    <MenuItem value="Baghdad">Baghdad</MenuItem>
+                    <MenuItem value="Basra">Basra</MenuItem>
+                    <MenuItem value="Dhi Qar">Dhi Qar</MenuItem>
+                    <MenuItem value="Al-Qādisiyyah">Al-Qādisiyyah</MenuItem>
+                    <MenuItem value="Diyala">Diyala</MenuItem>
+                    <MenuItem value="Duhok">Duhok</MenuItem>
+                    <MenuItem value="Erbil">Erbil</MenuItem>
+                    <MenuItem value="Halabja">Halabja</MenuItem>
+                    <MenuItem value="Karbala">Karbala</MenuItem>
+                    <MenuItem value="Kirkuk">Kirkuk</MenuItem>
+                    <MenuItem value="Maysan">Maysan</MenuItem>
+                    <MenuItem value="Muthanna">Muthanna</MenuItem>
+                    <MenuItem value="Najaf">Najaf</MenuItem>
+                    <MenuItem value="Ninawa">Ninawa</MenuItem>
+                    <MenuItem value="Salah Al-Din">Salah Al-Din</MenuItem>
+                    <MenuItem value="Sulaymaniyah">Sulaymaniyah</MenuItem>
+                    <MenuItem value="Wasit">Wasit</MenuItem>
+                  </Select>
+                </FormControl>
+
+                <TextField
+                  id="standard-basic"
+                  label="Address:"
+                  variant="standard"
+                  sx={{ width: "70%" }}
+                  color="success"
+                  required
+                  name="address"
+                />
+                <Typography display="flex" alignContent="center">
+                  <PaidIcon sx={{ mr: "6px" }} />
+                  Total Price:{"  "}
+                  <span style={{ color: "red", marginLeft: "3px" }}>
+                    ${Math.ceil(totalPrice)}
+                  </span>
+                </Typography>
+                <Typography display="flex" alignContent="center">
+                  <LocalShippingIcon sx={{ mr: "6px" }} />
+                  Shipping Fee:{" "}
+                  <span style={{ color: "red", marginLeft: "3px" }}>Free</span>
+                </Typography>
+                <Button variant="contained" sx={{ mt: "30px" }} type="submit">
+                  Submit and Buy
+                </Button>
+              </Box>
+            </form>
           </Box>
         </Box>
       )}
