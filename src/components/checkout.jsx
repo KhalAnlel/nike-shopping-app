@@ -138,7 +138,7 @@ const Checkout = () => {
             >
               Insert Your Information
             </Typography>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" netlify>
               <Box
                 display="flex"
                 flexDirection="column"
