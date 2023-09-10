@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import emailjs from "@emailjs/browser";
 import CartContext from "../cartContext";
 import data from "../data/allProducts.json";
 import PaidIcon from "@mui/icons-material/Paid";
@@ -48,6 +49,36 @@ const Checkout = () => {
 
   const handleDelete = (itemId) => {
     handleRemoveItem(itemId);
+  };
+
+  const form = useRef();
+
+  // Create a new array containing only the desired properties
+  const selectedData = filteredData.map((item) => ({
+    title: item.title,
+    color: item.color,
+    size: item.size,
+    quantity: item.quantity,
+  }));
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9ilfzy2",
+        "template_me2rbgl",
+        form.current,
+        "sszBIyYRSm_3x7Srf"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -138,7 +169,7 @@ const Checkout = () => {
             >
               Insert Your Information
             </Typography>
-            <form name="contact" method="POST" netlify>
+            <form ref={form} onSubmit={sendEmail}>
               <Box
                 display="flex"
                 flexDirection="column"
@@ -152,7 +183,7 @@ const Checkout = () => {
                   sx={{ width: "70%" }}
                   color="success"
                   required
-                  name="name"
+                  name="user_name"
                 />
                 <TextField
                   id="standard-basic"
@@ -161,7 +192,7 @@ const Checkout = () => {
                   sx={{ width: "70%" }}
                   color="success"
                   required
-                  name="email"
+                  name="user_email"
                 />
 
                 <TextField
@@ -171,7 +202,7 @@ const Checkout = () => {
                   sx={{ width: "70%" }}
                   color="success"
                   required
-                  name="phone_no1"
+                  name="user_phone_no1"
                 />
 
                 <TextField
@@ -180,7 +211,7 @@ const Checkout = () => {
                   variant="standard"
                   sx={{ width: "70%" }}
                   color="success"
-                  name="phone_no2"
+                  name="user_phone_no2"
                 />
 
                 <FormControl variant="standard">
@@ -193,7 +224,7 @@ const Checkout = () => {
                     onChange={handleChange}
                     sx={{ width: "70%" }}
                     required
-                    name="city[]"
+                    name="user_city"
                   >
                     <MenuItem value="Al-Anbar">Al-Anbar</MenuItem>
                     <MenuItem value="Babil">Babil</MenuItem>
@@ -224,7 +255,7 @@ const Checkout = () => {
                   sx={{ width: "70%" }}
                   color="success"
                   required
-                  name="address"
+                  name="user_address"
                 />
                 <Typography display="flex" alignContent="center">
                   <PaidIcon sx={{ mr: "6px" }} />
@@ -232,13 +263,28 @@ const Checkout = () => {
                   <span style={{ color: "red", marginLeft: "3px" }}>
                     ${Math.ceil(totalPrice)}
                   </span>
+                  <input
+                    type="hidden"
+                    value={`$${Math.ceil(totalPrice)}`}
+                    name="total_price"
+                  />
+                  <input
+                    type="hidden"
+                    value={JSON.stringify(selectedData)}
+                    name="items"
+                  />
                 </Typography>
                 <Typography display="flex" alignContent="center">
                   <LocalShippingIcon sx={{ mr: "6px" }} />
                   Shipping Fee:{" "}
                   <span style={{ color: "red", marginLeft: "3px" }}>Free</span>
                 </Typography>
-                <Button variant="contained" sx={{ mt: "30px" }} type="submit">
+                <Button
+                  variant="contained"
+                  sx={{ mt: "30px" }}
+                  type="submit"
+                  value="Send"
+                >
                   Submit and Buy
                 </Button>
               </Box>
