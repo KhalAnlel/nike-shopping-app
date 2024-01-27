@@ -7,7 +7,7 @@ const LearnMoreBtn = ({ id }) => {
       to={`/collection/productDetails/${id}`}
       style={{
         padding: "10px",
-        backgroundColor: "#3b71ca",
+        backgroundColor: "#000",
         borderRadius: "4px",
         color: "aliceblue",
       }}

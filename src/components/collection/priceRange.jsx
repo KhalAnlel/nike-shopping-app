@@ -65,7 +65,7 @@ export default function PriceRange() {
             onChange={(event) => handleTextFieldChange(event, 1)}
           />
         </Stack>
-        <Button variant="contained">Apply</Button>
+        <Button variant="contained" sx={{backgroundColor:"black"}}>Apply</Button>
       </Box>
     </Box>
   );

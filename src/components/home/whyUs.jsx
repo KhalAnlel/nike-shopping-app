@@ -15,7 +15,7 @@ const StyledBox = styled(Box)(({ theme }) => ({
 export const WhyUs = () => {
   return (
     <Box
-      bgcolor="rgb(59, 113, 202)"
+      bgcolor="rgb(0, 0, 0)"
       p="10px"
       display="flex"
       justifyContent="space-around"

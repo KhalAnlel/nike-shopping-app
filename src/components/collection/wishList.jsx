@@ -59,7 +59,7 @@ const WishList = () => {
               </Typography>
               <Typography color={"red"}>${item.price}</Typography>
               <IconButton color="primary" aria-label="add to shopping cart">
-                <DeleteIcon onClick={() => handleDelete(item.id)} />
+                <DeleteIcon onClick={() => handleDelete(item.id)} color="error"/>
               </IconButton>
             </Box>
           </Box>

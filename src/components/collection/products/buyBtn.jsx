@@ -43,8 +43,7 @@ const BuyBtn = ({
     <Box display={"flex"} gap={2} alignItems={"center"}>
       <Chip
         label={"$" + finalPrice}
-        color="primary"
-        sx={{ p: "5px", fontSize: "16px", fontWeight: 600 }}
+        sx={{ p: "10px", fontSize: "16px", fontWeight: 600 }}
       />
 
       <button className="btn" onClick={() => handleClick(id)}>

@@ -9,7 +9,7 @@ export const ByCategories = () => {
   const handleClick = (title) => {
     navigate(`collection/${title}`);
   };
-  const someCategories = categories.slice(0,7);
+  const someCategories = categories.slice(0,6);
   return (
     <>
       <Box marginTop={10}>

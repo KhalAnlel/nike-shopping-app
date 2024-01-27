@@ -4,7 +4,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Badge from "@mui/material/Badge";
 import Menu from "@mui/material/Menu";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
@@ -43,7 +42,7 @@ export default function TopNavbar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        sx={{ height: "60px", bgcolor: "rgb(59, 113, 202)" }}
+        sx={{ height: "60px", bgcolor: "rgb(0, 0, 0)" }}
       >
         <Toolbar>
           <Box

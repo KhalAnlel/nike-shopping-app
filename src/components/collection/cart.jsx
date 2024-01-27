@@ -73,7 +73,7 @@ const Cart = () => {
                 aria-label="add to shopping cart"
                 onClick={() => handleDelete(item.index)}
               >
-                <DeleteIcon />
+                <DeleteIcon color="error"/>
               </IconButton>
             </Box>
           </Box>

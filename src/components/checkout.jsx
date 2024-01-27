@@ -119,7 +119,7 @@ const Checkout = () => {
 
             <Typography
               textAlign="center"
-              color="primary"
+              color="black"
               fontSize={30}
               fontWeight={700}
               >
@@ -199,7 +199,7 @@ const Checkout = () => {
                 mt={3}
                 fontSize={20}
                 fontWeight={700}
-                color="#3b71ca"
+                color="#000"
               >
                 Insert Your Information
               </Typography>
@@ -317,7 +317,7 @@ const Checkout = () => {
                   </Typography>
                   <Button
                     variant="contained"
-                    sx={{ mt: "30px" }}
+                    sx={{ mt: "30px",backgroundColor:"#000" ,":hover":{backgroundColor:"#333"}}}
                     type="submit"
                     value="Send"
                   >

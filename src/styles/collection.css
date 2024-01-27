@@ -67,19 +67,19 @@
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #3b71ca;
+  color: #000;
   transition: all 1000ms;
   font-size: 15px;
   position: relative;
   overflow: hidden;
-  outline: 2px solid #3b71ca;
+  outline: 2px solid #000;
 }
 
 .button:hover {
   color: #ffffff;
   transform: scale(1.1);
-  outline: 2px solid #3b71ca;
-  box-shadow: 4px 5px 17px -4px #3b71ca;
+  outline: 2px solid #000;
+  box-shadow: 4px 5px 17px -4px #000;
 }
 
 .button::before {
@@ -89,7 +89,7 @@
   top: 0;
   width: 0;
   height: 100%;
-  background-color: #3b71ca;
+  background-color: #000;
   transform: skewX(45deg);
   z-index: -1;
   transition: width 1000ms;
