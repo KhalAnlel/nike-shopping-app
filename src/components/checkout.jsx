@@ -114,13 +114,15 @@ const Checkout = () => {
         </Box>
 
         {filteredData.length === 0 ? (
-          <Box p={5}>
+          <Box p={5} height={"70vh"} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+            <Box>
+
             <Typography
               textAlign="center"
               color="primary"
               fontSize={30}
               fontWeight={700}
-            >
+              >
               Empty Cart
             </Typography>
             <Typography
@@ -135,9 +137,10 @@ const Checkout = () => {
                   },
                 },
               }}
-            >
+              >
               <Link to={"/collection/all"}>Try to add something in cart</Link>
             </Typography>
+              </Box>
           </Box>
         ) : (
           <Box
@@ -160,6 +163,7 @@ const Checkout = () => {
                       src={item["images"][0].url}
                       width="200px"
                       height="200px"
+                      alt={item["images"][0].url}
                     />
                   </Box>
                   <Typography color={"#333"} fontWeight={700}>

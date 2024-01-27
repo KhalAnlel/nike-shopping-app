@@ -22,8 +22,8 @@ export const ButtomNavbar = () => {
         indicatorColor={""}
       >
         {categories.map((item) => (
-          <Link key={item} to={`/collection/${item}`} className="link">
-            <Tab key={item} label={`${item}`} />
+          <Link key={item.title} to={`/collection/${item.title}`} className="link">
+            <Tab key={item.title} label={`${item.title}`} />
           </Link>
         ))}
       </Tabs>

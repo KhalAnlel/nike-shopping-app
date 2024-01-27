@@ -18,7 +18,6 @@ export const Footer = () => {
             <Box className="footerColumn">
               <h3>SHOP</h3>
               <Link to="#">Shop By Categories</Link>
-              <Link to="#">Shop By Anime</Link>
             </Box>
           </Grid>
           <Grid item xs={6} sm={4}>
@@ -45,7 +44,7 @@ export const Footer = () => {
               </Box>
               <Box className="contactDiv">
                 <EmailIcon />
-                <Typography variant="overline">info@animeshop.com</Typography>
+                <Typography variant="overline">info@nike.com</Typography>
               </Box>
             </Box>
           </Grid>

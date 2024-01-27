@@ -7,7 +7,6 @@ import ScrollToTop from "./components/common/scrollToTop";
 import { WishlistProvider } from "./wishlistContext";
 import { CartProvider } from "./cartContext";
 import Checkout from "./components/checkout";
-import About from "./components/about";
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
               element={<ProductDetails />}
             />{" "}
             <Route path="/checkout/" element={<Checkout />} />{" "}
-            <Route path="/about" element={<About />} />{" "}
           </Routes>{" "}
         </WishlistProvider>{" "}
       </CartProvider>{" "}

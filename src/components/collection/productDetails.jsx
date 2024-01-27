@@ -10,7 +10,6 @@ import Quantity from "./products/quantity";
 import BuyBtn from "./products/buyBtn";
 import SmartSlider from "react-smart-slider";
 import Description from "./products/description";
-import CustomerReview from "./products/customerReview";
 import data from "../../data/allProducts.json";
 import "../../styles/productDetails.css";
 import { useState } from "react";
@@ -52,7 +51,7 @@ export const ProductDetails = () => {
         <Box>
           <BreadCrumb title={data[productID - 1].title} />
           <Box
-            sx={{ width: { xs: "90%", sm: "80%", md: "90%" }, margin: "auto" }}
+            sx={{ width:"500px", margin: "auto" }}
           >
             <SmartSlider
               slides={data[productID - 1]["images"]}
@@ -115,9 +114,8 @@ export const ProductDetails = () => {
         images={data[productID - 1]["images"]}
         description={data[productID - 1]["description"]}
         material={data[productID - 1]["material"]}
-        itemType={data[productID - 1]["type"]}
+        itemCategory={data[productID - 1]["category"]}
       />
-      <CustomerReview />
     </Box>
   );
 };

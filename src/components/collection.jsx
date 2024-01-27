@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import FilterDrawer from "./collection/filterDrawer";
 import ProductsGrid from "./collection/productsGrid";
 import SortBy from "./collection/sortBy";
@@ -9,7 +9,6 @@ import PerPage from "./collection/perPage";
 import Pages from "./common/pages";
 import data from "../data/allProducts.json";
 import { filterData, sortDataFunc } from "./collection/dataProcessing";
-
 import Search from "./collection/search";
 
 export const Collection = () => {
@@ -40,11 +39,7 @@ export const Collection = () => {
     <Box p={2} display={"flex"} flexDirection={"column"}>
       <Box>
         <Typography fontWeight={700} fontSize={20}>
-          ANIME PRODUCTS
-        </Typography>
-        <Typography mt={3}>
-          Buy High Quality Supercool And Cute Designed Anime For Men Or Women
-          With Free Shipping To All Over The World On All Order.
+          <Link to={"/collection"}>All Products</Link>
         </Typography>
       </Box>
       <Box m={"auto"} mt={6} width={"350px"}>

@@ -1,504 +1,436 @@
-[{
+[
+    {
         "id": 1,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sfbff257942074ad8a8a228edd433ec2dQ.jpg?v=1684769133"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f36d4e1f-127b-450e-95c8-606e5b57b2fa/dunk-low-womens-shoes-17jLs2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sf6e51499a20546c98a83ae565d88261ac.jpg?v=1684769136"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a1145bc0-3475-468c-8155-7b7c6a3a768d/dunk-low-womens-shoes-17jLs2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sd63ab5fa11bd4cadb48bfc27bde49000Z.jpg?v=1684769138"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b419d97a-4aaa-4d9f-9878-0d7b8fc4a742/dunk-low-womens-shoes-17jLs2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sa81ffbb0539d468fb554401b1eec245f5.jpg?v=1684769144"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a7d77886-1582-46a2-9a46-6600ccd2552d/dunk-low-womens-shoes-17jLs2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S9b45367f89504e5788456cbf2fb792a0x.jpg?v=1684769123"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70cc1804-c186-4aad-a1e9-e5cdd3b1e7fd/dunk-low-womens-shoes-17jLs2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S6955decf173443779921ffdf3282633fw.jpg?v=1684769131"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e13c3dcf-066a-4823-ac27-05a8c124acb4/dunk-low-womens-shoes-17jLs2.png"
             }
         ],
-        "title": "Fashionably Hashira Muichiro Tokito Casual Anime Hoodie Embody The Spirit Of Demon Slayer With Fashion-Forward Men's Pullover",
-        "description": "Fashionably Slayer Muichiro Tokito Casual Anime Hoodie Embody the Spirit of Demon Slayer with Fashion-Forward Men's Pullover Best Material High Quality Recomended For Uses Daily",
-        "price": 45.5,
+        "title": "Nike Dunk Low",
+        "description": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with perfectly shined overlays and classic team colors. With its iconic hoops design, the Nike Dunk Low channels '80s vintage back onto the streets while its padded, low-cut collar lets you take your game anywhere—in comfort.",
+        "price": 115,
         "rate": 4,
         "stock": 35,
-        "colors": ["white", "Grey", "Black", "Purple", "Red"],
-        "size": ["XS", "S", "M", "L", "XL", "XXL"],
-        "material": "Cotton,Polyester",
-        "type": "hoodies",
-        "anime": "demon slayer"
+        "colors": ["Brown"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5", "W 8 / M 6.5", "W 9 / M 7.5", "W 10 / M 8.5","W 5.5 / M 4","W 6.5 / M 5","W 7.5 / M 6","W 8.5 / M 7","W 9.5 / M 8"],
+        "material": "Low-cut collar / Foam insoleShown: Sail/Coconut Milk/Cacao Wow",
+        "category": "Dunk"
     },
     {
         "id": 2,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Scdee8c9c641544fc8cde9c273883d142u.jpg?v=1684768890"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ac88ab75-d4bf-4be4-a654-498d9d42f196/dunk-low-retro-se-mens-shoes-qTZ3Jk.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S1238c30a654d446ba00048e04bb3ca74d.jpg?v=1684768910"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a3da514-73b3-49db-9ba8-7f992f9af1d2/dunk-low-retro-se-mens-shoes-qTZ3Jk.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sd2a921f135e4462ca41dad3b302545c9H.jpg?v=1684768918"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/90d3ef2f-f814-45c1-9325-a274f14199a9/dunk-low-retro-se-mens-shoes-qTZ3Jk.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/db122ed2-017d-4f43-9a80-c367755b433f/dunk-low-retro-se-mens-shoes-qTZ3Jk.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e4dd28b-7c60-45f3-a9fd-54622890fd4b/dunk-low-retro-se-mens-shoes-qTZ3Jk.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e9e9b6a4-4574-4281-a75d-fba2e9c0eaba/dunk-low-retro-se-mens-shoes-qTZ3Jk.png"
             }
         ],
-        "title": "Fashionably Slayer Shinazugawa Sanemi Graphic Print Hoodie Embrace The Power Of Kimetsu No Yaiba In Casual Long Sleeve Hoodies",
-        "description": "Anime Demon Slayer Shinazugawa Sanemi Graphic Print Hoodie Kimetsu No Yaiba Sweatshirt  Fashion Casual Long Sleeve Hoodies Best material High Quality Recomended For Uses Daily",
-        "price": 43,
+        "title": "Nike Dunk Low Retro SE",
+        "description": "The '80s b-ball icon returns with classic colors, crisp leather and throwback hoops flair. Channeling vintage style back onto the streets, its padded collar lets you take your game anywhere—in comfort.",
+        "price": 125,
         "rate": 5,
-        "stock": 10,
-        "colors": ["white", "Grey", "Black"],
-        "size": ["XS", "S", "M"],
-        "material": "Acrylic,Cotton",
-        "type": "hoodies",
-        "anime": "demon slayer"
+        "stock": 15,
+        "colors": ["White/Platinum"],
+        "size": ["6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11"],
+        "material": "Suede Swoosh logo",
+        "category": "Dunk"
     },
     {
         "id": 3,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Ha3db9a88d9e34215b8b94eb525034872L.jpg?v=1684162787"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/660ff262-aef2-4394-9c65-b197f839c561/dunk-low-se-big-kids-shoes-z9BDQ2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Habfa23d5a5a74dcb82c6c3d9219ac88af.jpg?v=1684162793"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3d4f799d-45a3-4f18-b87c-339b091257a8/dunk-low-se-big-kids-shoes-z9BDQ2.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Hcdd37419dfba4b44b21374adb74eb60cI.jpg?v=1684162812"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1e2b1ae4-20fb-49af-8524-54af3c5491fc/dunk-low-se-big-kids-shoes-z9BDQ2.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e166a65d-bed5-4c93-ae9c-423929fc5b58/dunk-low-se-big-kids-shoes-z9BDQ2.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/23c26724-97b3-437e-8a09-c932e6a586f9/dunk-low-se-big-kids-shoes-z9BDQ2.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9c605af6-6819-40f4-a974-62eff3d6967a/dunk-low-se-big-kids-shoes-z9BDQ2.png"
             }
         ],
-        "title": "Best Fashion Spy X Family Anya Peanut Evolution Anime Hoodie High Quality",
-        "description": "This is an oversized women's hoodie inspired by the Korean fashion style. It features a graphic print from the anime 'Spy x Family', specifically Anya's peanut evolution. The hoodie has a gothic look and is part of a line of sweatshirts called 'Sudaderas Para Mujer'. It is a comfortable and fashionable option for those who enjoy anime and oversized clothing.",
-        "price": 43.9,
-        "rate": 3,
-        "stock": 15,
-        "colors": ["Orange", "Dark-Green", "Light-Blue"],
-        "size": ["XS", "S", "M"],
-        "material": "Polyester",
-        "type": "hoodies",
-        "anime": "spy x family"
+        "title": "Nike Dunk Low SE",
+        "description": "The '80s b-ball icon returns with classic colors, crisp leather and throwback hoops flair. Channeling vintage style back onto the streets, its padded collar lets you take your game anywhere—in comfort.",
+        "price": 95,
+        "rate": 4,
+        "stock": 10,
+        "colors": ["Summit White/Black/Playful Pink/Light"],
+        "size": ["3.5Y","4Y","4.5Y","5Y","5.5Y","6Y","6.5Y","7Y"],
+        "material": "Real and synthetic leather upper softens and gains vintage character with wear.",
+        "category": "Dunk"
     },
     {
         "id": 4,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S12d49b579dd54a2ab5d41e9fe5ec71edM.jpg?v=1684248561"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9007de73-97fd-423c-a961-1b1ab24afbb1/offcourt-adjust-mens-slides-n7mcwr.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sdd988d2fc70a42bbafb52902ad3e8498T.jpg?v=1684248572"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c93da3cc-fd7a-4823-ad08-69c549c3fae5/offcourt-adjust-mens-slides-n7mcwr.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S5eef067fc9404a088d4c78668daa1330V.jpg?v=1684248567"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4b47b889-b537-48ce-b953-94b2ee8eb1b0/offcourt-adjust-mens-slides-n7mcwr.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b2f7efa8-81d0-4dc3-b9d8-c0ace7758af4/offcourt-adjust-mens-slides-n7mcwr.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7d78d028-9266-42fd-95cf-69408e816cba/offcourt-adjust-mens-slides-n7mcwr.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b10f5e95-15c5-420f-9695-789123954bab/offcourt-adjust-mens-slides-n7mcwr.png"
             }
         ],
-        "title": "Best Denki Berserk Guts T-Shirt Fashion High Quality",
-        "description": "Unleash your inner hero with this stunning Guts printed T-shirt from Kenpuu Denki Berserk. Designed for both women and men, this Japanese anime tee features short sleeves and a summer-ready style. Made from 100% cotton, it ensures maximum comfort and breathability. With its captivating design, this top is the perfect choice for anime enthusiasts looking to showcase their love for the series. Embrace your own handsome style with this top-tier tee.",
-        "price": 35.5,
+        "title": "Nike Offcourt Adjust",
+        "description": "Post game, errands and more—adjust your comfort on the go. The adjustable, padded strap lets you perfect your fit, while the lightweight foam midsole brings first-class comfort to your feet.",
+        "price": 40,
         "rate": 4,
-        "stock": 35,
-        "colors": ["white", "Grey", "Black"],
-        "size": ["XS", "S", "M", "L", "XL", "XXL"],
-        "material": "100% Cotton",
-        "type": "shirts",
-        "anime": "berserk"
+        "stock": 32,
+        "colors": ["Thunder Blue","Black","Wolf Grey"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5"],
+        "material": "Dual-density foam provides lightweight cushioning.",
+        "category": "Slides"
     },
     {
-        "id": 5,
+        "id":5,
         "images": [{
-            "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S469499683ed246cdbf059308fc716aefS.jpg?v=1683640307"
-        }],
-        "title": "Best Tshirt Punk Dabi Japanese Anime My Hero Academia T Shirt Mens 100% Cotton Streetwear",
-        "description": "Japanese Anime My Hero Academia T Shirt Mens 100% Cotton Tshirt Punk Dabi T-shirt Manga Graphic Tops Tees Male Unisex Streetwear Best Material High Quality Recomended For Uses Daily",
-        "price": 36.6,
-        "rate": 3,
-        "stock": 10,
-        "colors": ["Black"],
-        "size": ["XS", "S", "M"],
-        "material": "100% Cotton",
-        "type": "shirts",
-        "anime": "my hero academia"
-    },
-    {
-        "id": 6,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sf971d23791ce4df4b68852062fe55053H.jpg?v=1683038659"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5cc7c3df-28cd-4d48-a32a-62ea10492ecf/burrow-mens-slippers-QqGvtw.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Se1f69eaf80a941bc800e9a4413e16a9bD.jpg?v=1683038663"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3bc83205-8e6e-40f6-a21e-8555e8915c9e/burrow-mens-slippers-QqGvtw.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S8ac9db72974d4518b6e55c956d619fdbN.jpg?v=1683038657"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2663f069-100e-45ec-980b-15f95f737e00/burrow-mens-slippers-QqGvtw.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/867ea09b-add0-4b0e-a9e7-cb94c01b7983/burrow-mens-slippers-QqGvtw.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ba0186f-8c1e-45df-994c-a8bbf717904f/burrow-mens-slippers-QqGvtw.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d7d0d3ae-a946-42f0-a955-37beb0bedd60/burrow-mens-slippers-QqGvtw.png"
             }
         ],
-        "title": "Best Hunter X Hunter Killua And Gon Happy Anime T-Shirts 100% Cotton High Quality",
-        "description": "This Hunter X Hunter T-shirt features popular characters Killua and Gon from the Japanese anime series in a graphic print design. It's made of 100% cotton and is a comfortable and stylish option for women who are fans of the show.",
-        "price": 34.5,
-        "rate": 5,
-        "stock": 15,
-        "colors": ["White", "Red", "Light-Blue"],
-        "size": ["XS", "S", "M"],
-        "material": "100% Cotton",
-        "type": "shirts",
-        "anime": "hunter x hunter"
-    },
-    {
-        "id": 7,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Hb965280a7699474b90d4b435164e3854Y.jpg?v=1684418973"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H8ba59c76382e4b93a28d2d358b410bc6w.jpg?v=1684418977"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H329e225271a84edba71f656e8106e162Y.jpg?v=1684418975"
-            }
-        ],
-        "title": "Tokyo Ghoul Print Kaneki Ken Ghoul Bucket Hats High Quality",
-        "description": "Experience the dark allure of Tokyo Ghoul with our Tokyo Ghoul Print Bucket Hat! This summer sunshade Panama bucket cap is designed for both men and women who want to make a fashion statement. The unique Tokyo Ghoul print adds an edgy touch to your outdoor adventures, whether you're hiking, fishing, or simply enjoying a sunny day. With its foldable and portable design, this adult fashion hat is perfect for on-the-go style. Step into the world of Tokyo Ghoul and elevate your fashion game with this trendy fisherman cap!",
-        "price": 24.9,
+        "title": "Nike Burrow",
+        "description": "There's nothing like cozying up to a campfire. Nothing like adventure. But also, there's nothing like the comfort of home. The Nike Burrow lets you bridge worlds. Slip them on and get lounging or step out of the tent and enjoy the fresh mountain air. Its fleece-like lining helps keep you warm. The marshmallow soft foam midsole/outsole with grippy traction pattern adds spring to your step.",
+        "price": 60,
         "rate": 4,
-        "stock": 35,
-        "colors": ["white", "Beige", "Yellow"],
-        "size": ["ONE SIZE"],
-        "material": "Polyester",
-        "type": "hats",
-        "anime": "tokyo ghoul"
+        "stock": 2,
+        "colors": ["Fir"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5"],
+        "material": "Fleece-like material lines the inside (and sockliner) for added warmth and comfort.",
+        "category": "Slides"
     },
     {
-        "id": 8,
+        "id":6,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S78eba5846e2a45a68f741625a2e4451d2.jpg?v=1684418409"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/594e44ac-04cb-4708-8eb8-237b70c80919/zoom-vomero-5-mens-shoes-MgsTqZ.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S797e121f2f934241b4d7a4a5323477dc4.jpg?v=1684418417"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d1e7b98b-bcfd-423c-b8b0-0ce115e10bd7/zoom-vomero-5-mens-shoes-MgsTqZ.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S8f955fd6e2464cdab61b1c99a8cc2285l.jpg?v=1684418423"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d8c311-e638-474c-ab47-08c01529fe33/zoom-vomero-5-mens-shoes-MgsTqZ.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/l0svab1ihb4o5dl7anuq/zoom-vomero-5-mens-shoes-MgsTqZ.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fa1e4605-7214-4570-9b63-67f0d6d1fd2f/zoom-vomero-5-mens-shoes-MgsTqZ.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b8dc7160-e049-4671-ab0b-13ddfa8f2839/zoom-vomero-5-mens-shoes-MgsTqZ.png"
             }
         ],
-        "title": "One Piece Skull Pirate Flag Baseball Caps High Quality",
-        "description": "Japanese Anime My Hero Academia T Shirt Mens 100% Cotton Tshirt Punk Dabi T-shirt Manga Graphic Tops Tees Male Unisex Streetwear Best Material High Quality Recomended For Uses Daily",
-        "price": 28.9,
-        "rate": 5,
-        "stock": 10,
-        "colors": ["Black", "Red", "Blue"],
-        "size": ["8.3x4x2 Inch"],
-        "material": "Cotton, Denim",
-        "type": "hats",
-        "anime": "one piece"
-    },
-    {
-        "id": 9,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H11986e84d12d44a1851fc71450afbe63o.jpg?v=1684417785"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Hb45f1edd1ebf4fdcb1cfa00c127971b2t.jpg?v=1684417778"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/H55a3e41fdac94b30a6cb0b24d1156156N.jpg?v=1684417780"
-            }
-        ],
-        "title": "Eren Yeager Bucket Cap Attack On Titan Summer New Foldable Panama Black",
-        "description": "Panama Hip Hop Fashion Cap Attack on Titan Woman Man Soft One Size Unisex Chapeau Femme Summer New Foldable Panama Black Best Material High Quality Recomended For Uses Daily",
-        "price": 26.66,
-        "rate": 5,
-        "stock": 15,
-        "colors": ["Beige", "Yellow", "Black"],
-        "size": ["ONE SIZE"],
-        "material": "Polyester",
-        "type": "hats",
-        "anime": "attack on titan"
-    },
-    {
-        "id": 10,
-        "images": [{
-            "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S549fe655d34040fba7e1efa50b13da93U.jpg?v=1684333341"
-        }],
-        "title": "Best Kimetsu No Yaiba Demon Slayer Inosuke Cool And Cute Anime Pants High Quality",
-        "description": "Kimetsu no Yaiba Demon Slayer Anime Gym Shorts Men Women Kawaii Manga Cartoon Print 2 In1 Performance Shorts to Workout Summer Best Material High-Quality Recommended For Uses Daily. Discover the ultimate workout companion for summer: the Kimetsu no Yaiba Demon Slayer Anime Gym Shorts. Crafted from the best materials, these shorts are designed for both men and women, ensuring a perfect fit and maximum comfort. Featuring a kawaii manga cartoon print inspired by the popular anime series, they add a touch of style to your workout attire. With their 2-in-1 performance design, these shorts offer the flexibility and durability you need for daily use. Whether you're hitting the gym, going for a run, or engaging in any physical activity, these high-quality shorts are your go-to choice. Embrace the power of Demon Slayer and elevate your workout routine with these recommended shorts, perfect for daily use.",
-        "price": 36.9,
+        "title": "Nike Zoom Vomero 5",
+        "description": "The Vomero 5 takes early 2000s running to modern heights. A combination of breathable and durable materials stands ready for the rigors of your day, while Zoom Air cushioning delivers a smooth ride.",
+        "price": 170,
         "rate": 4,
-        "stock": 35,
-        "colors": ["Red"],
-        "size": ["XS", "S", "M", "L", "XL", "XXL"],
-        "material": "nylon,Rayon",
-        "type": "pants",
-        "anime": "demon slayer"
+        "stock": 4,
+        "colors": ["Sanddrift","Cosmic Clay","Iron Grey","Vast Grey"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5", "W 8 / M 6.5", "W 9 / M 7.5", "W 10 / M 8.5","W 5.5 / M 4","W 6.5 / M 5","W 7.5 / M 6","W 8.5 / M 7","W 9.5 / M 8"],
+        "material": "Mesh with TecTuff® and utilitarian overlays is breathable and durable. Cushlon foam with Zoom Air cushioning offers a responsive, smooth ride.",
+        "category": "Lifestyle"
     },
     {
-        "id": 11,
+        "id":7,
         "images": [{
-            "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Sa9325de66e35407e8c10ea09d9091fd8t.jpg?v=1683127722"
-        }],
-        "title": "Hanma Baki Show Strength Powerful Anime Shorts High Quality",
-        "description": "Anime Hanma Baki Gym Shorts Black for Men 2 In1 Mesh Quick Dry Board Shorts Mens Bodybuilding Fitness Running Short Pants Summer Best Material High Quality Recomended For Uses Daily",
-        "price": 39.9,
-        "rate": 5,
-        "stock": 1,
-        "colors": ["Grey"],
-        "size": ["M"],
-        "material": "nylon,Rayon",
-        "type": "pants",
-        "anime": "baki"
-    },
-    {
-        "id": 12,
-        "images": [{
-            "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/H60e3c24ef5604e4080c70520de401318L.jpg?v=1679494544"
-        }],
-        "title": "Tokyo Revengers Mikey Cool 3D Anime Pants High Quality",
-        "description": "Tokyo Revengers Mikey Cool 3D Anime Pants High Quality",
-        "price": 36.71,
-        "rate": 4,
-        "stock": 15,
-        "colors": ["Black"],
-        "size": ["M", "L"],
-        "material": "Polyester",
-        "type": "pants",
-        "anime": "tokyo revengers"
-    },
-    {
-        "id": 13,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Hca3ad67461004ad8a671479942ebef2fg.jpg?v=1684506791"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7e0e1358-11fd-4041-ad53-00d991eca0cf/air-jordan-xxxviii-chinese-new-year-basketball-shoes-vkQ81Z.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Ha98ca540278d48f1b96179f7056d1a1e7.jpg?v=1684506794"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7cd384d8-83ab-4707-afa9-b5bc74fc0cb8/air-jordan-xxxviii-chinese-new-year-basketball-shoes-vkQ81Z.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2d1d379c-cadd-41bd-b158-f753e7737411/air-jordan-xxxviii-chinese-new-year-basketball-shoes-vkQ81Z.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b3eda4bc-b1c4-41a6-9b8a-bd16c476c9ba/air-jordan-xxxviii-chinese-new-year-basketball-shoes-vkQ81Z.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6765e98d-a005-4dd6-b0e3-6a462432e041/air-jordan-xxxviii-chinese-new-year-basketball-shoes-vkQ81Z.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5513e235-9fcf-4977-a9ce-9d65c7d419e1/air-jordan-xxxviii-chinese-new-year-basketball-shoes-vkQ81Z.png"
             }
         ],
-        "title": "Tokyo Revengers Cosplay Manjiro Sano Draken Kimono Anime Cosplay Costume High Quality",
-        "description": "Experience the thrilling world of Tokyo Revengers as you step into the shoes of Manjiro Sano, also known as Draken, with this incredible cosplay kimono costume! This Halloween, immerse yourself in the intense atmosphere of the series by donning this authentic and intricately designed uniform. The attention to detail in this costume captures the essence of Draken's style, making you feel like a true member of the Tokyo Manji Gang. Whether you're attending a cosplay event or celebrating Halloween, this cosplay suit is the perfect choice to showcase your love for Tokyo Revengers and pay homage to the charismatic and badass character of Draken. Get ready to command attention and stand out with this remarkable cosplay ensemble.",
-        "price": 129.9,
-        "rate": 4,
-        "stock": 35,
-        "colors": ["For Girls", "For Boys"],
-        "size": ["XS", "S", "M", "L", "XL", "XXL"],
-        "material": "Polyester",
-        "type": "cosplay",
-        "anime": "tokyo revengers"
-    },
-    {
-        "id": 14,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S3c43421e9d3148f3a0c8d6d2cf8d4029m.jpg?v=1684506012"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sd2befc7a9de04990a97b50e9ba1c3e05B.jpg?v=1684506014"
-            }
-        ],
-        "title": "Best Bleach Orihime Inoue Arrancar Cosplay Costume White Dress Anime Cosplay High Quality",
-        "description": "Transform into the captivating Orihime Inoue from the popular anime Bleach with this stunning Arrancar cosplay costume! This custom-made white dress perfectly captures the essence of Orihime's iconic style. Whether you're attending a Halloween party or immersing yourself in anime conventions, this costume is sure to impress fellow fans with its meticulous attention to detail and authentic design. Embrace your inner Orihime and make a powerful fashion statement with this extraordinary cosplay ensemble.",
-        "price": 128.5,
-        "rate": 3,
-        "stock": 3,
-        "colors": ["Full Set"],
-        "size": ["M"],
-        "material": "Polyester",
-        "type": "cosplay",
-        "anime": "bleach"
-    },
-    {
-        "id": 15,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S04ea0fc398c34e78bbd1210207708d58V.jpg?v=1683297124"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sc92990f7678644d2801d2ff7abb3b94bY.jpg?v=1683297131"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Se9174c3d2d2b4af7903787e4b57c9276F.jpg?v=1683297129"
-            }
-        ],
-        "title": "One Piece Shirohige Whitebeard Edward Newgate Anime Cosplay Costume High Quality",
-        "description": "Shirohige Whitebeard Edward Newgate cosplay costume uniform suit set outfit is a cosplay attire inspired by the character Edward Newgate, also known as Whitebeard, from the anime and manga series One Piece. This outfit is designed for Halloween or cosplay events and features a white and black suit with a red sash and matching hat. The costume typically includes additional accessories such as a fake mustache, beard, and weapon props to complete the character's look.",
-        "price": 162.9,
+        "title": "Air Jordan XXXVIII Chinese New Year",
+        "description": "Start the Year of the Dragon in style. This elegant Air Jordan XXXVIII is inspired by the Chinese Zodiac's only mythological creature, with celebratory colors and crisp metallic details. And with cutting-edge tech, like the new stabilizing X-Plate and full-length Zoom Strobel cushioning, you'll be more than ready for that holiday hoops session.",
+        "price": 200,
         "rate": 4,
         "stock": 10,
-        "colors": ["Full Set"],
-        "size": ["M", "L"],
-        "material": "Polyester",
-        "type": "cosplay",
-        "anime": "one piece"
+        "colors": ["Cedar/Light"],
+        "size": ["6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11"],
+        "material": "The embroidery in the upper is designed to help you feel extra secure while criss-crossing the court. Your skills, plus supportive, lightweight mesh? A winning combo.",
+        "category": "Jordan"
     },
     {
-        "id": 16,
+        "id":8,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S83d270253b214d349e5a87da978862dcj.jpg?v=1684591131"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3222ad95-9099-4823-a60c-ba7c8f908473/air-max-90-mens-shoes-nkr3dc.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Se77616dfae6c47e086dd01ec67db9a45F.jpg?v=1684591151"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb53c4a9-c031-4f3c-a1e2-b765c47b62d4/air-max-90-mens-shoes-nkr3dc.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2396a216-7be1-44a0-b86a-dbb8d7bdd1c7/air-max-90-mens-shoes-nkr3dc.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f60372cb-2d64-41e8-a75e-ee2852751e5b/air-max-90-mens-shoes-nkr3dc.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4b3627e8-c07c-4a39-af9a-36e4bd5ae8c6/air-max-90-mens-shoes-nkr3dc.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f3d3c55a-20d3-497d-86eb-dc9f898b2a59/air-max-90-mens-shoes-nkr3dc.png"
             }
         ],
-        "title": "Dragon Ball Z The Sage's Power Unleashed GK Master Roshi's Kame Sennin Muscle Strengthening Form PVC Action Figure",
-        "description": "10cm Dragon Ball Z Figure GK Master Roshi Action Figures Kame Sennin Muscle Strengthening Form PVC Anime Collectible Model Toys Best Material High Quality Recomended For Uses Collections",
-        "price": 47.9,
+        "title": "Nike Air Max 90",
+        "description": "Lace up and feel the legacy in this champion running shoe that helped define the ‘90s. Worn by presidents, revolutionized through collabs and celebrated through rare colorways, its Waffle outsole, visible Nike Air cushioning and striking visuals keep it alive and well.",
+        "price": 110,
         "rate": 4,
-        "stock": 35,
-        "colors": ["Mascular", "Non-Mascular"],
-        "size": ["10cm"],
-        "material": "PVC",
-        "type": "figures",
-        "anime": "dragon ball"
+        "stock": 9,
+        "colors": ["Midnight Navy","Malachite","Light Smoke Grey","Anthracite"],
+        "size": ["6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11"],
+        "material": "Textile upper with leather and synthetic overlays adds texture and durability.",
+        "category": "Air Max"
     },
     {
-        "id": 17,
+        "id":9,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S7a582e161d8240eb94c6820e7e50d502S.jpg?v=1683382430"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/368a093d-7dc3-4141-966d-e61c09c59c53/air-force-1-07-lv8-mens-shoes-Zj9bVF.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S35adf6c5732242eabc61253645801c11t.jpg?v=1683382439"
-            }
-        ],
-        "title": "12.5cm Anime One Piece Charlotte Katakuri PVC Action Figure High Quality",
-        "description": "This high-quality PVC action figure of the One Piece character Charlotte Katakuri is a collectible model toy that makes a great gift for children who are fans of the series.",
-        "price": 66.9,
-        "rate": 3,
-        "stock": 3,
-        "colors": ["With Box", "Open Box"],
-        "size": ["12.5cm"],
-        "material": "PVC",
-        "type": "figures",
-        "anime": "one piece"
-    },
-    {
-        "id": 18,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S889aca6aeefb42dc8f211b2e4c45ea4bG.jpg?v=1683382939"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/58f7873c-1f86-426f-8ac2-56fc01eec982/air-force-1-07-lv8-mens-shoes-Zj9bVF.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S79addbff016d4fe9aa721f3a9ee8833cr.jpg?v=1683382951"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3a8b7b2b-ca8f-4ba8-9548-2450ed746c46/air-force-1-07-lv8-mens-shoes-Zj9bVF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f60372cb-2d64-41e8-a75e-ee2852751e5b/air-max-90-mens-shoes-nkr3dc.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4991f11b-8ad5-4fcd-b510-87052b2c2448/air-force-1-07-lv8-mens-shoes-Zj9bVF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b829992a-4b76-4d3a-a453-1b14ff3f38fe/air-force-1-07-lv8-mens-shoes-Zj9bVF.png"
             }
         ],
-        "title": "Hashira Rengoku Kyoujurou Figure Demon Slayer Kimetu No Yaiba Action Figurine Dawn Near Death",
-        "description": "Legend Rengoku Kyoujurou Figure Demon Slayer Kimetu No Yaiba Action Figurine Dawn Near Death Anime 13cm PVC Collection Model Toys Gifts Best material High Quality Recomended For Uses Daily",
-        "price": 69.9,
+        "title": "Nike Air Force 1 '07 LV8",
+        "description": "The radiance lives on in the Nike Air Force 1 ’07 LV8. This b-ball original puts a fresh spin on everything you love about the AF1 with durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+        "price": 125,
         "rate": 4,
-        "stock": 10,
-        "colors": ["With Box"],
-        "size": ["13cm"],
-        "material": "PVC",
-        "type": "figures",
-        "anime": "demon slayer"
+        "stock": 9,
+        "colors": ["Light Pumice/Dark"],
+        "size": ["6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11"],
+        "material": "Foam midsole, Perforations on toe, Rubber outsole.",
+        "category": "Air Force"
     },
     {
-        "id": 19,
+        "id":10,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S37d62565b2fc4b518a6921e830ad55bbA.jpg?v=1684679645"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/06480133-a655-4b4d-8c5f-062cb4a7e60f/blazer-mid-77-premium-mens-shoes-j9Nd0C.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Sda9ff5891b384bfa87f539f8cc4be4a7F.jpg?v=1684679649"
-            }
-        ],
-        "title": "Best My Hero Academia Key Tag Embroidered Keychain Anime Accessories High Quality",
-        "description": "The Japanese Anime My Hero Academia KeyTag is a must-have accessory for fans of the popular series. This embroidered key fob is designed for motorcycles, cars, backpacks, or as a fashionable chaveiro key tag. It features intricate embroidery showcasing iconic characters from the anime, adding a touch of style and personality to your belongings. Whether you're a devoted fan or looking for a trendy gift, this key tag is the perfect way to display your love for My Hero Academia while keeping your keys organized and making a fashion statement.",
-        "price": 16.9,
-        "rate": 4,
-        "stock": 35,
-        "colors": ["Color 1", "Color 2"],
-        "size": ["3cm * 13cm"],
-        "material": "Zinc alloy",
-        "type": "accessories",
-        "anime": "my hero academia"
-    },
-    {
-        "id": 20,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/S5a5735c19d5348fdb1dce79b6ad4708aH.jpg?v=1683464479"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d58bf718-8605-4cee-b13c-4b10f940c292/blazer-mid-77-premium-mens-shoes-j9Nd0C.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/Se22a6513a5ce4958b58c34f6851ab80er.jpg?v=1683464477"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/86a9011f-e606-4a49-bfca-76639ba1b873/blazer-mid-77-premium-mens-shoes-j9Nd0C.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fdb50e12-017d-4909-b376-33ba66ad24aa/blazer-mid-77-premium-mens-shoes-j9Nd0C.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8b499312-b2be-477d-ae4d-5b2fb784a8d4/blazer-mid-77-premium-mens-shoes-j9Nd0C.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/11ce3c23-7e2f-4b35-bcd2-664a69b933fd/blazer-mid-77-premium-mens-shoes-j9Nd0C.png"
             }
         ],
-        "title": "Cute Jewelry Accessories Demon Slayer Anime Enamel Pins Hashibira Inosuke Brooch Clothes Backpack",
-        "description": "Cute Demon Slayer Anime Enamel Pins Cosplay Hashibira Inosuke Brooch Clothes Backpack Lapel Badges Fashion Jewelry Accessories Gifts Best material High Quality Recomended For Uses Daily",
-        "price": 15.5,
+        "title": "Nike Blazer Mid '77 Premium",
+        "description": "Styled for the ‘70s. Loved in the ‘80s. Classic in the ‘90s. Ready for the future. A neutral color palette pairs with premium leather for a luxe look that goes with every outfit. Exposed foam on the tongue and a special midsole finish make it look like you've just pulled these from the history books.",
+        "price": 125,
         "rate": 5,
-        "stock": 3,
-        "colors": ["White"],
-        "size": ["1.1inch * 1.4inch"],
-        "material": "Metal",
-        "type": "accessories",
-        "anime": "demon slayer"
+        "stock": 2,
+        "colors": ["Dark Stucco"],
+        "size": ["6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11"],
+        "material": "Rubber midsole, Rubber outsole.",
+        "category": "Blazers"
     },
     {
-        "id": 21,
+        "id":11,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S2e30ddee3ca94b8cbbee22ae678b8f61j.jpg?v=1682258424"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ad43263b-15ec-4d67-a311-eb11433dcc29/free-metcon-5-mens-workout-shoes-H0Qszz.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/S15f2c9555eee4a2c8312cc9756099d07U.jpg?v=1682258426"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d003edc8-d992-45e4-953f-227ae8bdfba0/free-metcon-5-mens-workout-shoes-H0Qszz.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e4c35aa4-88f1-4d91-a0ff-12c176e97a66/free-metcon-5-mens-workout-shoes-H0Qszz.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d000bfd0-b16c-4948-8c2d-0ffa34c31cde/free-metcon-5-mens-workout-shoes-H0Qszz.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fcf3e572-caba-442a-94c1-a72feda8ad64/free-metcon-5-mens-workout-shoes-H0Qszz.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a79c1993-df36-482b-8d39-e6884ee19a32/free-metcon-5-mens-workout-shoes-H0Qszz.png"
             }
         ],
-        "title": "Enamel Keychain Anime Chainsaw Man Key Chains Ring Souvenir Jewelry Accessories Decorations",
-        "description": "Japanese Anime Chainsaw Man Enamel keychain Key Chains Ring Souvenir For Women Men Handbag Jewelry Accessorie Decorations Gifts Best material High Quality Recomended For Uses Daily",
-        "price": 17.9,
+        "title": "Nike Free Metcon 5",
+        "description": "When your workouts wade into the nitty gritty, the Nike Free Metcon 5 can meet you in the depths, help you dig deep to find that final ounce of force and come out of the other side on a high. It matches style with substance, forefoot flexibility with backend stability, perfect for flying through a cardio day or enhancing your agility. A revamped upper offers easier entry with a collar made just for your ankle.",
+        "price": 120,
         "rate": 5,
-        "stock": 10,
-        "colors": ["Tinje", "Power"],
-        "size": ["5cm"],
-        "material": "Metal",
-        "type": "accessories",
-        "anime": "chainsaw man"
+        "stock":30,
+        "colors": ["Dusty Cactus"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5", "W 8 / M 6.5", "W 9 / M 7.5", "W 10 / M 8.5","W 5.5 / M 4","W 6.5 / M 5","W 7.5 / M 6","W 8.5 / M 7","W 9.5 / M 8"],
+        "material": "Molded heel clip offers support. Webbing eyelets offer dynamic containment. Rubber tread in high-wear areas gives you durable traction.",
+        "category": "Training"
     },
     {
-        "id": 22,
+        "id":12,
         "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1765494721.jpg?v=1648976503"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4a2b7e09-9991-4c56-a836-2821a1b7af67/gt-cut-3-basketball-shoes-P4rcKp.png"
             },
             {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1765494704.jpg?v=1648976509"
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/88efb7d6-3399-43a2-8240-9e4f4d03343e/gt-cut-3-basketball-shoes-P4rcKp.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6b7e206f-b363-4781-88e5-a06c71aa2533/gt-cut-3-basketball-shoes-P4rcKp.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ff7573e2-b86d-4e1d-8a39-fc62fc5e46f9/gt-cut-3-basketball-shoes-P4rcKp.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d57649bd-2cc5-4854-a557-36bbceaab686/gt-cut-3-basketball-shoes-P4rcKp.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7f810083-d1e7-4fd4-a291-b7a07a61a790/gt-cut-3-basketball-shoes-P4rcKp.png"
             }
         ],
-        "title": "That Time I Got Reincarnated As A Slime Rimuru Tempest Pillow",
-        "description": "That Time I Got Reincarnated as a Slime Rimuru Tempest Pillow. Rimuru Tempest Plush Toys Anime That Time I Got Reincarnated as a Slime Rimuru Tempest Pillow for Children Baby Model Number.",
-        "price": 24.7,
+        "title": "Nike G.T. Cut 3",
+        "description": "How can you separate your game when it’s winning time? Start by lacing up in the G.T. Cut 3. Designed to help you create space for stepback jumpers and backdoor cuts, its sticky multicourt traction helps you stop on a dime and shift gears at will. And when you're making all those game-changing plays, the newly added, ultra-responsive ZoomX foam helps keep you fresh for four quarters.",
+        "price": 190,
+        "rate": 5,
+        "stock":10,
+        "colors": ["Vapor Green","Summit White"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5", "W 8 / M 6.5", "W 9 / M 7.5", "W 10 / M 8.5"],
+        "material": "Molded heel clip offers support. Webbing eyelets offer dynamic containment. Rubber tread in high-wear areas gives you durable traction.",
+        "category": "Basketball"
+    },
+    {
+        "id":13,
+        "images": [{
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3c27d5ca-55d8-4c3c-a27e-66aed66e27a0/infinityrn-4-mens-road-running-shoes-ZgtnjF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c28db679-004a-4e9b-a02e-136f75ad5327/infinityrn-4-mens-road-running-shoes-ZgtnjF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/14186a35-1a03-489e-8152-f297d6b06f17/infinityrn-4-mens-road-running-shoes-ZgtnjF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4d85c8b0-e16c-47d0-8121-c57a2bff2109/infinityrn-4-mens-road-running-shoes-ZgtnjF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4e08c3d2-2ad1-4705-974c-e957a83e86cd/infinityrn-4-mens-road-running-shoes-ZgtnjF.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c463acdf-504e-4f6a-8227-fa0bf1913bc1/infinityrn-4-mens-road-running-shoes-ZgtnjF.png"
+            }
+        ],
+        "title": "Nike InfinityRN 4",
+        "description": "With supportive cushioning built for a smooth run, the Nike InfinityRN 4 is a brand-new take on a familiar favorite. It's made from our all-new Nike ReactX foam, which gives you 13% more energy return compared with Nike React foam, to help you stay fresh and bouncy. (What's more? Nike ReactX reduces its carbon footprint in a pair of midsoles by at least 43% compared to Nike React foam.*) We coupled the ReactX foam with Nike Running's best-fitting Flyknit yet, so you can take off anytime, anywhere with secure upper support and breathability. It’s the kind of shoe that can grant you that priceless peace of mind to go faster and farther thanks to an intuitive design that supports every stride. *The carbon footprint of ReactX is based on cradle-to-gate assessment reviewed by PRé Sustainability B.V and Intertek China. Other midsole components such as airbags, plates or other foam formulations were not considered.",
+        "price": 110,
+        "rate": 5,
+        "stock":25,
+        "colors": ["University Red","Black/Bright"],
+        "size": ["6","6.5","7","7.5","8","8.5","9","9.5","10","10.5","11"],
+        "material": "Waffle outsole provides durable traction. Flyknit tongue is adjustable and plush. Foam collar is soft and supportive to the touch. Increased rubber at the outsole gives traction and durability.",
+        "category": "Running"
+    },
+    {
+        "id":14,
+        "images": [{
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fbafe7e5-1020-484b-a552-b784857d4d13/sb-force-58-skate-shoes-Txk6xG.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6cb02edd-0df6-4407-a429-c41f7e73d8ff/sb-force-58-skate-shoes-Txk6xG.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/890e0b39-fced-430e-8df0-a32f5af528db/sb-force-58-skate-shoes-Txk6xG.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/def728fe-65af-4257-8237-d5000a24887e/sb-force-58-skate-shoes-Txk6xG.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/18c5783f-2385-4eca-a2f9-3f94b85e6768/sb-force-58-skate-shoes-Txk6xG.png"
+            },
+            {
+                "url": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e25d0378-6f65-44f1-93cb-532f011f74a0/sb-force-58-skate-shoes-Txk6xG.png"
+            }
+        ],
+        "title": "Nike SB Force 58",
+        "description": "The latest and greatest innovation to hit the streets, the Force 58 gives you the durability of a cupsole with the flexibility of vulcanized shoes. Made from canvas and suede and finished with perforations on the toe, the whole look is infused with heritage basketball DNA.",
+        "price":80,
         "rate": 4,
-        "stock": 35,
-        "colors": ["Light-Blue"],
-        "size": ["28cm * 55cm"],
-        "material": "Plush",
-        "type": "pillows",
-        "anime": "other"
-    },
-    {
-        "id": 23,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1953844594.jpg?v=1645453098"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1953844598.jpg?v=1645453101"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1953844599.jpg?v=1645453104"
-            }
-        ],
-        "title": "Anime Demon Slayer Kimetsu No Yaiba Plush Stuffed Cushion Cute Pillow",
-        "description": "Cute anime demon slayer kimetsu no yaiba cushion pillow, soft material.",
-        "price": 39.22,
-        "rate": 1,
-        "stock": 3,
-        "colors": ["Tanjiro", "Nezuko", "Zenitsu"],
-        "size": ["36cm * 27cm"],
-        "material": "Plush",
-        "type": "pillows",
-        "anime": "demon slayer"
-    },
-    {
-        "id": 24,
-        "images": [{
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1658842695.jpg?v=1648969786"
-            },
-            {
-                "url": "https://cdn.shopify.com/s/files/1/0610/0883/8824/products/product-image-1658842719.jpg?v=1648969723"
-            }
-        ],
-        "title": "Super Soft Plush Newspaper Style One Piece Character Print Cushion Cover Pillow",
-        "description": "Super Soft Plush Newspaper Style One Piece Luffy Print Cushion Cover Pillow Covers Pillows Cases for Sofa Home Decor Pillowcase",
-        "price": 20.9,
-        "rate": 4,
-        "stock": 10,
-        "colors": ["Ace", "Luffy"],
-        "size": ["450mm * 450mm"],
-        "material": "Plush",
-        "type": "pillows",
-        "anime": "one piece"
+        "stock":14,
+        "colors": [" Monarch/Midnight Navy"],
+        "size": ["W 5 / M 3.5", "W 6 / M 4.5", "W 7 / M 5.5", "W 8 / M 6.5", "W 9 / M 7.5", "W 10 / M 8.5"],
+        "material": "Rubber sole has a full cupsole stitch for exceptional durability.",
+        "category": "Nike SB"
     }
 ]

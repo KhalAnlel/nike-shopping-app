@@ -1,7 +1,7 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
-import { Box, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import "../../styles/search.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -15,7 +15,7 @@ const Search = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    navigate(`/collection/${searchValue}`);
+    navigate(`/collection/${searchValue.toLowerCase()}`);
   }
   const handleReset = () => {
     setSearchValue("");

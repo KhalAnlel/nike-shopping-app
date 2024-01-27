@@ -11,7 +11,6 @@ import PriceRange from "./priceRange";
 import { Radio, RadioGroup } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import animeSeries from "../../data/animeSeries.json";
 import categories from "../../data/categories.json";
 
 export default function Filters({ setCurrentPage }) {
@@ -47,6 +46,8 @@ export default function Filters({ setCurrentPage }) {
       case "latest":
         navigate("/collection/latest");
         break;
+      default:
+        navigate("/collection/all");
     }
   };
 
@@ -61,21 +62,6 @@ export default function Filters({ setCurrentPage }) {
         </ListSubheader>
       }
     >
-      <ListItemButton onClick={() => handleClick("openSeries")}>
-        <ListItemText primary="ANIME SERIES" />
-        {openStates.openSeries ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-      <Collapse in={openStates.openSeries} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {animeSeries.map((item) => (
-            <Link to={`/collection/${item}`}>
-              <ListItemButton sx={{ pl: 4 }} key={item}>
-                <ListItemText secondary={item.toLocaleUpperCase()} />
-              </ListItemButton>
-            </Link>
-          ))}
-        </List>
-      </Collapse>
       <ListItemButton onClick={() => handleClick("openCategories")}>
         <ListItemText primary="ANIME CATEGORIES" />
         {openStates.openCategories ? <ExpandLess /> : <ExpandMore />}
@@ -83,9 +69,9 @@ export default function Filters({ setCurrentPage }) {
       <Collapse in={openStates.openCategories} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           {categories.map((item) => (
-            <Link to={`/collection/${item}`}>
+            <Link to={`/collection/${item.title}`}>
               <ListItemButton sx={{ pl: 4 }} key={item}>
-                <ListItemText secondary={item.toLocaleUpperCase()} />
+                <ListItemText secondary={item.title.toLocaleUpperCase()} />
               </ListItemButton>
             </Link>
           ))}

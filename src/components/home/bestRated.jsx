@@ -14,12 +14,12 @@ import data from "../../data/allProducts.json";
 export const BestRated = () => {
   const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1);
-  const cardPerPage = 4;
+  const cardPerPage = 3;
 
   const indexOfLastCard = currentPage * cardPerPage;
   const indexOfFirstCard = indexOfLastCard - cardPerPage;
   // Filter and sort the data based on the rate property
-  const filteredData = data.filter((product) => product.rate >= 4); // Filter by rate value (e.g., 4)
+  const filteredData = data.filter((product) => product.rate >= 3); // Filter by rate value (e.g., 3)
 
   // Sort the filtered data based on the rate property
   const sortedData = filteredData.sort((a, b) => b.rate - a.rate); // Sort in descending order
@@ -30,7 +30,7 @@ export const BestRated = () => {
   };
   return (
     <>
-      <Box marginTop={15}>
+      <Box marginTop={10}>
         <Typography textAlign="center" variant="h5" fontWeight={700}>
           Best Rated Products
         </Typography>
@@ -89,7 +89,7 @@ export const BestRated = () => {
         ))}
       </Box>
       <Box display="flex" m={2}>
-        <Pages setCurrentPage={setCurrentPage} count={4} />
+        <Pages setCurrentPage={setCurrentPage} count={3} />
       </Box>
     </>
   );

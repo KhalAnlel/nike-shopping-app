@@ -2,10 +2,10 @@ import React from "react";
 import SmartSlider from "react-smart-slider";
 const slidesArray = [
   {
-    url: "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/Add_a_heading_2.png?v=1678281887&width=1880",
+    url: "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1824,c_limit/bf6ccafa-64c3-4c0f-b6e2-084f4e27af2f/men-s-shoes-clothing-accessories.jpg",
   },
   {
-    url: "https://cdn.shopify.com/s/files/1/0610/0883/8824/files/OTAKU_1.png?v=1678299202&width=1880",
+    url: "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1824,c_limit/16b0e3d3-5323-4733-afe9-519dffe4427e/women-s-shoes-clothing-accessories.jpg",
   },
 ];
 

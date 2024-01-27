@@ -8,7 +8,6 @@ import {
   Button,
   Dialog,
 } from "@mui/material";
-import DialogTitle from "@mui/material/DialogTitle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import SendIcon from "@mui/icons-material/Send";
 

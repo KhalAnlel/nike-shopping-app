@@ -27,7 +27,7 @@ const ProductsGrid = ({ currentCards, notFound }) => {
               <img
                 src={item["images"][0].url}
                 alt={item.title}
-                width="100%"
+                width="90%"
                 height="240px"
               />
               <Link

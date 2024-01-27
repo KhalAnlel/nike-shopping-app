@@ -47,7 +47,7 @@ export default function TopNavbar() {
       >
         <Toolbar>
           <Box
-            width={"130px"}
+            width={"80px"}
             sx={{
               ":hover": {
                 transform: "scale(1.1)",
@@ -56,80 +56,9 @@ export default function TopNavbar() {
             }}
           >
             <Link to="/" className="logo">
-              <img src={logo} width="100%" />
+              <img src={logo} width="100%" alt={logo}/>
             </Link>
           </Box>
-          <Stack
-            flexDirection={"row"}
-            gap={2}
-            alignItems={"center"}
-            width={"100%"}
-            justifyContent={"center"}
-          >
-            <Link to="/">
-              <Typography
-                color={"white"}
-                fontSize={14}
-                fontWeight={700}
-                width="40px"
-                height="20px"
-                p={1}
-                textAlign={"center"}
-                display={"flex"}
-                alignItems={"center"}
-                sx={{
-                  ":hover": {
-                    borderRadius: "10%",
-                    bgcolor: "rgb(255,255,255,0.05)",
-                  },
-                }}
-              >
-                Home
-              </Typography>
-            </Link>
-            <Link to="/collection/all">
-              <Typography
-                color={"white"}
-                fontSize={14}
-                fontWeight={700}
-                width="60px"
-                height="20px"
-                p={1}
-                textAlign={"center"}
-                display={"flex"}
-                alignItems={"center"}
-                sx={{
-                  ":hover": {
-                    borderRadius: "10%",
-                    bgcolor: "rgb(255,255,255,0.05)",
-                  },
-                }}
-              >
-                Products
-              </Typography>
-            </Link>
-            <Link to="/about">
-              <Typography
-                color={"white"}
-                fontSize={14}
-                fontWeight={700}
-                width="40px"
-                height="20px"
-                p={1}
-                textAlign={"center"}
-                display={"flex"}
-                alignItems={"center"}
-                sx={{
-                  ":hover": {
-                    borderRadius: "10%",
-                    bgcolor: "rgb(255,255,255,0.05)",
-                  },
-                }}
-              >
-                About
-              </Typography>
-            </Link>
-          </Stack>
           <Box sx={{ flexGrow: 1 }} />
           <Stack flexDirection="row">
             <IconButton

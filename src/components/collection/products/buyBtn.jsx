@@ -12,7 +12,7 @@ const BuyBtn = ({
   selectedSize,
   index,
 }) => {
-  const { cartItems, handleAdd } = useContext(CartContext);
+  const { handleAdd } = useContext(CartContext);
   const handleClick = (id) => {
     handleAdd(id, quantity, selectedColor, selectedSize, null);
     setOpen(true);

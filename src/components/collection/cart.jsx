@@ -42,6 +42,7 @@ const Cart = () => {
                 width="55px"
                 height="55px"
                 style={{ borderRadius: "50%" }}
+                alt={item["images"][0].url}
               />
               <Stack>
                 <Typography

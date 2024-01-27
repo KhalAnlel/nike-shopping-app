@@ -16,7 +16,7 @@ const Description = ({ ...props }) => {
       </Typography>
       <p>{props.description}</p>
       <p>Material: {props.material}</p>
-      <p>Item Type: {props.itemType}</p>
+      <p>Item Category: {props.itemCategory}</p>
       {props.images.map((item, index) => (
         <Box key={index}>
           <img src={item.url} width="100%" alt={props.description} />

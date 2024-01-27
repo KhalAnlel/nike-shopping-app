@@ -1,44 +1,42 @@
-import animeSeries from "../../data/animeSeries.json";
+import categories from "../../data/categories.json";
 
 export const filterData = (category, data) => {
   let filteredData = [];
   let notFound = false;
+  const categoryExists = categories.some(
+    (item) => item.title.toLowerCase() === category
+  );
 
-  if (animeSeries.includes(category)) {
-    filteredData = data.filter((item) => item.anime === category);
-    notFound = false;
-  } else if (category === undefined) {
-    filteredData = data;
-    notFound = false;
-  } else if (category && category !== "") {
+  if (categoryExists) {
+    // Exact match for category
     filteredData = data.filter(
-      (item) =>
-        item.type.includes(category.toLowerCase()) ||
-        item.anime.includes(category.toLowerCase())
+      (item) => item.category.toLowerCase() === category
     );
     notFound = false;
+  } else if (category === undefined || category === "") {
+    // Show all items when category is undefined or empty
+    filteredData = data;
+    notFound = false;
+  } else {
+    // Partial match for category
+    filteredData = data.filter((item) =>
+      item.category.toLowerCase().includes(category)
+    );
+    notFound = filteredData.length === 0;
   }
 
-  if (filteredData.length === 0) {
-    notFound = true;
-  }
-
+  // Handle special cases
   if (category === "all") {
     filteredData = data;
-  }
-
-  if (category === "latest") {
+  } else if (category === "latest") {
     filteredData = data.slice(-50).reverse();
     notFound = false;
-  }
-
-  if (category === "best rated") {
+  } else if (category === "best rated") {
     filteredData = data
       .filter((item) => item.rate >= 1)
       .sort((a, b) => b.rate - a.rate);
     notFound = false;
   }
-
   return { filteredData, notFound };
 };
 
