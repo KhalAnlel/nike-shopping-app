@@ -51,7 +51,7 @@ export const ProductDetails = () => {
         <Box>
           <BreadCrumb title={data[productID - 1].title} />
           <Box
-            sx={{ width:"500px", margin: "auto" }}
+            sx={{ width:{sm:"400px",lg:"500px"}, margin: "auto", }}
           >
             <SmartSlider
               slides={data[productID - 1]["images"]}
