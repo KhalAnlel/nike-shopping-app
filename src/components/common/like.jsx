@@ -7,10 +7,7 @@ const Like = ({ id, handleLike, likedItems, size }) => {
   const [clickedItems, setClickedItems] = useState({});
   const isClicked = likedItems.some((item) => item.id === id);
   const handleClick = (id) => {
-    setClickedItems((prevState) => ({
-      ...prevState,
-      [id]: !prevState[id],
-    }));
+    setClickedItems((prevState) => ({...prevState,[id]: !prevState[id]}));
     handleLike(id);
   };
 

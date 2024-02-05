@@ -22,15 +22,15 @@ export function CartProvider({ children }) {
   };
 
   useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  }, [cartItems]);
+
+  useEffect(() => {
     const storedItems = localStorage.getItem("cart");
     if (storedItems) {
       setCartItems(JSON.parse(storedItems));
     }
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartItems));
-  }, [cartItems]);
 
   const countCart = cartItems.length;
 
@@ -38,7 +38,7 @@ export function CartProvider({ children }) {
     <CartContext.Provider
       value={{ handleAdd, cartItems, countCart, handleRemoveItem }}
     >
-      {children}{" "}
+      {children}
     </CartContext.Provider>
   );
 }

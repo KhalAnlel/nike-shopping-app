@@ -20,8 +20,9 @@ export const filterData = (category, data) => {
   } else {
     // Partial match for category
     filteredData = data.filter((item) =>
-      item.category.toLowerCase().includes(category)
-    );
+    item.category.toLowerCase().includes(category) ||
+    item.title.toLowerCase().includes(category)
+  );
     notFound = filteredData.length === 0;
   }
 
@@ -29,7 +30,7 @@ export const filterData = (category, data) => {
   if (category === "all") {
     filteredData = data;
   } else if (category === "latest") {
-    filteredData = data.slice(-50).reverse();
+    filteredData = data.reverse();
     notFound = false;
   } else if (category === "best rated") {
     filteredData = data

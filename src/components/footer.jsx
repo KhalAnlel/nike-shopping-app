@@ -39,7 +39,7 @@ export const Footer = () => {
               <Box className="contactDiv">
                 <CallIcon />
                 <Typography variant="overline">
-                  Call us: +1 3024040584
+                  Call us: +964 7504321025
                 </Typography>
               </Box>
               <Box className="contactDiv">

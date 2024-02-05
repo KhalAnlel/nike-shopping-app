@@ -8,7 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box, CardActionArea, Chip } from "@mui/material";
 import Pages from "../common/pages";
-import LearnMoreBtn from "./learnMoreBtn";
+import LearnMoreBtn from "../common/learnMoreBtn";
 import data from "../../data/allProducts.json";
 
 export const BestRated = () => {
@@ -16,8 +16,8 @@ export const BestRated = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const cardPerPage = 3;
 
-  const indexOfLastCard = currentPage * cardPerPage;
-  const indexOfFirstCard = indexOfLastCard - cardPerPage;
+  const indexOfLastCard = currentPage * cardPerPage; // 1*3=3 or 2*3=6 
+  const indexOfFirstCard = indexOfLastCard - cardPerPage; // 3-3=0 or 6-3=3
   // Filter and sort the data based on the rate property
   const filteredData = data.filter((product) => product.rate >= 3); // Filter by rate value (e.g., 3)
 

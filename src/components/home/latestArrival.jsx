@@ -11,7 +11,7 @@ import {
   CardActions,
   Card,
 } from "@mui/material";
-import LearnMoreBtn from "./learnMoreBtn";
+import LearnMoreBtn from "../common/learnMoreBtn";
 import data from "../../data/allProducts.json";
 
 export const LatestArrival = () => {

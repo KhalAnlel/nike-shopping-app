@@ -5,7 +5,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import categories from "../../data/categories.json";
 
-export const ButtomNavbar = () => {
+export default function ButtomNavbar() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -22,11 +22,15 @@ export const ButtomNavbar = () => {
         indicatorColor={""}
       >
         {categories.map((item) => (
-          <Link key={item.title} to={`/collection/${item.title}`} className="link">
+          <Link
+            key={item.title}
+            to={`/collection/${item.title}`}
+            className="link"
+          >
             <Tab key={item.title} label={`${item.title}`} />
           </Link>
         ))}
       </Tabs>
     </Box>
   );
-};
+}

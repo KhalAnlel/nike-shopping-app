@@ -7,7 +7,6 @@ import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import PriceRange from "./priceRange";
 import { Radio, RadioGroup } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -108,15 +107,6 @@ export default function Filters({ setCurrentPage }) {
               label="Latest Arrival"
             />
           </RadioGroup>
-        </List>
-      </Collapse>
-      <ListItemButton onClick={() => handleClick("openPrice")}>
-        <ListItemText primary="Price" />
-        {openStates.openPrice ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-      <Collapse in={openStates.openPrice} timeout="auto" unmountOnExit>
-        <List component="div" sx={{ p: 3 }}>
-          <PriceRange />
         </List>
       </Collapse>
     </List>
