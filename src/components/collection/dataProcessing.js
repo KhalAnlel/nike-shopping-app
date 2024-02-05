@@ -1,38 +1,38 @@
 import categories from "../../data/categories.json";
 
-export const filterData = (category, data) => {
+export const filterData = (query, data) => {
   let filteredData = [];
   let notFound = false;
   const categoryExists = categories.some(
-    (item) => item.title.toLowerCase() === category
+    (category) => category.title.toLowerCase() === query
   );
 
   if (categoryExists) {
-    // Exact match for category
+    // Exact match for query
     filteredData = data.filter(
-      (item) => item.category.toLowerCase() === category
+      (product) => product.category.toLowerCase() === query
     );
     notFound = false;
-  } else if (category === undefined || category === "") {
-    // Show all items when category is undefined or empty
+  } else if (query === undefined || query === "") {
+    // Show all items when query is undefined or empty
     filteredData = data;
     notFound = false;
   } else {
     // Partial match for category
-    filteredData = data.filter((item) =>
-    item.category.toLowerCase().includes(category) ||
-    item.title.toLowerCase().includes(category)
+    filteredData = data.filter((product) =>
+    product.category.toLowerCase().includes(query) ||
+    product.title.toLowerCase().includes(query)
   );
     notFound = filteredData.length === 0;
   }
 
   // Handle special cases
-  if (category === "all") {
+  if (query === "all") {
     filteredData = data;
-  } else if (category === "latest") {
+  } else if (query === "latest") {
     filteredData = data.reverse();
     notFound = false;
-  } else if (category === "best rated") {
+  } else if (query === "best rated") {
     filteredData = data
       .filter((item) => item.rate >= 1)
       .sort((a, b) => b.rate - a.rate);

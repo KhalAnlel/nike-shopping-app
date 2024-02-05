@@ -16,7 +16,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/collection/:category?" element={<Collection />} />
+            <Route path="/collection/:query?" element={<Collection />} />
             <Route
               path="/collection/productDetails/:productID"
               element={<ProductDetails />}

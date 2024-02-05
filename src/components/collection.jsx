@@ -12,12 +12,12 @@ import { filterData, sortDataFunc } from "./collection/dataProcessing";
 import Search from "./collection/search";
 
 export const Collection = () => {
-  const { category } = useParams();
+  const { query } = useParams();
   const [sortData, setSortData] = useState("");
   const [itemsPerPage, setItemsPerPage] = useState(20);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const { filteredData, notFound } = filterData(category, data);
+  const { filteredData, notFound } = filterData(query, data);
   const sortedData = sortDataFunc(sortData, filteredData);
 
   const totalCards = sortedData.length;
