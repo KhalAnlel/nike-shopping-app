@@ -7,6 +7,7 @@ import { ProductDetails } from "./components/collection/productDetails";
 import { WishlistProvider } from "./wishlistContext";
 import { CartProvider } from "./cartContext";
 import Checkout from "./components/checkout";
+import ScrollToTop from "./components/common/scrollToTop";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CartProvider>
         <WishlistProvider>
           <Navbar />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/collection/:query?" element={<Collection />} />
